@@ -1,0 +1,71 @@
+.\Manpage pour sniffer.
+.\Contact zoeurk.gmail.com
+.TH man 0 "01 juillet 2020" "1.0" "sniffer man page"
+.SH NAME
+sniffer
+.SH SYNOPSIS
+sniffer [options]
+.SH DESCRIPTION
+Outil pour sniffer le reseau
+.SH OPTIONS
+.TP
+.BR \-i , " \-\-interface "\fIinterface\fR
+ecouter sur l'\fIinterface\fR specifiee.
+.TP
+.BR \-A , " \-\-noaddress"
+Ne pas afficher les adresses et les nom d'hotes. 
+.TP
+.BR \-d , " \-\-nodata"
+Ne Pas afficher les datas.
+.TP
+.BR \-D , " \-\-nohexa"
+Ne pas afficher les datas en hexadecimal.
+.TP
+.BR \-H , " \-\-noheader"
+Ne pas afficher les "headers"
+.TP
+.BR \-L , " \-\-nolinklayer"
+Ne pas afficher les adresses MAC.
+.TP
+.BR \-O , " \-\-nooptions"
+Ne pas afficher les options IP.
+.TP
+.BR \-T , " \-\-notreansport"
+Ne  pas afficher la "partie transport"
+.TP
+.BR \-c , " \-\-count_captured " \fIcount\fR
+Quitter apres \fIcount\fR packet recu.
+.TP
+.BR \-C , " \-\-count_selected " \fIcount\fR
+Quitter apres \fIcount\fR packet recu et analyse.
+.TP
+.BR \-r , "\-\-count_received " \f\Icount\fR
+Quitter apres \fIcount\fR packet recu par la socket.
+.TP
+.BR \-R , " \-\-noresolve"
+Ne pas tenter de resoudre les adresses en nom d'hote.
+.TP
+.BR \-f , " \-\-flags " \fIopt1:arg1;opt2,opt3\fR
+Cette option peut-etre utilisee plusieur fois.
+Cette option permet de selectionner les packets qui seront affichee.
+ex: ./sniffer -f "TCPFLAGS:S|SA|A" -f "protocol:udp;port=123"
+Attention certains etats son exclusif en effet TCPFLAGS selection le protocle TCP donc on ne peut pas faire 
+ex: ./sniffer -f "protocol:udp;tcpflags:S|A" (ne fonctionne pas)
+voici la list de drapeau:
+VERSION,
+PROTOCOL,
+HOST (ip ou nom d'hote)
+PORT
+TCPFLAGS.
+Lesprotcol reconu sont:
+udp
+tcp
+icmp
+icmpv6
+et les drapeux TCP :A=ACK, S=SYN, R=RST, P=PSH, U=URG, F=FIN, E=ECE.
+.SH BUGS
+Je sais pas
+.SH AUTHORS
+ZoeurK (zoeurk@gmail.com)
+.SH SEE ALSO
+RAS
