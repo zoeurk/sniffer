@@ -557,6 +557,7 @@ void print_ipv4hdr(struct output *out){
 		out->version, out->ihl, out->ipchecksum, out->re_ipchecksum, out->length, out->offset, out->ttl, out->protocol, out->ipflags);
 }
 void print_ipv6hdr(struct output *out){
+	
 	printf("Version:%u\nInternet header length;%u\nPacket length:%u\n",
 		out->version, out->ihl, out->length);
 }
@@ -572,6 +573,7 @@ void print_options(char *data,unsigned long int len){
 			if(*pdata > 31 && *pdata != 127)
 				printf("\tOctet %lu:\'%c\'\n", i+1, *pdata);
 			else
+				
 				printf("\tOctet %lu:0x%02x\n", i+1, *pdata&0xFF);
 		printf("End of options.\n");
 	}
@@ -701,8 +703,8 @@ void *analyse(void *buf){
 			dst.s_addr = ip4->dst_ip;
 			inet_ntop(AF_INET,&src,myoutput.src_addr,sizeof(myoutput.src_addr));
 			inet_ntop(AF_INET,&dst,myoutput.dst_addr,sizeof(myoutput.dst_addr));
-			phostname = myoutput.src_hostname;
 			if((args.options&NORESOLV) == 0){
+				phostname = myoutput.src_hostname;
 				___getnameinfo___(&sa, sizeof(sa), &phostname, sizeof(myoutput.src_hostname), myoutput.src_addr);
 				phostname = myoutput.dst_hostname;
 				___getnameinfo___(&sa, sizeof(sa), &phostname, sizeof(myoutput.dst_hostname), myoutput.dst_addr);
@@ -721,8 +723,8 @@ void *analyse(void *buf){
 			myoutput.ttl = ip4->ttl;
 			myoutput.protocol = ip4->protocol;
 			if(myoutput.ihl > sizeof(struct ipv4header)){
-				myoutput.optlen = myoutput.ihl - sizeof(struct tcp4header);
-				myoutput.options = (char *)(ip4 + myoutput.optlen);
+				myoutput.optlen = myoutput.ihl - sizeof(struct ipv4header);
+				myoutput.options = ((char *)ip4 + sizeof(struct ipv4header));
 				myoutput.print_options = print_options;
 			}
 			myoutput.print_hdr = print_ipv4hdr;
@@ -977,11 +979,10 @@ int main(int argc, char **argv){
 					prt++;
 				if(myoutput.protocol == poptflags->protocol)
 					prt++;
-				if((myoutput.protocol == 6 || myoutput.protocol == 17) && poptflags->port != 0 &&
-					(	myoutput.udp4.src_port == poptflags->port || myoutput.udp4.dst_port == poptflags->port
+				if((myoutput.protocol == 6 || myoutput.protocol == 17) && poptflags->port != 0)
+					if(	myoutput.udp4.src_port == poptflags->port || myoutput.udp4.dst_port == poptflags->port
 						|| myoutput.tcp4.dst_port == poptflags->port|| myoutput.tcp4.src_port == poptflags->port
 					)
-				)
 					prt++;
 				if(poptflags->host){
 					phost = poptflags->host;
