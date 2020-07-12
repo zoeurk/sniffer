@@ -18,7 +18,6 @@
 #include <strings.h>
 
 #define LINK_LAYER 14
-
 struct ipv4header{
 	unsigned char ihl:4,version:4;
 	unsigned char ecn:2,dscp:6;
@@ -660,7 +659,7 @@ void print_udp4(struct output *out){
 		out->udp4.length);
 }
 void *c_alloc(void *check, unsigned long int size){
-	if(size == 0){
+	if(check == NULL){
 		if((check = malloc(size)) == NULL){
 			perror("malloc()");
 			exit(EXIT_FAILURE);
@@ -668,7 +667,6 @@ void *c_alloc(void *check, unsigned long int size){
 	}else{
 		if((check = realloc(check,size)) == NULL ){
 			perror("realloc()");
-			fprintf(stderr,"%lu\n",size);
 			exit(EXIT_FAILURE);
 		}
 	}
@@ -897,16 +895,88 @@ void print_it(void *output){
 	myoutput.print_data = NULL;
 	myoutput.print_data_hex = NULL;
 }
+int show_it(struct optflags *poptflags,struct output *myoutput){
+	struct tcpflags *pflags;
+	struct host *phost;
+	int	prt =1,
+		prt_,
+		i,j,k;
+	poptflags = args.opt;
+	if(poptflags){
+		while(poptflags){
+			prt_ = 0;
+			prt = 0;
+			if(poptflags->version != 0)
+				prt_++;
+			if(poptflags->protocol != 0)
+				prt_++;
+			if(poptflags->port != 0)
+				prt_++;
+			if(poptflags->host != NULL)
+				prt_++;
+			if(poptflags->tcpflags != NULL)
+				prt_++;
+			if(myoutput->version == poptflags->version)
+				prt++;
+			if(myoutput->protocol == poptflags->protocol)
+				prt++;
+			if((myoutput->protocol == 6 || myoutput->protocol == 17) && poptflags->port != 0)
+				if(	myoutput->udp4.src_port == poptflags->port || myoutput->udp4.dst_port == poptflags->port
+					|| myoutput->tcp4.dst_port == poptflags->port|| myoutput->tcp4.src_port == poptflags->port
+				)
+				prt++;
+			if(poptflags->host){
+				phost = poptflags->host;
+				while(phost){
+					if(strcmp(phost->host,myoutput->src_hostname) == 0 || strcmp(phost->host,myoutput->dst_hostname) == 0
+						|| strcmp(phost->host,myoutput->src_addr) == 0 || strcmp(phost->host,myoutput->dst_addr) == 0
+					)
+					{
+					prt++;
+					break;
+					}
+					phost = phost->next;
+				}
+			}
+			if(myoutput->protocol == 6 && poptflags->tcpflags){
+				pflags = poptflags->tcpflags;
+				while(pflags){
+					for(i = 0, j = 0, k = 0;i < 7; i++){
+						if(myoutput->tcp4.flags[i] == '.')continue;
+						if(strchr(pflags->flags,myoutput->tcp4.flags[i])){
+							j++;
+							k++;
+						}else	k++;
+					}
+					if(j == pflags->size && k == j){
+						prt++;
+						break;
+					}
+					pflags = pflags->next;
+				}
+			}
+			if(prt_ == prt){
+				break;
+			}
+			poptflags = poptflags->next;
+		}
+	}else
+		return 1;
+	if(prt == prt_ && prt_ > 0){
+		return 1;
+	}else{
+		if(poptflags != NULL)
+			return 0;
+	}
+	return 0;
+}
 int main(int argc, char **argv){
-	struct host			*phost;
-	struct tcpflags			*pflags;
-	struct optflags			*poptflags;
 	struct ipv4header 		*ip4;
 	struct ifreq 			ifr;
 	struct sockaddr_ll 		sll,from;
 	struct tpacket_stats		stats = {};
 	socklen_t 			len = sizeof(stats),fromlen = sizeof(from);
-	int				loopback, prt, prt_, i, j, k;
+	int				loopback;
 	if(argp_parse(&argp,argc, argv, 0, 0, &args) < 0)
 		exit(EXIT_FAILURE);
 	if((s = socket(AF_PACKET, SOCK_RAW,htons(ETH_P_ALL))) < 0){
@@ -958,76 +1028,7 @@ int main(int argc, char **argv){
 		ip4 = (struct ipv4header *)(buffer + LINK_LAYER);
 		myoutput.version = ip4->version;
 		analyse(ip4);
-		prt_ = 0;
-		prt = 1;
-		if(args.opt != NULL){
-			poptflags = args.opt;
-			while(poptflags){
-				prt_ = 0;
-				prt = 0;
-				if(poptflags->version != 0)
-					prt_++;
-				if(poptflags->protocol != 0)
-					prt_++;
-				if(poptflags->port != 0)
-					prt_++;
-				if(poptflags->host != NULL)
-					prt_++;
-				if(poptflags->tcpflags != NULL)
-					prt_++;
-				if(myoutput.version == poptflags->version)
-					prt++;
-				if(myoutput.protocol == poptflags->protocol)
-					prt++;
-				if((myoutput.protocol == 6 || myoutput.protocol == 17) && poptflags->port != 0)
-					if(	myoutput.udp4.src_port == poptflags->port || myoutput.udp4.dst_port == poptflags->port
-						|| myoutput.tcp4.dst_port == poptflags->port|| myoutput.tcp4.src_port == poptflags->port
-					)
-					prt++;
-				if(poptflags->host){
-					phost = poptflags->host;
-					while(phost){
-						if(strcmp(phost->host,myoutput.src_hostname) == 0 || strcmp(phost->host,myoutput.dst_hostname) == 0
-							|| strcmp(phost->host,myoutput.src_addr) == 0 || strcmp(phost->host,myoutput.dst_addr) == 0
-						)
-						{
-							prt++;
-							break;
-						}
-						phost = phost->next;
-					}
-				}
-				if(myoutput.protocol == 6 && poptflags->tcpflags){
-					pflags = poptflags->tcpflags;
-					while(pflags){
-						for(i = 0, j = 0, k = 0;i < 7; i++){
-							if(myoutput.tcp4.flags[i] == '.')continue;
-							if(strchr(pflags->flags,myoutput.tcp4.flags[i])){
-								j++;
-								k++;
-							}else	k++;
-						}
-						if(j == pflags->size && k == j){
-							prt++;
-							break;
-						}
-						pflags = pflags->next;
-					}
-				}
-				if(prt_ == prt){
-					break;
-				}
-				poptflags = poptflags->next;
-			}
-		}else
-			prt = 1;
-		if(prt == prt_ && prt_ > 0){
-			prt  = 1;
-		}else{
-			if(args.opt != NULL)
-				prt = 0;
-		}
-		if(prt == 1){
+		if(show_it(args.opt, &myoutput) == 1){
 			print_it(&myoutput);
 			selected++;
 		}
