@@ -916,7 +916,7 @@ int show_it(struct optflags *poptflags,struct output *myoutput){
 				prt_++;
 			if(poptflags->tcpflags != NULL)
 				prt_++;
-			if(myoutput->version == poptflags->version)
+			if(poptflags->version != 0 && myoutput->version == poptflags->version)
 				prt++;
 			if(myoutput->protocol == poptflags->protocol)
 				prt++;
