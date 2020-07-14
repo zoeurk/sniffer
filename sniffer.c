@@ -960,14 +960,18 @@ int show_it(struct optflags *poptflags,struct output *myoutput){
 			}
 			poptflags = poptflags->next;
 		}
-	}else
-		return 1;
+	}else{
+		if(args.opt)
+			return 0;
+	}
 	if(prt == prt_ && prt_ > 0){
 		return 1;
 	}else{
 		if(poptflags != NULL)
 			return 0;
 	}
+	if(args.opt == NULL)
+		return 1;
 	return 0;
 }
 int main(int argc, char **argv){
