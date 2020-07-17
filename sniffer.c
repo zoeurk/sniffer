@@ -14,10 +14,42 @@
 #include <signal.h>
 #include <errno.h>
 
+#include <time.h>
+
 #include <argp.h>
 #include <strings.h>
 
 #define LINK_LAYER 14
+
+#define IPV4 4
+#define IPV6 6
+
+#define ICMP 1
+#define TCP 6
+#define UDP 17
+#define ICMPv6 58
+
+#define ADDRESS 1
+#define NS 2
+#define CNAME 5
+#define SOA 6
+#define PTR 12
+#define MX 15
+#define TXT 16
+#define ADDRESS6 28
+#define OPT 41
+
+#define DNS_PORT 53
+#define NTP_PORT 123
+
+#define MAXINT 4294967296.0
+#define JAN_1970 2208988800U
+
+#define UNSPECIFIED 0
+#define PRIM_REF 1
+#define INFO_QUERY 62
+#define INFO_REPLY 63
+
 struct ipv4header{
 	unsigned char ihl:4,version:4;
 	unsigned char ecn:2,dscp:6;
@@ -123,6 +155,62 @@ union ipv4output{
 	struct udp4output udp4;
 	struct tcp4output tcp4;
 };
+struct dns{
+	unsigned short int  id;
+	unsigned char Rd:1,Tc:1,Aa:1,opcode:4,qr:1;
+	unsigned char Rcode:4,Z:3,Ra:1;
+	unsigned short int Qdcount;
+	unsigned short int Ancount;
+	unsigned short int Nscount;
+	unsigned short int Arcount;
+};
+struct question{
+	unsigned short int	qtype;
+	unsigned short int	qclass;
+};
+struct answer{
+	unsigned short int 	type;
+	unsigned short int 	class;
+	unsigned int		ttl;
+	unsigned short int	len;
+}__attribute__((packed));
+struct dnsopt{
+	unsigned short int	type;
+	unsigned short int	class;
+	unsigned short int	___;
+	unsigned short int	DO;
+	unsigned short int	ttl;
+};
+struct soa{
+	unsigned int serial;
+	unsigned int refresh;
+	unsigned int retry;
+	unsigned int expire;
+	unsigned int minimum;
+};
+struct frac_32{
+	short int seconds;
+	unsigned short int fraction;
+};
+struct frac_64{
+	int seconds;
+	unsigned int fraction;
+};
+struct ntp{
+	char m:3,v:3,l:2;
+	char peer_clock_stratum;
+	char peer_polling_interval;
+	char peer_clock_precision;
+	struct frac_32 root_delay;
+	struct frac_32 clock_dispertion;
+	int reference_clock_id;
+	struct frac_64 reference_timestamp;
+	struct frac_64 original_timestamp;
+	struct frac_64 received_timestamp;
+	struct frac_64 transmit_timestamp;
+	unsigned int key_id;
+	unsigned char msg_digest[16];
+};
 struct output{
 	unsigned long int sizeread;
 	char link_layer[14];
@@ -213,9 +301,10 @@ enum ARGS_OPTIONS{
 	NOHEADER	= 16,
 	NOOPTIONS	= 32,
 	NODATA		= 64,
-	NODATAHEX	= 128
+	NODATAHEX	= 128,
+	VERBEUX		= 256
 };
-const char 			*argp_program_version = "sniffer-1.0";
+const char 			*argp_program_version = "sniffer-2.0";
 const char 			*argp_program_bug_address = "zoeurk@gmail.com";
 
 static struct output		myoutput = {0, {'\0'}, 0, 0, 0, 0 ,0, 0, 0, 0, 0,
@@ -229,7 +318,7 @@ static void 			*check = NULL;
 static char			___flags___[7] = "FSRPAUE",
 				*ip4flags[3]={ NULL, "DF", "MF" };
 static char 			buffer[65535];
-static char 			doc[] = "Simple sniffer";
+static char 			doc[] = "Simple sniffer TCP/IP";
 static struct argp_option	options[] = {
 						{"interface", 'i', "inteface", 0, "interface utilisée", 0 },
 						{"flags", 'f', "opt1:arg;opt2:arg2[;...]", 0, "options de filtre", 0},
@@ -244,6 +333,7 @@ static struct argp_option	options[] = {
 						{"count_captured", 'c', "x", 0, "s'arreter après avoir capture un certain nombre de packet analysé", 0},
 						{"count_received",'r', "x", 0, "s'arreter après avoir capture un certain nombre de packet recu", 0},
 						{"count_selected",'C', "x", 0, "s'arreter après avoir capture un certain nombre de packet selectionné par les filtres", 0},
+						{"verbose", 'v', 0, 0, "mode verbeux (port 53 et 123)", 0},
 						{0}
 				};
 static struct arguments		args = { NULL, 0, 0, 0, 0, NULL };
@@ -482,6 +572,9 @@ static error_t parse_opt(int key, char *arg, struct argp_state *state){
 		case 'r':	_args_->count_received = atol(arg);
 				break;
 		case 'C':	_args_->count_selected = atol(arg);
+				break;
+		case 'v':	_args_->options |= VERBEUX;
+				break;
 		case ARGP_KEY_END:
 				break;
 		case ARGP_KEY_ARG:
@@ -524,7 +617,6 @@ void finish(int sig){
 		selected, captured, statsrecv, statsdrops);
 	if(check != NULL)
 		free(check);
-	check = NULL;
 	delete_arguments(&args);
 	close(s);
 	if(sig != -1)
@@ -552,7 +644,7 @@ int ___getnameinfo___(void *sa,unsigned long int sa_sz,char **addr,unsigned long
 	
 }
 void print_ipv4hdr(struct output *out){
-	printf("Version:%u\nInternet header length:%u\nIP checksum:0x%x (0x%x)\nPacket Length:%u\nOffset:%u\nTime To live:%u\nProtocol:%u\nFlags:%s\n",
+	printf("Version:%u\nInternet header length:%u\nIP checksum:0x%x (0x%x)\nPacket Length:%u\nOffset:%u\nTime to live:%u\nProtocol:%u\nFlags:%s\n",
 		out->version, out->ihl, out->ipchecksum, out->re_ipchecksum, out->length, out->offset, out->ttl, out->protocol, out->ipflags);
 }
 void print_ipv6hdr(struct output *out){
@@ -647,7 +739,7 @@ void print_tcp4(struct output *out){
 	for(i = 0; i < 7; i++){
 		printf("%c", out->tcp4.flags[i]);
 	}
-	printf("\nWindow:%u\nurgptr:%u\nHeader Size:%u\ntcp4 Options (option lenght %lu):\n",
+	printf("\nWindow:%u\nurgptr:%u\nHeader size:%u\ntcp4 options (option lenght %lu):\n",
 		out->tcp4.window,  out->tcp4.urgptr, out->tcp4.header_size, out->tcp4.optlen);
 	for( i = 0; i < out->tcp4.optlen;i++ )
 		printf("\tOctet %lu:0x%x\n", i+1, out->tcp4.options[i]&0xFF);
@@ -689,7 +781,7 @@ void *analyse(void *buf){
 	int 				fl, temp, size, i;
 	char				*phostname, *ip,*ptr;
 	switch(ip4->version){
-		case 4:
+		case IPV4:
 			myoutput.ihl = ip4->ihl *4;
 			temp = ip4->checksum;
 			myoutput.ipchecksum = ntohs(ip4->checksum);
@@ -729,7 +821,8 @@ void *analyse(void *buf){
 			myoutput.print_addr = print_addr;
 			ip = ((char *)ip4 + myoutput.ihl);
 			break;
-		case 6: myoutput.protocol = ((struct ipv6header *)ip6)->next_header;
+		case IPV6:
+			myoutput.protocol = ((struct ipv6header *)ip6)->next_header;
 			myoutput.length = myoutput.sizeread - LINK_LAYER - sizeof(struct ipv6header);
 			myoutput.ihl = sizeof(struct ipv6header);
 			memcpy(src6.s6_addr, ip6->src_ip, sizeof(src6.s6_addr));
@@ -750,7 +843,7 @@ void *analyse(void *buf){
 			return  NULL;
 	}
 	switch(myoutput.protocol){
-		case 58:	icmp4 = (struct icmp4header *)ip;
+		case ICMPv6:	icmp4 = (struct icmp4header *)ip;
 				size = myoutput.sizeread + sizeof(struct pseudo_icmp6header) - myoutput.ihl - LINK_LAYER;
 				if(sz < (unsigned long int)size || sz == 0){
 					check = c_alloc(check, size);
@@ -780,7 +873,7 @@ void *analyse(void *buf){
 				myoutput.print_data = print_data;
 				myoutput.print_data_hex = print_data_hex;
 				break;
-		case 1:		icmp4 = (struct icmp4header *)ip;
+		case ICMP:	icmp4 = (struct icmp4header *)ip;
 				myoutput.icmp4.checksum = ntohs(icmp4->checksum);
 				icmp4->checksum = 0; 
 				myoutput.icmp4.re_checksum =
@@ -795,7 +888,7 @@ void *analyse(void *buf){
 				myoutput.print_data = print_data;
 				myoutput.print_data_hex = print_data_hex;
 				break;
-		case 6:		tcp4 = (struct tcp4header *)ip;
+		case TCP:	tcp4 = (struct tcp4header *)ip;
 				size = myoutput.sizeread + sizeof(struct pseudo_tcp4header) - myoutput.ihl - LINK_LAYER;
 				myoutput.tcp4.src_port = ntohs(tcp4->src_port);
 				myoutput.tcp4.dst_port = ntohs(tcp4->dst_port);
@@ -840,7 +933,7 @@ void *analyse(void *buf){
 				myoutput.print_data = print_data;
 				myoutput.print_data_hex = print_data_hex;
 				break;
-		case 17:	udp4 = (struct udp4header *)ip;
+		case UDP:	udp4 = (struct udp4header *)ip;
 				size = myoutput.sizeread + sizeof(struct pseudo_udp4header) - myoutput.ihl - LINK_LAYER; 
 				myoutput.udp4.src_port = ntohs(udp4->src_port);
 				myoutput.udp4.dst_port = ntohs(udp4->dst_port);
@@ -903,9 +996,9 @@ int show_it(struct optflags *poptflags,struct output *myoutput){
 		i,j,k;
 	poptflags = args.opt;
 	if(poptflags){
+		prt_ = 0;
+		prt = 0;
 		while(poptflags){
-			prt_ = 0;
-			prt = 0;
 			if(poptflags->version != 0)
 				prt_++;
 			if(poptflags->protocol != 0)
@@ -961,18 +1054,481 @@ int show_it(struct optflags *poptflags,struct output *myoutput){
 			poptflags = poptflags->next;
 		}
 	}else{
-		if(args.opt)
+		if(args.opt != NULL){
 			return 0;
+		}
 	}
 	if(prt == prt_ && prt_ > 0){
 		return 1;
-	}else{
-		if(poptflags != NULL)
-			return 0;
 	}
-	if(args.opt == NULL)
+	if(args.opt == NULL){
+		return 1;
+	}
+	return 0;
+}
+unsigned char *ReadName(unsigned char* reader,unsigned char* buffer,int* count, unsigned char *name)
+{
+    //unsigned char *name;
+    unsigned int p=0,jumped=0,offset = 0;
+    int i , j;
+ 
+    *count = 1;
+    //name = (unsigned char*)malloc(256);
+ 
+    name[0]='\0';
+    //read the names in 3www6google3com format
+    while(*reader!=0)
+    {	if(*reader>=192)
+        {
+            offset = (*reader)*256 + *(reader+1) - 49152; //49152 = 11000000 00000000 ;)
+	    reader = buffer + offset - 1;
+            jumped = 1; //we have jumped to another location so counting wont go up!
+        }
+        else
+        { 	
+		name[p++]=*reader;
+        }
+
+        reader = reader+1;
+
+        if(jumped==0)
+        {
+            *count = *count + 1; //if we havent jumped to another location then we can count up
+        }
+    }
+ 
+    name[p]='\0'; //string complete
+    if(jumped==1)
+    {
+        *count = *count + 1; //number of steps we actually moved forward in the packet
+    }
+ 
+    //now convert 3www6google3com0 to www.google.com
+    for(i=0; i<(int)strlen((const char*)name);i++) 
+    {
+        p=name[i];
+        for(j=0;j<(int)p;j++) 
+        {     
+	      name[i]=name[i+1];
+              i=i+1;
+        }
+        name[i]='.';
+    }
+    name[i-1]='\0'; //remove the last dot
+    return name;
+}
+void dns_type_41(void *pdata){
+	struct dnsopt *opt = (struct dnsopt *)pdata;
+	printf("\tOPT:\n\t\ttype: %u\n\t\tLength: %u\n\t\tDO: %u\n\t\tTTL: %u\n",
+		ntohs(opt->type), ntohs(opt->class), (ntohs(opt->DO)&0x8000) ? 1 : 0, ntohs(opt->ttl));
+}
+void dns_type(int type, unsigned char **pdata,unsigned char *data, int *len){
+	struct in_addr s;
+	struct in6_addr s6;
+	unsigned char buf[NI_MAXHOST];
+	char address[45];
+	int stop;
+	switch(type){
+		case ADDRESS:
+			*pdata = (*pdata + sizeof(struct answer));
+			memcpy(&s.s_addr,*pdata,sizeof(s.s_addr));
+			inet_ntop(AF_INET,&s,address,sizeof(address));
+			printf("\tAddress: %s\n", address);
+			*pdata = (*pdata + *len);
+			break;
+		case NS:
+			*pdata = (*pdata + sizeof(struct answer));
+ 			ReadName(*pdata,data,&stop, buf);
+			printf("\tMX: %s\n",buf);
+			*pdata = (*pdata + stop);
+			break;
+		case CNAME:
+			*pdata = (*pdata + sizeof(struct answer));
+ 			ReadName(*pdata,data,&stop, buf);
+			printf("\tCNAME: %s\n",buf);
+			*pdata += stop;
+			break;
+		case SOA:
+			*pdata = (*pdata + sizeof(struct answer));
+ 			ReadName(*pdata,data,&stop, buf);
+			printf("\tSOA: %s\n", buf);
+			*pdata = (*pdata + stop);
+			ReadName(*pdata,data,&stop, buf);
+			printf("\tMX: %s\n",buf);
+			*pdata = (*pdata + stop);
+			printf("\tSerial: %u\n\tRefresh: %u\n\tRetry: %u\n\tExpire: %u\n\tMinimum: %u\n",
+				ntohl(((struct soa *)*pdata)->serial), ntohl(((struct soa *)*pdata)->refresh),
+				ntohl(((struct soa *)*pdata)->retry),ntohl(((struct soa *)*pdata)->expire),ntohl(((struct soa *)*pdata)->minimum));
+			*pdata += (sizeof(struct soa));
+			break;
+		case PTR:
+			*pdata = (*pdata + sizeof(struct answer));
+ 			ReadName(*pdata,data,&stop, buf);
+			printf("\tHostname: %s\n", buf);
+			*pdata = (*pdata + stop);
+			break;
+		case MX:
+			*pdata = (*pdata + sizeof(struct answer));
+ 			*pdata = (*pdata + sizeof(short int));
+			ReadName(*pdata,data,&stop, buf);
+			*pdata = (*pdata + stop);
+			printf("\tMX: %s\n",buf);
+			break;
+		case TXT:
+			*pdata = (*pdata + sizeof(struct answer));
+ 			ReadName(*pdata,data,&stop, buf);
+			while(*((char *)buf) == 0){
+				*len -= stop;
+				*pdata = (*pdata + stop);
+				ReadName(*pdata,data,&stop, buf);
+			}
+			buf[*len-1] = 0;
+			printf("\ttext: %s\n", buf);
+			*pdata = (*pdata + (*len));
+			break;
+		case ADDRESS6:
+			*pdata = (*pdata + sizeof(struct answer));
+ 			memcpy(&s6.s6_addr,*pdata,sizeof(s6.s6_addr));
+			inet_ntop(AF_INET6,&s6,address,sizeof(address));
+			printf("\tAddress: %s\n", address);
+			*pdata = (*pdata + *len);
+			break;
+		case OPT:
+			dns_type_41(*pdata);
+			break;
+		default:*pdata = (*pdata + sizeof(struct answer));
+ 			printf("\tTYPE (unknow): %u\n",type);
+			ReadName(*pdata,data,&stop, buf);
+			*pdata = (*pdata + stop);
+			break;
+	}
+}
+void services_udp_src(char *data){
+	unsigned long int i, j;
+	unsigned char buf[NI_MAXHOST];
+	struct dns *d = (struct dns *)data;
+	struct answer *a;
+	int stop = 0,k = 0,l;
+	unsigned short int count[3];
+	char *text[3] = {"Answers records:","Authoritive records:","Additional records:"};
+	printf("ID:%u\nqdcount:%u\nAncount:%u\nNscount:%u\nArcount:%u\n",
+			ntohs(d->id),ntohs(d->Qdcount),ntohs(d->Ancount),ntohs(d->Nscount),ntohs(d->Arcount));
+	count[0] = ntohs(d->Ancount);
+	count[1] = ntohs(d->Nscount);
+	count[2] = ntohs(d->Arcount);
+	a = (struct answer *)(data + sizeof(struct dns) + strlen(data+sizeof(struct dns)) + 1 + sizeof(struct question));
+	switch(d->Rcode){
+		case 0:	for(l = 0; l < 3; l++){
+				if(count[l])
+					printf("%s\n",text[l]);
+				for(i = 0; i < count[l]; i++){
+					ReadName((unsigned char *)((char *)a),(unsigned char *)data,&stop, buf);
+					printf("\tNAME: %s\n", buf);
+					a = (struct answer *)(((char *)a + stop));
+					k = ntohs(((struct answer *)a)->len);
+					j = ntohs(((struct answer *)a)->type);
+					dns_type(j, (unsigned char **)&a, (unsigned char *)data, &k);
+				}
+			}
+			break;
+		case 1: printf("Erreur dans le requete.\n");
+			break;
+		case 2: printf("Erreur du serveur.\n");
+			break;
+		case 3:	printf("Le nom n'existe pas.\n");
+			break;
+		case 4: printf("Nom implemente.\n");
+			break;
+		case 5: printf("Refus.\n");
+			break;
+		default:printf("Reserve.\n");
+			break;
+	}
+}
+void services_udp_dst(char *data){
+	struct dns *d = (struct dns *)data;
+	struct question * q = (struct question *)(data+sizeof(struct dns));
+	unsigned char buf[NI_MAXHOST];
+	char *text[4] = {"Question:","Answers records:","Authoritive records:","Additional records:"};
+	long int i, j;
+	int stop = 0,
+		count[4] = { ntohs(d->Qdcount), ntohs(d->Ancount),ntohs(d->Nscount),ntohs(d->Arcount) };
+	printf("ID:%u\nqdcount:%u\nAncount:%u\nNscount:%u\nArcount:%u\n",
+		ntohs(d->id),ntohs(d->Qdcount),ntohs(d->Ancount),ntohs(d->Nscount),ntohs(d->Arcount)
+	);
+	for(i = 0; i < 4; i++){
+		if(count[i]>0)
+			printf("%s\n",text[i]);
+		for(j = 0; j < count[i]; j++){
+			ReadName((unsigned char *)q,(unsigned char *)data,&stop, buf);
+			q = (struct question *)((char *)q + stop);
+			if(i)
+				q = (struct question *)((char *)q + sizeof(struct question));
+			switch(ntohs(q->qtype)){
+				case ADDRESS:
+					printf("\tAddress: %s\n",buf);
+					break;
+				case NS:
+					printf("\tNS: %s\n",buf);
+					break;
+				case CNAME:
+					printf("\tCNAME: %s\n",buf);
+					break;
+				case SOA:
+					printf("\tSOA: %s\n",buf);
+					break;
+				case PTR:
+					printf("\tPTR: %s\n",buf);
+					break;
+				case MX:printf("\tMX: %s\n",buf);
+					break;
+				case TXT:
+					printf("\tTXT: %s\n",buf);
+					break;
+				case ADDRESS6:
+					printf("\tAddress: %s\n",buf);
+					break;
+				case OPT:
+					dns_type_41(q);
+					break;
+				default:printf("\tTYPE (unknow):%u\n", ntohs(q->qtype));
+					break;
+			}
+		}
+	}
+}
+void ntp32bits(struct frac_32 *ntp, struct frac_32 *result){
+	short int seconds = ntohs(ntp->seconds);
+	short int fraction = ntohs(ntp->fraction);
+	double ff = fraction/65536.0;
+	fraction = (short int)(ff*1000000.0);
+	result->seconds = seconds;
+	result->fraction = fraction;
+}
+void ntp64bits(struct frac_64 *ntp, struct frac_64 *result, char *time, unsigned long int timelen){
+	unsigned int seconds = ntohl(ntp->seconds);
+	unsigned int fraction = ntohl(ntp->fraction);
+	double ff = fraction;
+	time_t s;
+	struct tm *tm;
+	if(ff < 0.0)
+		ff += MAXINT;
+	ff = ff/MAXINT;
+	result->fraction = (unsigned int)(ff * 1000000000.0);
+	result->seconds = seconds;
+	if(result->seconds){
+		s = result->seconds - JAN_1970;
+		tm = localtime(&s);
+		strftime(time, timelen, "%Y/%m/%d %H:%M:%S", tm);
+	}else	*time = 0;
+}
+int ntp_diff(struct frac_64 *o_ntp,struct frac_64 *n_ntp, struct frac_64 *result,char *time, unsigned long int timelen){
+	unsigned int f;
+	int i, signebits;
+	double ff;
+	if(o_ntp->seconds == 0 && n_ntp->seconds == 0){
+		ntp64bits(n_ntp, result, time, timelen);
+		return -1;
+	}
+	i = n_ntp->seconds;
+	if(i > 0){
+		signebits = 0;
+		f = n_ntp->fraction - o_ntp->fraction;
+		if(o_ntp->fraction > n_ntp->fraction)
+			i--;
+	}else{
+		if(i < 0){
+			signebits = 1;
+		f = o_ntp->fraction - n_ntp->fraction;
+			if(n_ntp->fraction > o_ntp->fraction)
+				i++;
+			i = -i;
+		}else{
+			if(n_ntp->fraction > o_ntp->fraction){
+				signebits = 0;
+				f = n_ntp->fraction - o_ntp->fraction;
+			}else{
+				signebits = 1;
+				f = o_ntp->fraction - n_ntp->fraction;
+			}
+		}
+	}
+	ff = f;
+	if(ff < 0.0)
+		ff += MAXINT;
+	ff = ff/MAXINT;
+	f = (unsigned int)(ff * 1000000000.0);
+	result->seconds = i;
+	result->fraction = f;
+	*time = 0;
+	if(signebits)
 		return 1;
 	return 0;
+}
+void timestamp(char *originator, char **buffer, struct frac_64 *f, int sign){
+	if(*originator == 0)
+	{
+		sprintf(*buffer,"%s%d.%09d",
+				(sign > 0)? "-": "+",
+				f->seconds,
+				f->fraction
+			);
+	}else{
+		strcpy(*buffer,originator);
+	}
+
+}
+void ___set_id_fn___(char **buf, int *clock_id, unsigned long int size){
+	struct sockaddr_in sa;
+	struct sockaddr_in6 sa6;
+	struct in_addr s;
+	struct in6_addr s6;
+	char address[48];
+	unsigned long int sz = sizeof(sa);
+	void *___sa___ = &sa;
+	memcpy(&s.s_addr,clock_id,sizeof(s.s_addr));
+	if(!inet_ntop(AF_INET,&s,address,48)){
+		memcpy(&s6.s6_addr,clock_id,sizeof(s6.s6_addr));
+		inet_ntop(AF_INET6,&s6,*buf,48);
+		___sa___ = &sa6;
+		sz = sizeof(sa6);
+	}
+	if((args.options&NORESOLV) == 0){
+		___getnameinfo___(___sa___, sz, buf, NI_MAXHOST+12-size, address);
+		if(strlen(*buf) == 0)
+			strcpy(*buf, address);
+	}else strcpy(*buf,address);
+}
+void service_ntp(char *data, unsigned long int datalen){
+	struct ntp *t =(struct ntp *) data;
+	struct frac_32	root_delay,
+			clock_dispertion;
+	struct frac_64 reference_timestamp,
+			original_timestamp,
+			received_timestamp,
+			transmit_timestamp,
+			originator_received_timestamp,
+			originator_transmit_timestamp;
+	char ___reference_timestamp___[128],
+		___original_timestamp___[128],
+		___received_timestamp___[128],
+		___transmit_timestamp___[128],
+		___originator_received_timestamp___[128],
+		___originator_transmit_timestamp___[128],
+		*mode[8] = {"reserved",
+				"symetric active",
+				"symetric  active",
+				"client",
+				"server",
+				"broadcast",
+				"NTP control message",
+				"reserved for  private use"
+		},
+		*stratum[5] = {"unspecified or invalid",
+				"primary server",
+				"secondary server",
+				"unsychronized",
+				"reserved"
+		},
+		*leap[4] = {"no warning",
+				"+1s",
+				"-1s",
+				"unkonwn (clock unsyncrhonized)"
+		},
+		originator_buffer1[1024],originator_buffer2[1024], *buffer1 = originator_buffer1, *buffer2 = originator_buffer2, 
+		refid[NI_MAXHOST+12], *id;
+	unsigned long int timelen = 1024;
+	int ___stratum___ = 0 + (t->peer_clock_stratum ==1 )*1
+				+ (t->peer_clock_stratum >1 && t->peer_clock_stratum < 17) *2
+				+ (t->peer_clock_stratum == 17) *3
+				+ (t->peer_clock_stratum > 16)*4,
+				s_originator_received_timestamp,
+				s_originator_transmit_timestamp;
+	memset(refid,0,NI_MAXHOST+12);
+	switch(t->peer_clock_stratum){
+		case UNSPECIFIED:
+			strcpy(refid, "unspecified");
+			break;
+		case PRIM_REF:
+			memcpy(refid,&t->reference_clock_id,4);
+			break;
+		case INFO_QUERY:
+			strcpy(refid, "INFO_QUERY ");
+			id = &refid[strlen(refid)-1];
+			___set_id_fn___(&id,&t->reference_clock_id,strlen(refid));
+			break;
+		case INFO_REPLY:
+			strcpy(refid, "INFO_REPLY ");
+			id = &refid[strlen(refid)-1];
+			___set_id_fn___(&id,&t->reference_clock_id,strlen(refid));
+			break;
+		default:id = refid;
+			___set_id_fn___(&id,&t->reference_clock_id,strlen(refid));
+			break;
+	}
+	ntp32bits(&t->root_delay,&root_delay);
+	ntp32bits(&t->clock_dispertion, &clock_dispertion);
+	ntp64bits(&t->reference_timestamp, &reference_timestamp, ___reference_timestamp___, timelen);
+	ntp64bits(&t->original_timestamp, &original_timestamp, ___original_timestamp___, timelen);
+	ntp64bits(&t->received_timestamp, &received_timestamp, ___received_timestamp___, timelen);
+	ntp64bits(&t->transmit_timestamp, &transmit_timestamp, ___transmit_timestamp___, timelen);
+	s_originator_received_timestamp =
+		ntp_diff(&t->original_timestamp,
+				&t->received_timestamp,
+				&originator_received_timestamp,
+				___originator_received_timestamp___,
+				timelen
+		);
+	s_originator_transmit_timestamp =
+		ntp_diff(&t->original_timestamp,
+				&t->transmit_timestamp,
+				&originator_transmit_timestamp,
+				___originator_transmit_timestamp___,
+				timelen
+		);
+	timestamp(___originator_received_timestamp___, &buffer1, &originator_received_timestamp, s_originator_received_timestamp);
+	timestamp(___originator_transmit_timestamp___, &buffer2, &originator_transmit_timestamp, s_originator_transmit_timestamp);
+printf("\
+Version: %u; Mode: %s (%u); Stratum: %s (%u)\n\
+\tLeap : %s\n\
+\tReference clock id: %s\n\
+\tClock precision: %d\n\
+\tRoot delay: %d.%06d\n\
+\tRoot dispersion: %d.%06d\n\
+\tReference timestamp: %u.%09d (%s)\n\
+\tReceived timestamp: %u.%09d (%s)\n\
+\tTransmit timestamp: %u.%09d (%s)\n\
+\tOriginator - Received timestamp: %s\n\
+\tOriginator - Transmit timestamp: %s\n",
+	t->v&0x07,
+	mode[t->m&0x07],
+	t->m&0x07,
+	stratum[___stratum___],
+	___stratum___,
+	leap[t->l&2],
+	refid,
+	t->peer_clock_precision,
+	root_delay.seconds, root_delay.fraction,
+	clock_dispertion.seconds, clock_dispertion.fraction,
+	reference_timestamp.seconds, reference_timestamp.fraction, ___reference_timestamp___,
+	received_timestamp.seconds, received_timestamp.fraction, ___received_timestamp___,
+	transmit_timestamp.seconds, transmit_timestamp.fraction, ___transmit_timestamp___,
+	originator_buffer1,
+	originator_buffer2
+);
+	if(sizeof(struct ntp) - datalen == 16){
+		printf("Key ID: %u\n", t->key_id);
+	}else{
+		if(datalen == sizeof(struct ntp)){
+			printf("Key ID: %u\nAuthentication:\n\t0x%08x\n\t0x%08x\n\t0x%08x\n\t%08x\n",
+				t->key_id,
+				ntohl(t->msg_digest[0]),
+				ntohl(t->msg_digest[4]),
+				ntohl(t->msg_digest[8]),
+				ntohl(t->msg_digest[12])
+			);
+		}
+	}
 }
 int main(int argc, char **argv){
 	struct ipv4header 		*ip4;
@@ -1034,6 +1590,21 @@ int main(int argc, char **argv){
 		analyse(ip4);
 		if(show_it(args.opt, &myoutput) == 1){
 			print_it(&myoutput);
+			if((args.options&VERBEUX) == 0)
+				goto end;
+			if(myoutput.protocol == UDP && myoutput.udp4.src_port == DNS_PORT){
+				services_udp_src(myoutput.data);
+				goto end;
+			}
+			if(myoutput.protocol == UDP && myoutput.udp4.dst_port == DNS_PORT){
+				services_udp_dst(myoutput.data);
+				goto end;
+			}
+			if(myoutput.protocol == UDP && (myoutput.udp4.dst_port == NTP_PORT || myoutput.udp4.src_port == NTP_PORT)){
+				service_ntp(myoutput.data, myoutput.datalen);
+				goto end;
+			}
+			end:
 			selected++;
 		}
 		captured++;

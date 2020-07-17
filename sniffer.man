@@ -45,6 +45,9 @@ Quitter apres \fIcount\fR packet recu par la socket.
 .BR \-R , " \-\-noresolve"
 Ne pas tenter de resoudre les adresses en nom d'hote.
 .TP
+.BR \-v , " \-\-verbose"
+Mode verbeux pour dns et ntp.
+.TP
 .BR \-f , " \-\-flags " \fIopt1:arg1;opt2,opt3\fR
 Cette option peut-etre utilisee plusieur fois.
 Cette option permet de selectionner les packets qui seront affichee.
