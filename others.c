@@ -4,7 +4,7 @@
 
 #include "others.h"
 
-const char 			*argp_program_version = "sniffer-1.0";
+const char 			*argp_program_version = "sniffer-2.1";
 const char 			*argp_program_bug_address = "zoeurk@gmail.com";
 
 struct output		myoutput = {0, {'\0'}, 0, 0, 0, 0 ,0, 0, 0, 0, 0,
