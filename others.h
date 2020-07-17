@@ -84,7 +84,10 @@ struct output{
 	char *options;
 	char *data;
 	union {
-		struct icmp4output icmp4;
+		union {
+			struct icmp4output icmp4;
+			struct icmp4output icmp6;
+		};
 		struct udp4output udp4;
 		struct tcp4output tcp4;
 	};

@@ -38,33 +38,37 @@ void ntp64bits(struct frac_64 *ntp, struct frac_64 *result, char *time, unsigned
 	}else	*time = 0;
 }
 int ntp_diff(struct frac_64 *o_ntp,struct frac_64 *n_ntp, struct frac_64 *result,char *time, unsigned long int timelen){
-	unsigned int f;
+	unsigned int u,uf,ou,ouf, f;
 	int i, signebits;
 	double ff;
-	if(o_ntp->seconds == 0 && n_ntp->seconds == 0){
+	u = ntohl(n_ntp->seconds);
+	ou = ntohl(o_ntp->seconds);
+	uf = ntohl(n_ntp->fraction);
+	ouf = ntohl(o_ntp->fraction);
+	if(ou == 0 && ouf == 0){
 		ntp64bits(n_ntp, result, time, timelen);
 		return -1;
 	}
-	i = n_ntp->seconds;
+	i = u -ou;
 	if(i > 0){
 		signebits = 0;
-		f = n_ntp->fraction - o_ntp->fraction;
-		if(o_ntp->fraction > n_ntp->fraction)
+		f = uf - ouf;
+		if(ouf > uf)
 			i--;
 	}else{
 		if(i < 0){
 			signebits = 1;
-			f = o_ntp->fraction - n_ntp->fraction;
-			if(n_ntp->fraction > o_ntp->fraction)
+			f = ouf - uf;
+			if(uf > ouf)
 				i++;
 			i = -i;
 		}else{
-			if(n_ntp->fraction > o_ntp->fraction){
+			if(uf > ouf){
 				signebits = 0;
-				f = n_ntp->fraction - o_ntp->fraction;
+				f = uf - ouf;
 			}else{
 				signebits = 1;
-				f = o_ntp->fraction - n_ntp->fraction;
+				f = ouf - uf;
 			}
 		}
 	}
