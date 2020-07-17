@@ -43,7 +43,7 @@ struct ntp{
 	struct frac_64 transmit_timestamp;
 	unsigned int key_id;
 	unsigned char msg_digest[16];
-};
+};//__attribute__((packed));
 void ntp32bits(struct frac_32 *ntp, struct frac_32 *result);
 void ntp64bits(struct frac_64 *ntp, struct frac_64 *result, char *time, unsigned long int timelen);
 int ntp_diff(struct frac_64 *o_ntp,struct frac_64 *n_ntp, struct frac_64 *result,char *time, unsigned long int timelen);

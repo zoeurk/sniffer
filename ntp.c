@@ -208,8 +208,8 @@ void service_ntp(char *data, unsigned long int datalen){
 	timestamp(___originator_received_timestamp___, &buffer1, &originator_received_timestamp, s_originator_received_timestamp);
 	timestamp(___originator_transmit_timestamp___, &buffer2, &originator_transmit_timestamp, s_originator_transmit_timestamp);
 printf("\
-Version: %u; Mode: %s (%u); Stratum: %s (%u)\n\
-\tLeap : %s\n\
+Version: %u; Mode: %s (%u);Stratum: %s (%u)\n\
+\tLeap : %s; poll %u (%us)\n\
 \tReference clock id: %s\n\
 \tClock precision: %d\n\
 \tRoot delay: %d.%06d\n\
@@ -224,7 +224,7 @@ Version: %u; Mode: %s (%u); Stratum: %s (%u)\n\
 	t->m&0x07,
 	stratum[___stratum___],
 	___stratum___,
-	leap[t->l&2],
+	leap[t->l&2],t->peer_polling_interval, 1<< t->peer_polling_interval,
 	refid,
 	t->peer_clock_precision,
 	root_delay.seconds, root_delay.fraction,
