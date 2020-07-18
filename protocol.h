@@ -107,7 +107,7 @@ struct host{
 	struct host *next;
 };
 struct optflags{
-	unsigned int version:4,protocol:28;
+	unsigned int version:4,protocol:24,protoflag:4;
 	int port;
 	struct host *host;
 	struct tcpflags *tcpflags;

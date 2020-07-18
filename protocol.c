@@ -395,7 +395,7 @@ int show_it(struct optflags *poptflags,struct output *myoutput){
 				prt_++;
 			if(poptflags->version != 0 && myoutput->version == poptflags->version)
 				prt++;
-			if(((args.options&PROTO)== PROTO) && myoutput->protocol == poptflags->protocol)
+			if(poptflags->protoflag == 1 && myoutput->protocol == poptflags->protocol)
 				prt++;
 			if((myoutput->protocol == 6 || myoutput->protocol == 17) && poptflags->port != 0)
 				if(	myoutput->udp4.src_port == poptflags->port || myoutput->udp4.dst_port == poptflags->port

@@ -14,7 +14,6 @@ enum ARGS_OPTIONS{
 	NODATA		= 64,
 	NODATAHEX	= 128,
 	VERBEUX		= 256,
-	PROTO		= 512,
 };
 struct arguments{
 	char *interface;

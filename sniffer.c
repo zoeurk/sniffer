@@ -153,14 +153,14 @@ static error_t parse_opt(int key, char *arg, struct argp_state *state){
 													break;
 												}
 												poptflags->protocol = 6;
-												_args_->options |= PROTO;
+												poptflags->protoflag = 1;
 												break;
 											case 1:	if(poptflags->protocol != 17 && poptflags->protocol != 0){
 													ok  = -3;
 													break;
 												}
 												poptflags->protocol = 17;
-												_args_->options |= PROTO;
+												poptflags->protoflag = 1;
 												break;
 											case 2:	if(poptflags->protocol != 1 && poptflags->protocol != 0 
 													&& poptflags->port == 0)
@@ -169,6 +169,7 @@ static error_t parse_opt(int key, char *arg, struct argp_state *state){
 													break;
 												}
 												poptflags->protocol = 1;
+												poptflags->protoflag = 1;
 												break;
 											case 3:	if(poptflags->protocol != 58 && poptflags->protocol != 0
 													&& poptflags->port == 0)
@@ -176,7 +177,7 @@ static error_t parse_opt(int key, char *arg, struct argp_state *state){
 													ok  = -3;
 													break;
 												}
-												_args_->options |= PROTO;
+												poptflags->protoflag = 1;
 												poptflags->protocol = 58;
 												break;
 										}
