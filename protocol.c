@@ -376,7 +376,7 @@ int show_it(struct optflags *poptflags,struct output *myoutput){
 	struct tcpflags *pflags;
 	struct host *phost;
 	int	prt =1,
-		prt_,
+		prt_ = 0,
 		i,j,k;
 	poptflags = args.opt;
 	if(poptflags){
@@ -385,7 +385,7 @@ int show_it(struct optflags *poptflags,struct output *myoutput){
 		while(poptflags){
 			if(poptflags->version != 0)
 				prt_++;
-			if(poptflags->protocol != 0)
+			if(poptflags->protoflag != 0)
 				prt_++;
 			if(poptflags->port != 0)
 				prt_++;
@@ -395,7 +395,7 @@ int show_it(struct optflags *poptflags,struct output *myoutput){
 				prt_++;
 			if(poptflags->version != 0 && myoutput->version == poptflags->version)
 				prt++;
-			if(poptflags->protoflag == 1 && myoutput->protocol == poptflags->protocol)
+			if((poptflags->protoflag&1) == 1 && myoutput->protocol == poptflags->protocol)
 				prt++;
 			if((myoutput->protocol == 6 || myoutput->protocol == 17) && poptflags->port != 0)
 				if(	myoutput->udp4.src_port == poptflags->port || myoutput->udp4.dst_port == poptflags->port
