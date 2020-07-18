@@ -148,37 +148,35 @@ static error_t parse_opt(int key, char *arg, struct argp_state *state){
 											break;
 										}
 										switch(i){
-											case 0:	if(poptflags->protocol != 6 && poptflags->protocol != 0){
+											case 0:	if(poptflags->protoflag){
 													ok  = -3;
 													break;
 												}
-												poptflags->protocol = 6;
+												poptflags->protocol = TCP;
 												poptflags->protoflag = 1;
 												break;
-											case 1:	if(poptflags->protocol != 17 && poptflags->protocol != 0){
+											case 1:	if(poptflags->protoflag){
 													ok  = -3;
 													break;
 												}
-												poptflags->protocol = 17;
+												poptflags->protocol = UDP;
 												poptflags->protoflag = 1;
 												break;
-											case 2:	if(poptflags->protocol != 1 && poptflags->protocol != 0 
-													&& poptflags->port == 0)
+											case 2:	if(poptflags->protoflag)
 												{
 													ok  = -3;
 													break;
 												}
-												poptflags->protocol = 1;
+												poptflags->protocol = ICMP;
 												poptflags->protoflag = 1;
 												break;
-											case 3:	if(poptflags->protocol != 58 && poptflags->protocol != 0
-													&& poptflags->port == 0)
+											case 3:	if(poptflags->protoflag)
 												{
 													ok  = -3;
 													break;
 												}
 												poptflags->protoflag = 1;
-												poptflags->protocol = 58;
+												poptflags->protocol = ICMPv6;
 												break;
 										}
 										if(ok != 0)break;
@@ -222,7 +220,8 @@ static error_t parse_opt(int key, char *arg, struct argp_state *state){
 												strcpy(ptcpflags->flags,pstr2);
 												ptcpflags->size = strlen(pstr2);
 											}
-											poptflags->protocol = 6;
+											poptflags->protocol = TCP;
+											poptflags->protoflag = 1;
 										}else{
 											ok = -1;
 											break;
