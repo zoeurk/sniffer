@@ -1,877 +1,1859 @@
-19:44:58.073583 IP (tos 0x10, ttl 64, id 39958, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.49003 > ntp1.omdc.pl.ntp: [bad udp cksum 0x9357 -> 0xc61f!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   2471464693.635269076 (1978/04/26 23:58:13)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 2471464693.635269076 (1978/04/26 23:58:13)
-19:44:58.073600 IP (tos 0x10, ttl 64, id 65126, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.47814 > ns0.serverhouse.com.ntp: [bad udp cksum 0x5098 -> 0x465a!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   4189994136.199174955 (2032/10/10 09:15:36)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 4189994136.199174955 (2032/10/10 09:15:36)
-19:44:58.073611 IP (tos 0x10, ttl 64, id 14852, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.51411 > pob01.aplu.fr.ntp: [bad udp cksum 0xd4be -> 0x79a2!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   1491354946.006960222 (2083/05/12 09:44:02)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 1491354946.006960222 (2083/05/12 09:44:02)
-19:44:58.073623 IP (tos 0x10, ttl 64, id 63763, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.33241 > master.servme.fr.ntp: [bad udp cksum 0xe257 -> 0xa3e9!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   1422674444.449947485 (2081/03/08 10:49:00)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 1422674444.449947485 (2081/03/08 10:49:00)
-19:44:58.073635 IP (tos 0x10, ttl 64, id 28129, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.50344 > ntp.tuxfamily.net.ntp: [bad udp cksum 0x3366 -> 0xf934!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   3170170550.704307738 (2000/06/16 20:55:50)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 3170170550.704307738 (2000/06/16 20:55:50)
-19:44:58.073646 IP (tos 0x10, ttl 64, id 29126, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.39481 > ntp.roothost.com.ntp: [bad udp cksum 0xafcd -> 0x597a!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   3849898626.212056310 (2021/12/31 01:17:06)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 3849898626.212056310 (2021/12/31 01:17:06)
-19:44:58.073656 IP (tos 0x10, ttl 64, id 62690, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.41368 > 62-210-213-21.rev.poneytelecom.eu.ntp: [bad udp cksum 0xd4ed -> 0xc1b0!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   3144493604.005595986 (1999/08/24 16:26:44)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 3144493604.005595986 (1999/08/24 16:26:44)
-19:44:58.073666 IP (tos 0x10, ttl 64, id 57227, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.52841 > y.ns.gin.ntt.net.ntp: [bad udp cksum 0x66fb -> 0xde94!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   2374483874.894097701 (1975/03/31 11:51:14)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 2374483874.894097701 (1975/03/31 11:51:14)
-19:44:58.073700 IP (tos 0x10, ttl 64, id 30388, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.51345 > 82-64-165-222.subs.proxad.net.ntp: [bad udp cksum 0xb924 -> 0x7538!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   1571644335.820042733 (2085/11/26 15:20:31)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 1571644335.820042733 (2085/11/26 15:20:31)
-19:44:58.073711 IP (tos 0x10, ttl 64, id 1945, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.52736 > ntp-3.arkena.net.ntp: [bad udp cksum 0xcdf2 -> 0x2608!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   1493851218.493101520 (2083/06/10 07:08:34)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 1493851218.493101520 (2083/06/10 07:08:34)
-19:44:58.073722 IP (tos 0x10, ttl 64, id 48546, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.40345 > ntp.univ-angers.fr.ntp: [bad udp cksum 0x2c41 -> 0xf56a!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   924611289.194568709 (2065/05/26 20:56:25)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 924611289.194568709 (2065/05/26 20:56:25)
-19:44:58.073734 IP (tos 0x10, ttl 64, id 12322, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.39194 > ns.rail.eu.org.ntp: [bad udp cksum 0x48f6 -> 0x1e4e!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   3000848893.448705923 (1995/02/04 02:08:13)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 3000848893.448705923 (1995/02/04 02:08:13)
-19:44:58.073746 IP (tos 0x10, ttl 64, id 37730, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.43084 > fr-sbg1.burble.com.ntp: [bad udp cksum 0x957a -> 0xfee9!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   426192519.751229724 (2049/08/10 03:16:55)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 426192519.751229724 (2049/08/10 03:16:55)
-19:44:58.073762 IP (tos 0x10, ttl 64, id 17691, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.60804 > fr-rbx1.burble.com.ntp: [bad udp cksum 0x1588 -> 0x50f2!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   984361197.894306168 (2067/04/18 10:08:13)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 984361197.894306168 (2067/04/18 10:08:13)
-19:44:58.073783 IP (tos 0x10, ttl 64, id 22285, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.52711 > a.ams.pobot.net.ntp: [bad udp cksum 0xaf06 -> 0xe1d4!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   987637839.881290003 (2067/05/26 08:18:55)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 987637839.881290003 (2067/05/26 08:18:55)
-19:44:58.073799 IP (tos 0x10, ttl 64, id 17778, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.44015 > villisika.miuku.net.ntp: [bad udp cksum 0x23fe -> 0x21a1!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   1884550505.313906946 (2095/10/27 06:43:21)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 1884550505.313906946 (2095/10/27 06:43:21)
-19:44:58.107759 IP (tos 0x0, ttl 55, id 22562, offset 0, flags [DF], proto UDP (17), length 76)
-    ntp1.omdc.pl.ntp > ZoeurK.lan.49003: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -24
-	Root Delay: 0.027664, Root dispersion: 0.022720, Reference-ID: 229.30.220.210
-	  Reference Timestamp:  3803995533.923816682 (2020/07/17 19:25:33)
-	  Originator Timestamp: 2471464693.635269076 (1978/04/26 23:58:13)
-	  Receive Timestamp:    3803996698.082218803 (2020/07/17 19:44:58)
-	  Transmit Timestamp:   3803996698.082232180 (2020/07/17 19:44:58)
-	    Originator - Receive Timestamp:  +1332532004.446949727
-	    Originator - Transmit Timestamp: +1332532004.446963104
-19:44:58.107759 IP (tos 0x0, ttl 55, id 42347, offset 0, flags [DF], proto UDP (17), length 76)
-    ns0.serverhouse.com.ntp > ZoeurK.lan.47814: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -18
-	Root Delay: 0.023071, Root dispersion: 0.029724, Reference-ID: ntps1-0.eecsit.tu-berlin.de
-	  Reference Timestamp:  3803995798.992085033 (2020/07/17 19:29:58)
-	  Originator Timestamp: 4189994136.199174955 (2032/10/10 09:15:36)
-	  Receive Timestamp:    3803996698.084445111 (2020/07/17 19:44:58)
-	  Transmit Timestamp:   3803996698.084529722 (2020/07/17 19:44:58)
-	    Originator - Receive Timestamp:  -385997438.114729843
-	    Originator - Transmit Timestamp: -385997438.114645232
-19:44:58.107759 IP (tos 0x0, ttl 54, id 43352, offset 0, flags [DF], proto UDP (17), length 76)
-    pob01.aplu.fr.ntp > ZoeurK.lan.51411: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -24
-	Root Delay: 0.024795, Root dispersion: 0.009948, Reference-ID: gatekeeper.dhco.org
-	  Reference Timestamp:  3803996477.177058516 (2020/07/17 19:41:17)
-	  Originator Timestamp: 1491354946.006960222 (2083/05/12 09:44:02)
-	  Receive Timestamp:    3803996698.083706186 (2020/07/17 19:44:58)
-	  Transmit Timestamp:   3803996698.083730252 (2020/07/17 19:44:58)
-	    Originator - Receive Timestamp:  -1982325543.923254036
-	    Originator - Transmit Timestamp: -1982325543.923229970
-19:44:58.107759 IP (tos 0x0, ttl 54, id 29346, offset 0, flags [DF], proto UDP (17), length 76)
-    master.servme.fr.ntp > ZoeurK.lan.33241: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 3 (secondary reference), poll 3 (8s), precision -23
-	Root Delay: 0.011062, Root dispersion: 0.024444, Reference-ID: ntp0.ovh.net
-	  Reference Timestamp:  3803996503.588862088 (2020/07/17 19:41:43)
-	  Originator Timestamp: 1422674444.449947485 (2081/03/08 10:49:00)
-	  Receive Timestamp:    3803996698.086128371 (2020/07/17 19:44:58)
-	  Transmit Timestamp:   3803996698.086154041 (2020/07/17 19:44:58)
-	    Originator - Receive Timestamp:  -1913645042.363819114
-	    Originator - Transmit Timestamp: -1913645042.363793444
-19:44:58.107759 IP (tos 0x0, ttl 53, id 483, offset 0, flags [DF], proto UDP (17), length 76)
-    ntp.roothost.com.ntp > ZoeurK.lan.39481: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 0 (1s), precision -25
-	Root Delay: 0.004028, Root dispersion: 0.001037, Reference-ID: n168-239-000-000.static.online-age.net
-	  Reference Timestamp:  3803995918.557268521 (2020/07/17 19:31:58)
-	  Originator Timestamp: 3849898626.212056310 (2021/12/31 01:17:06)
-	  Receive Timestamp:    3803996698.090165076 (2020/07/17 19:44:58)
-	  Transmit Timestamp:   3803996698.090264245 (2020/07/17 19:44:58)
-	    Originator - Receive Timestamp:  -45901928.121891233
-	    Originator - Transmit Timestamp: -45901928.121792065
-19:44:58.107759 IP (tos 0x0, ttl 55, id 59350, offset 0, flags [DF], proto UDP (17), length 76)
-    62-210-213-21.rev.poneytelecom.eu.ntp > ZoeurK.lan.41368: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -24
-	Root Delay: 0.021240, Root dispersion: 0.028305, Reference-ID: 168-84.static.speedwelshpool.com
-	  Reference Timestamp:  3803995915.321268121 (2020/07/17 19:31:55)
-	  Originator Timestamp: 3144493604.005595986 (1999/08/24 16:26:44)
-	  Receive Timestamp:    3803996698.090886159 (2020/07/17 19:44:58)
-	  Transmit Timestamp:   3803996698.090935461 (2020/07/17 19:44:58)
-	    Originator - Receive Timestamp:  +659503094.085290172
-	    Originator - Transmit Timestamp: +659503094.085339474
-19:44:58.107759 IP (tos 0x0, ttl 56, id 0, offset 0, flags [DF], proto UDP (17), length 76)
-    y.ns.gin.ntt.net.ntp > ZoeurK.lan.52841: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -23
-	Root Delay: 0.118667, Root dispersion: 0.022232, Reference-ID: 249.224.99.213
-	  Reference Timestamp:  3803996602.580970805 (2020/07/17 19:43:22)
-	  Originator Timestamp: 2374483874.894097701 (1975/03/31 11:51:14)
-	  Receive Timestamp:    3803996698.093214443 (2020/07/17 19:44:58)
-	  Transmit Timestamp:   3803996698.093273051 (2020/07/17 19:44:58)
-	    Originator - Receive Timestamp:  +1429512823.199116742
-	    Originator - Transmit Timestamp: +1429512823.199175349
-19:44:58.107759 IP (tos 0x0, ttl 56, id 19103, offset 0, flags [none], proto UDP (17), length 76)
-    ns.rail.eu.org.ntp > ZoeurK.lan.39194: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -24
-	Root Delay: 0.008590, Root dispersion: 0.035461, Reference-ID: 136.231.192.35.bc.googleusercontent.com
-	  Reference Timestamp:  3803995471.152411247 (2020/07/17 19:24:31)
-	  Originator Timestamp: 3000848893.448705923 (1995/02/04 02:08:13)
-	  Receive Timestamp:    3803996698.096271905 (2020/07/17 19:44:58)
-	  Transmit Timestamp:   3803996698.096280372 (2020/07/17 19:44:58)
-	    Originator - Receive Timestamp:  +803147804.647565981
-	    Originator - Transmit Timestamp: +803147804.647574448
-19:44:58.109347 IP (tos 0x0, ttl 56, id 30422, offset 0, flags [DF], proto UDP (17), length 76)
-    ntp-3.arkena.net.ntp > ZoeurK.lan.52736: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -23
-	Root Delay: 0.026824, Root dispersion: 0.019317, Reference-ID: ntp-sop.inria.fr
-	  Reference Timestamp:  3803995813.994167148 (2020/07/17 19:30:13)
-	  Originator Timestamp: 1493851218.493101520 (2083/06/10 07:08:34)
-	  Receive Timestamp:    3803996698.099300917 (2020/07/17 19:44:58)
-	  Transmit Timestamp:   3803996698.099376882 (2020/07/17 19:44:58)
-	    Originator - Receive Timestamp:  -1984821816.393800602
-	    Originator - Transmit Timestamp: -1984821816.393724638
-19:44:58.109347 IP (tos 0x0, ttl 54, id 42534, offset 0, flags [DF], proto UDP (17), length 76)
-    fr-rbx1.burble.com.ntp > ZoeurK.lan.60804: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 1 (2s), precision -25
-	Root Delay: 0.005722, Root dispersion: 0.000030, Reference-ID: 85.199.214.102
-	  Reference Timestamp:  3803996694.670795513 (2020/07/17 19:44:54)
-	  Originator Timestamp: 984361197.894306168 (2067/04/18 10:08:13)
-	  Receive Timestamp:    3803996698.102227818 (2020/07/17 19:44:58)
-	  Transmit Timestamp:   3803996698.102291785 (2020/07/17 19:44:58)
-	    Originator - Receive Timestamp:  -1475331795.792078350
-	    Originator - Transmit Timestamp: -1475331795.792014383
-19:44:58.110148 IP (tos 0x0, ttl 56, id 48045, offset 0, flags [DF], proto UDP (17), length 76)
-    82-64-165-222.subs.proxad.net.ntp > ZoeurK.lan.51345: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 1 (primary reference), poll 0 (1s), precision -23
-	Root Delay: 0.000015, Root dispersion: 0.000030, Reference-ID: GPS^@
-	  Reference Timestamp:  3803996678.812649745 (2020/07/17 19:44:38)
-	  Originator Timestamp: 1571644335.820042733 (2085/11/26 15:20:31)
-	  Receive Timestamp:    3803996698.098185708 (2020/07/17 19:44:58)
-	  Transmit Timestamp:   3803996698.098281573 (2020/07/17 19:44:58)
-	    Originator - Receive Timestamp:  -2062614933.721857024
-	    Originator - Transmit Timestamp: -2062614933.721761160
-19:44:58.112552 IP (tos 0x0, ttl 55, id 17540, offset 0, flags [DF], proto UDP (17), length 76)
-    fr-sbg1.burble.com.ntp > ZoeurK.lan.43084: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 1 (2s), precision -26
-	Root Delay: 0.015777, Root dispersion: 0.000076, Reference-ID: server1.quickdrivingtestcancellations.net
-	  Reference Timestamp:  3803996640.693036014 (2020/07/17 19:44:00)
-	  Originator Timestamp: 426192519.751229724 (2049/08/10 03:16:55)
-	  Receive Timestamp:    3803996698.103104339 (2020/07/17 19:44:58)
-	  Transmit Timestamp:   3803996698.103122992 (2020/07/17 19:44:58)
-	    Originator - Receive Timestamp:  -917163117.648125385
-	    Originator - Transmit Timestamp: -917163117.648106732
-19:44:58.115369 IP (tos 0x0, ttl 54, id 21958, offset 0, flags [DF], proto UDP (17), length 76)
-    villisika.miuku.net.ntp > ZoeurK.lan.44015: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 4 (16s), precision -18
-	Root Delay: 0.024749, Root dispersion: 0.000946, Reference-ID: 85.199.214.98
-	  Reference Timestamp:  3803995907.486762925 (2020/07/17 19:31:47)
-	  Originator Timestamp: 1884550505.313906946 (2095/10/27 06:43:21)
-	  Receive Timestamp:    3803996698.109216346 (2020/07/17 19:44:58)
-	  Transmit Timestamp:   3803996698.109267062 (2020/07/17 19:44:58)
-	    Originator - Receive Timestamp:  +1919446192.795309399
-	    Originator - Transmit Timestamp: +1919446192.795360116
-19:44:58.119304 IP (tos 0x0, ttl 50, id 14843, offset 0, flags [DF], proto UDP (17), length 76)
-    ntp.tuxfamily.net.ntp > ZoeurK.lan.50344: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -21
-	Root Delay: 0.028900, Root dispersion: 0.037796, Reference-ID: 210-65-119-71.HINET-IP.hinet.net
-	  Reference Timestamp:  3803995713.779167621 (2020/07/17 19:28:33)
-	  Originator Timestamp: 3170170550.704307738 (2000/06/16 20:55:50)
-	  Receive Timestamp:    3803996698.097390256 (2020/07/17 19:44:58)
-	  Transmit Timestamp:   3803996698.097429379 (2020/07/17 19:44:58)
-	    Originator - Receive Timestamp:  +633826147.393082517
-	    Originator - Transmit Timestamp: +633826147.393121641
-19:44:58.119304 IP (tos 0x0, ttl 53, id 22130, offset 0, flags [DF], proto UDP (17), length 76)
-    ntp.univ-angers.fr.ntp > ZoeurK.lan.40345: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -23
-	Root Delay: 0.009902, Root dispersion: 0.034637, Reference-ID: ntp-p1.obspm.fr
-	  Reference Timestamp:  3803995767.740568305 (2020/07/17 19:29:27)
-	  Originator Timestamp: 924611289.194568709 (2065/05/26 20:56:25)
-	  Receive Timestamp:    3803996698.100862319 (2020/07/17 19:44:58)
-	  Transmit Timestamp:   3803996698.100882231 (2020/07/17 19:44:58)
-	    Originator - Receive Timestamp:  -1415581887.093706389
-	    Originator - Transmit Timestamp: -1415581887.093686477
-19:44:58.120647 IP (tos 0x0, ttl 52, id 34566, offset 0, flags [DF], proto UDP (17), length 76)
-    a.ams.pobot.net.ntp > ZoeurK.lan.52711: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 8 (256s), precision -24
-	Root Delay: 0.008804, Root dispersion: 0.000701, Reference-ID: uklon5-ntp-004.aaplimg.com
-	  Reference Timestamp:  3803996152.797910154 (2020/07/17 19:35:52)
-	  Originator Timestamp: 987637839.881290003 (2067/05/26 08:18:55)
-	  Receive Timestamp:    3803996698.109950641 (2020/07/17 19:44:58)
-	  Transmit Timestamp:   3803996698.109951641 (2020/07/17 19:44:58)
-	    Originator - Receive Timestamp:  -1478608437.771339361
-	    Originator - Transmit Timestamp: -1478608437.771338361
-19:45:03.126067 IP (tos 0x10, ttl 64, id 49011, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.40345 > ntp.univ-angers.fr.ntp: [bad udp cksum 0x2c41 -> 0x2f8d!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   3481672072.604177425 (2010/05/01 05:07:52)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 3481672072.604177425 (2010/05/01 05:07:52)
-19:45:03.157558 IP (tos 0x0, ttl 53, id 23133, offset 0, flags [DF], proto UDP (17), length 76)
-    ntp.univ-angers.fr.ntp > ZoeurK.lan.40345: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -23
-	Root Delay: 0.009902, Root dispersion: 0.034713, Reference-ID: ntp-p1.obspm.fr
-	  Reference Timestamp:  3803995767.740568305 (2020/07/17 19:29:27)
-	  Originator Timestamp: 3481672072.604177425 (2010/05/01 05:07:52)
-	  Receive Timestamp:    3803996703.142751809 (2020/07/17 19:45:03)
-	  Transmit Timestamp:   3803996703.142766211 (2020/07/17 19:45:03)
-	    Originator - Receive Timestamp:  +322324630.538574384
-	    Originator - Transmit Timestamp: +322324630.538588786
-19:45:04.158805 IP (tos 0x10, ttl 64, id 767, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.47814 > ns0.serverhouse.com.ntp: [bad udp cksum 0x5098 -> 0x3de6!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   1036593410.603020778 (2068/12/12 22:05:06)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 1036593410.603020778 (2068/12/12 22:05:06)
-19:45:04.158823 IP (tos 0x10, ttl 64, id 15004, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.51411 > pob01.aplu.fr.ntp: [bad udp cksum 0xd4be -> 0xe3e7!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   689132173.598820084 (2057/12/09 09:04:29)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 689132173.598820084 (2057/12/09 09:04:29)
-19:45:04.158829 IP (tos 0x10, ttl 64, id 28519, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.50344 > ntp.tuxfamily.net.ntp: [bad udp cksum 0x3366 -> 0x52a8!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   3414284005.561498608 (2008/03/12 05:13:25)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 3414284005.561498608 (2008/03/12 05:13:25)
-19:45:04.158836 IP (tos 0x10, ttl 64, id 38748, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.43084 > fr-sbg1.burble.com.ntp: [bad udp cksum 0x957a -> 0x3a59!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   3749714915.463103427 (2018/10/28 12:28:35)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 3749714915.463103427 (2018/10/28 12:28:35)
-19:45:04.158841 IP (tos 0x10, ttl 64, id 22900, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.52711 > a.ams.pobot.net.ntp: [bad udp cksum 0xaf06 -> 0xe620!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   1962441971.371569168 (2098/04/15 19:14:27)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 1962441971.371569168 (2098/04/15 19:14:27)
-19:45:04.172030 IP (tos 0x0, ttl 55, id 43074, offset 0, flags [DF], proto UDP (17), length 76)
-    ns0.serverhouse.com.ntp > ZoeurK.lan.47814: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -18
-	Root Delay: 0.023071, Root dispersion: 0.029815, Reference-ID: ntps1-0.eecsit.tu-berlin.de
-	  Reference Timestamp:  3803995798.992085033 (2020/07/17 19:29:58)
-	  Originator Timestamp: 1036593410.603020778 (2068/12/12 22:05:06)
-	  Receive Timestamp:    3803996704.166329994 (2020/07/17 19:45:04)
-	  Transmit Timestamp:   3803996704.166396974 (2020/07/17 19:45:04)
-	    Originator - Receive Timestamp:  -1527564002.436690784
-	    Originator - Transmit Timestamp: -1527564002.436623804
-19:45:04.175040 IP (tos 0x0, ttl 54, id 44125, offset 0, flags [DF], proto UDP (17), length 76)
-    pob01.aplu.fr.ntp > ZoeurK.lan.51411: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -24
-	Root Delay: 0.024795, Root dispersion: 0.010040, Reference-ID: gatekeeper.dhco.org
-	  Reference Timestamp:  3803996477.177058516 (2020/07/17 19:41:17)
-	  Originator Timestamp: 689132173.598820084 (2057/12/09 09:04:29)
-	  Receive Timestamp:    3803996704.165681848 (2020/07/17 19:45:04)
-	  Transmit Timestamp:   3803996704.165706410 (2020/07/17 19:45:04)
-	    Originator - Receive Timestamp:  -1180102765.433138235
-	    Originator - Transmit Timestamp: -1180102765.433113673
-19:45:04.181211 IP (tos 0x0, ttl 55, id 18839, offset 0, flags [DF], proto UDP (17), length 76)
-    fr-sbg1.burble.com.ntp > ZoeurK.lan.43084: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 1 (2s), precision -26
-	Root Delay: 0.015777, Root dispersion: 0.000076, Reference-ID: server1.quickdrivingtestcancellations.net
-	  Reference Timestamp:  3803996640.693036014 (2020/07/17 19:44:00)
-	  Originator Timestamp: 3749714915.463103427 (2018/10/28 12:28:35)
-	  Receive Timestamp:    3803996704.173167957 (2020/07/17 19:45:04)
-	  Transmit Timestamp:   3803996704.173219100 (2020/07/17 19:45:04)
-	    Originator - Receive Timestamp:  +54281788.710064530
-	    Originator - Transmit Timestamp: +54281788.710115673
-19:45:04.186302 IP (tos 0x0, ttl 52, id 34993, offset 0, flags [DF], proto UDP (17), length 76)
-    a.ams.pobot.net.ntp > ZoeurK.lan.52711: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 8 (256s), precision -24
-	Root Delay: 0.008804, Root dispersion: 0.000717, Reference-ID: uklon5-ntp-004.aaplimg.com
-	  Reference Timestamp:  3803996152.797910154 (2020/07/17 19:35:52)
-	  Originator Timestamp: 1962441971.371569168 (2098/04/15 19:14:27)
-	  Receive Timestamp:    3803996704.175695191 (2020/07/17 19:45:04)
-	  Transmit Timestamp:   3803996704.175696061 (2020/07/17 19:45:04)
-	    Originator - Receive Timestamp:  +1841554732.804126023
-	    Originator - Transmit Timestamp: +1841554732.804126893
-19:45:04.193941 IP (tos 0x0, ttl 50, id 15160, offset 0, flags [DF], proto UDP (17), length 76)
-    ntp.tuxfamily.net.ntp > ZoeurK.lan.50344: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -21
-	Root Delay: 0.028900, Root dispersion: 0.037887, Reference-ID: 210-65-119-71.HINET-IP.hinet.net
-	  Reference Timestamp:  3803995713.779167621 (2020/07/17 19:28:33)
-	  Originator Timestamp: 3414284005.561498608 (2008/03/12 05:13:25)
-	  Receive Timestamp:    3803996704.179437333 (2020/07/17 19:45:04)
-	  Transmit Timestamp:   3803996704.179470357 (2020/07/17 19:45:04)
-	    Originator - Receive Timestamp:  +389712698.617938725
-	    Originator - Transmit Timestamp: +389712698.617971749
-19:45:05.194159 IP (tos 0x10, ttl 64, id 65395, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.33241 > master.servme.fr.ntp: [bad udp cksum 0xe257 -> 0x93ec!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   1717537527.908280034 (2090/07/12 06:13:43)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 1717537527.908280034 (2090/07/12 06:13:43)
-19:45:05.194225 IP (tos 0x10, ttl 64, id 18462, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.60804 > fr-rbx1.burble.com.ntp: [bad udp cksum 0x1588 -> 0x9e1e!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   3328364076.274953852 (2005/06/21 19:34:36)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 3328364076.274953852 (2005/06/21 19:34:36)
-19:45:05.213424 IP (tos 0x0, ttl 54, id 29441, offset 0, flags [DF], proto UDP (17), length 76)
-    master.servme.fr.ntp > ZoeurK.lan.33241: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 3 (secondary reference), poll 3 (8s), precision -23
-	Root Delay: 0.011062, Root dispersion: 0.024551, Reference-ID: ntp0.ovh.net
-	  Reference Timestamp:  3803996503.588862088 (2020/07/17 19:41:43)
-	  Originator Timestamp: 1717537527.908280034 (2090/07/12 06:13:43)
-	  Receive Timestamp:    3803996705.205421765 (2020/07/17 19:45:05)
-	  Transmit Timestamp:   3803996705.205440842 (2020/07/17 19:45:05)
-	    Originator - Receive Timestamp:  +2086459177.297141731
-	    Originator - Transmit Timestamp: +2086459177.297160808
-19:45:05.214602 IP (tos 0x0, ttl 54, id 43185, offset 0, flags [DF], proto UDP (17), length 76)
-    fr-rbx1.burble.com.ntp > ZoeurK.lan.60804: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 1 (2s), precision -25
-	Root Delay: 0.005722, Root dispersion: 0.000030, Reference-ID: 85.199.214.102
-	  Reference Timestamp:  3803996694.670795513 (2020/07/17 19:44:54)
-	  Originator Timestamp: 3328364076.274953852 (2005/06/21 19:34:36)
-	  Receive Timestamp:    3803996705.205576958 (2020/07/17 19:45:05)
-	  Transmit Timestamp:   3803996705.205639373 (2020/07/17 19:45:05)
-	    Originator - Receive Timestamp:  +475632628.930623105
-	    Originator - Transmit Timestamp: +475632628.930685520
-19:45:06.216088 IP (tos 0x10, ttl 64, id 40917, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.49003 > ntp1.omdc.pl.ntp: [bad udp cksum 0x9357 -> 0xb83f!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   2214752551.257012982 (1970/03/08 18:02:31)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 2214752551.257012982 (1970/03/08 18:02:31)
-19:45:06.216112 IP (tos 0x10, ttl 64, id 29802, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.39481 > ntp.roothost.com.ntp: [bad udp cksum 0xafcd -> 0x3bd8!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   3753010249.823566413 (2018/12/05 15:50:49)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 3753010249.823566413 (2018/12/05 15:50:49)
-19:45:06.216119 IP (tos 0x10, ttl 64, id 62744, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.41368 > 62-210-213-21.rev.poneytelecom.eu.ntp: [bad udp cksum 0xd4ed -> 0x0e61!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   3101511162.895071709 (1998/04/14 04:52:42)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 3101511162.895071709 (1998/04/14 04:52:42)
-19:45:06.216125 IP (tos 0x10, ttl 64, id 57882, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.52841 > y.ns.gin.ntt.net.ntp: [bad udp cksum 0x66fb -> 0xa738!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   1688487178.743203624 (2089/08/10 00:41:14)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 1688487178.743203624 (2089/08/10 00:41:14)
-19:45:06.216132 IP (tos 0x10, ttl 64, id 13445, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.39194 > ns.rail.eu.org.ntp: [bad udp cksum 0x48f6 -> 0x2eb6!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   3904689177.502526166 (2023/09/26 05:52:57)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 3904689177.502526166 (2023/09/26 05:52:57)
-19:45:06.237059 IP (tos 0x0, ttl 53, id 1833, offset 0, flags [DF], proto UDP (17), length 76)
-    ntp.roothost.com.ntp > ZoeurK.lan.39481: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 0 (1s), precision -25
-	Root Delay: 0.004028, Root dispersion: 0.001052, Reference-ID: n168-239-000-000.static.online-age.net
-	  Reference Timestamp:  3803995918.557268521 (2020/07/17 19:31:58)
-	  Originator Timestamp: 3753010249.823566413 (2018/12/05 15:50:49)
-	  Receive Timestamp:    3803996706.228082182 (2020/07/17 19:45:06)
-	  Transmit Timestamp:   3803996706.228121588 (2020/07/17 19:45:06)
-	    Originator - Receive Timestamp:  +50986456.404515769
-	    Originator - Transmit Timestamp: +50986456.404555175
-19:45:06.237059 IP (tos 0x0, ttl 55, id 24188, offset 0, flags [DF], proto UDP (17), length 76)
-    ntp1.omdc.pl.ntp > ZoeurK.lan.49003: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -24
-	Root Delay: 0.027664, Root dispersion: 0.022842, Reference-ID: 229.30.220.210
-	  Reference Timestamp:  3803995533.923816682 (2020/07/17 19:25:33)
-	  Originator Timestamp: 2214752551.257012982 (1970/03/08 18:02:31)
-	  Receive Timestamp:    3803996706.228436761 (2020/07/17 19:45:06)
-	  Transmit Timestamp:   3803996706.228499077 (2020/07/17 19:45:06)
-	    Originator - Receive Timestamp:  +1589244154.971423778
-	    Originator - Transmit Timestamp: +1589244154.971486094
-19:45:06.237059 IP (tos 0x0, ttl 55, id 60254, offset 0, flags [DF], proto UDP (17), length 76)
-    62-210-213-21.rev.poneytelecom.eu.ntp > ZoeurK.lan.41368: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -24
-	Root Delay: 0.021240, Root dispersion: 0.028427, Reference-ID: 168-84.static.speedwelshpool.com
-	  Reference Timestamp:  3803995915.321268121 (2020/07/17 19:31:55)
-	  Originator Timestamp: 3101511162.895071709 (1998/04/14 04:52:42)
-	  Receive Timestamp:    3803996706.228847548 (2020/07/17 19:45:06)
-	  Transmit Timestamp:   3803996706.228897714 (2020/07/17 19:45:06)
-	    Originator - Receive Timestamp:  +702485543.333775839
-	    Originator - Transmit Timestamp: +702485543.333826004
-19:45:06.237059 IP (tos 0x0, ttl 56, id 37355, offset 0, flags [none], proto UDP (17), length 76)
-    ns.rail.eu.org.ntp > ZoeurK.lan.39194: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -24
-	Root Delay: 0.008590, Root dispersion: 0.035598, Reference-ID: 136.231.192.35.bc.googleusercontent.com
-	  Reference Timestamp:  3803995471.152411247 (2020/07/17 19:24:31)
-	  Originator Timestamp: 3904689177.502526166 (2023/09/26 05:52:57)
-	  Receive Timestamp:    3803996706.230147513 (2020/07/17 19:45:06)
-	  Transmit Timestamp:   3803996706.230155924 (2020/07/17 19:45:06)
-	    Originator - Receive Timestamp:  -100692471.272378653
-	    Originator - Transmit Timestamp: -100692471.272370241
-19:45:06.237060 IP (tos 0x0, ttl 56, id 0, offset 0, flags [DF], proto UDP (17), length 76)
-    y.ns.gin.ntt.net.ntp > ZoeurK.lan.52841: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -23
-	Root Delay: 0.118667, Root dispersion: 0.022338, Reference-ID: 249.224.99.213
-	  Reference Timestamp:  3803996602.580970805 (2020/07/17 19:43:22)
-	  Originator Timestamp: 1688487178.743203624 (2089/08/10 00:41:14)
-	  Receive Timestamp:    3803996706.231157285 (2020/07/17 19:45:06)
-	  Transmit Timestamp:   3803996706.231181451 (2020/07/17 19:45:06)
-	    Originator - Receive Timestamp:  +2115509527.487953661
-	    Originator - Transmit Timestamp: +2115509527.487977826
-19:45:07.237792 IP (tos 0x10, ttl 64, id 31582, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.51345 > 82-64-165-222.subs.proxad.net.ntp: [bad udp cksum 0xb924 -> 0xeaa6!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   788292782.528783136 (2061/01/30 01:41:18)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 788292782.528783136 (2061/01/30 01:41:18)
-19:45:07.237814 IP (tos 0x10, ttl 64, id 2137, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.52736 > ntp-3.arkena.net.ntp: [bad udp cksum 0xcdf2 -> 0xa7e0!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   2578539152.730817861 (1981/09/17 06:52:32)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 2578539152.730817861 (1981/09/17 06:52:32)
-19:45:07.237822 IP (tos 0x10, ttl 64, id 19442, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.44015 > villisika.miuku.net.ntp: [bad udp cksum 0x23fe -> 0x614e!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   2074413988.394557879 (2101/11/02 17:34:44)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 2074413988.394557879 (2101/11/02 17:34:44)
-19:45:07.259821 IP (tos 0x0, ttl 54, id 25743, offset 0, flags [DF], proto UDP (17), length 76)
-    villisika.miuku.net.ntp > ZoeurK.lan.44015: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 4 (16s), precision -18
-	Root Delay: 0.024749, Root dispersion: 0.000961, Reference-ID: 85.199.214.98
-	  Reference Timestamp:  3803995907.486762925 (2020/07/17 19:31:47)
-	  Originator Timestamp: 2074413988.394557879 (2101/11/02 17:34:44)
-	  Receive Timestamp:    3803996707.257854360 (2020/07/17 19:45:07)
-	  Transmit Timestamp:   3803996707.257887466 (2020/07/17 19:45:07)
-	    Originator - Receive Timestamp:  +1729582718.863296480
-	    Originator - Transmit Timestamp: +1729582718.863329587
-19:45:07.265422 IP (tos 0x0, ttl 56, id 31102, offset 0, flags [DF], proto UDP (17), length 76)
-    ntp-3.arkena.net.ntp > ZoeurK.lan.52736: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -23
-	Root Delay: 0.026824, Root dispersion: 0.019454, Reference-ID: ntp-sop.inria.fr
-	  Reference Timestamp:  3803995813.994167148 (2020/07/17 19:30:13)
-	  Originator Timestamp: 2578539152.730817861 (1981/09/17 06:52:32)
-	  Receive Timestamp:    3803996707.255872409 (2020/07/17 19:45:07)
-	  Transmit Timestamp:   3803996707.255921219 (2020/07/17 19:45:07)
-	    Originator - Receive Timestamp:  +1225457554.525054547
-	    Originator - Transmit Timestamp: +1225457554.525103357
-19:45:07.274572 IP (tos 0x0, ttl 56, id 48453, offset 0, flags [DF], proto UDP (17), length 76)
-    82-64-165-222.subs.proxad.net.ntp > ZoeurK.lan.51345: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 1 (primary reference), poll 0 (1s), precision -23
-	Root Delay: 0.000015, Root dispersion: 0.000015, Reference-ID: GPS^@
-	  Reference Timestamp:  3803996694.344041114 (2020/07/17 19:44:54)
-	  Originator Timestamp: 788292782.528783136 (2061/01/30 01:41:18)
-	  Receive Timestamp:    3803996707.258850546 (2020/07/17 19:45:07)
-	  Transmit Timestamp:   3803996707.259001586 (2020/07/17 19:45:07)
-	    Originator - Receive Timestamp:  -1279263371.269932590
-	    Originator - Transmit Timestamp: -1279263371.269781550
-19:45:08.275999 IP (tos 0x10, ttl 64, id 50060, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.40345 > ntp.univ-angers.fr.ntp: [bad udp cksum 0x2c41 -> 0x1b60!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   106783335.413347511 (2039/06/27 06:30:31)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 106783335.413347511 (2039/06/27 06:30:31)
-19:45:08.303527 IP (tos 0x0, ttl 53, id 23409, offset 0, flags [DF], proto UDP (17), length 76)
-    ntp.univ-angers.fr.ntp > ZoeurK.lan.40345: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -23
-	Root Delay: 0.009902, Root dispersion: 0.034790, Reference-ID: ntp-p1.obspm.fr
-	  Reference Timestamp:  3803995767.740568305 (2020/07/17 19:29:27)
-	  Originator Timestamp: 106783335.413347511 (2039/06/27 06:30:31)
-	  Receive Timestamp:    3803996708.288790488 (2020/07/17 19:45:08)
-	  Transmit Timestamp:   3803996708.288805502 (2020/07/17 19:45:08)
-	    Originator - Receive Timestamp:  -597753923.124557023
-	    Originator - Transmit Timestamp: -597753923.124542009
-19:45:09.305012 IP (tos 0x10, ttl 64, id 39911, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.43084 > fr-sbg1.burble.com.ntp: [bad udp cksum 0x957a -> 0x795e!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   2262464010.869129762 (1971/09/11 23:13:30)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 2262464010.869129762 (1971/09/11 23:13:30)
-19:45:09.325337 IP (tos 0x0, ttl 55, id 19456, offset 0, flags [DF], proto UDP (17), length 76)
-    fr-sbg1.burble.com.ntp > ZoeurK.lan.43084: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 1 (2s), precision -26
-	Root Delay: 0.015777, Root dispersion: 0.000030, Reference-ID: server1.quickdrivingtestcancellations.net
-	  Reference Timestamp:  3803996705.311015991 (2020/07/17 19:45:05)
-	  Originator Timestamp: 2262464010.869129762 (1971/09/11 23:13:30)
-	  Receive Timestamp:    3803996709.317098478 (2020/07/17 19:45:09)
-	  Transmit Timestamp:   3803996709.317165095 (2020/07/17 19:45:09)
-	    Originator - Receive Timestamp:  +1541532698.447968716
-	    Originator - Transmit Timestamp: +1541532698.448035333
-19:45:10.326209 IP (tos 0x10, ttl 64, id 15823, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.51411 > pob01.aplu.fr.ntp: [bad udp cksum 0xd4be -> 0x8b24!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   2643120033.094530952 (1983/10/04 17:00:33)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 2643120033.094530952 (1983/10/04 17:00:33)
-19:45:10.326231 IP (tos 0x10, ttl 64, id 24072, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.52711 > a.ams.pobot.net.ntp: [bad udp cksum 0xaf06 -> 0x024f!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   4060068318.405720312 (2028/08/28 14:45:18)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 4060068318.405720312 (2028/08/28 14:45:18)
-19:45:10.343281 IP (tos 0x0, ttl 54, id 45552, offset 0, flags [DF], proto UDP (17), length 76)
-    pob01.aplu.fr.ntp > ZoeurK.lan.51411: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -24
-	Root Delay: 0.024795, Root dispersion: 0.010131, Reference-ID: gatekeeper.dhco.org
-	  Reference Timestamp:  3803996477.177058516 (2020/07/17 19:41:17)
-	  Originator Timestamp: 2643120033.094530952 (1983/10/04 17:00:33)
-	  Receive Timestamp:    3803996710.333791479 (2020/07/17 19:45:10)
-	  Transmit Timestamp:   3803996710.333823432 (2020/07/17 19:45:10)
-	    Originator - Receive Timestamp:  +1160876677.239260527
-	    Originator - Transmit Timestamp: +1160876677.239292480
-19:45:10.350087 IP (tos 0x0, ttl 52, id 35590, offset 0, flags [DF], proto UDP (17), length 76)
-    a.ams.pobot.net.ntp > ZoeurK.lan.52711: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 8 (256s), precision -24
-	Root Delay: 0.008804, Root dispersion: 0.000717, Reference-ID: uklon5-ntp-004.aaplimg.com
-	  Reference Timestamp:  3803996152.797910154 (2020/07/17 19:35:52)
-	  Originator Timestamp: 4060068318.405720312 (2028/08/28 14:45:18)
-	  Receive Timestamp:    3803996710.339432806 (2020/07/17 19:45:10)
-	  Transmit Timestamp:   3803996710.339433786 (2020/07/17 19:45:10)
-	    Originator - Receive Timestamp:  -256071608.066287505
-	    Originator - Transmit Timestamp: -256071608.066286525
-19:45:11.351574 IP (tos 0x10, ttl 64, id 63255, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.41368 > 62-210-213-21.rev.poneytelecom.eu.ntp: [bad udp cksum 0xd4ed -> 0x75dc!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   3603525168.063974056 (2014/03/11 12:12:48)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 3603525168.063974056 (2014/03/11 12:12:48)
-19:45:11.351646 IP (tos 0x10, ttl 64, id 18556, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.60804 > fr-rbx1.burble.com.ntp: [bad udp cksum 0x1588 -> 0x41f9!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   3300758171.708260214 (2004/08/06 07:16:11)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 3300758171.708260214 (2004/08/06 07:16:11)
-19:45:11.366558 IP (tos 0x0, ttl 55, id 61219, offset 0, flags [DF], proto UDP (17), length 76)
-    62-210-213-21.rev.poneytelecom.eu.ntp > ZoeurK.lan.41368: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -24
-	Root Delay: 0.021240, Root dispersion: 0.028518, Reference-ID: 168-84.static.speedwelshpool.com
-	  Reference Timestamp:  3803995915.321268121 (2020/07/17 19:31:55)
-	  Originator Timestamp: 3603525168.063974056 (2014/03/11 12:12:48)
-	  Receive Timestamp:    3803996711.359156804 (2020/07/17 19:45:11)
-	  Transmit Timestamp:   3803996711.359235561 (2020/07/17 19:45:11)
-	    Originator - Receive Timestamp:  +200471543.295182748
-	    Originator - Transmit Timestamp: +200471543.295261505
-19:45:11.369932 IP (tos 0x0, ttl 54, id 44290, offset 0, flags [DF], proto UDP (17), length 76)
-    fr-rbx1.burble.com.ntp > ZoeurK.lan.60804: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 1 (2s), precision -25
-	Root Delay: 0.005722, Root dispersion: 0.000045, Reference-ID: 85.199.214.102
-	  Reference Timestamp:  3803996694.670795513 (2020/07/17 19:44:54)
-	  Originator Timestamp: 3300758171.708260214 (2004/08/06 07:16:11)
-	  Receive Timestamp:    3803996711.362535147 (2020/07/17 19:45:11)
-	  Transmit Timestamp:   3803996711.362566427 (2020/07/17 19:45:11)
-	    Originator - Receive Timestamp:  +503238539.654274932
-	    Originator - Transmit Timestamp: +503238539.654306212
-19:45:12.371360 IP (tos 0x10, ttl 64, id 41547, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.49003 > ntp1.omdc.pl.ntp: [bad udp cksum 0x9357 -> 0x5b63!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   2940977707.456013199 (1993/03/13 03:15:07)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 2940977707.456013199 (1993/03/13 03:15:07)
-19:45:12.371423 IP (tos 0x10, ttl 64, id 29126, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.50344 > ntp.tuxfamily.net.ntp: [bad udp cksum 0x3366 -> 0x5dcf!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   3542477085.201547060 (2012/04/03 23:24:45)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 3542477085.201547060 (2012/04/03 23:24:45)
-19:45:12.371448 IP (tos 0x10, ttl 64, id 31658, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.51345 > 82-64-165-222.subs.proxad.net.ntp: [bad udp cksum 0xb924 -> 0x84ac!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   2547359860.319355718 (1980/09/21 09:57:40)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 2547359860.319355718 (1980/09/21 09:57:40)
-19:45:12.389528 IP (tos 0x0, ttl 55, id 25046, offset 0, flags [DF], proto UDP (17), length 76)
-    ntp1.omdc.pl.ntp > ZoeurK.lan.49003: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -24
-	Root Delay: 0.027664, Root dispersion: 0.022933, Reference-ID: 229.30.220.210
-	  Reference Timestamp:  3803995533.923816682 (2020/07/17 19:25:33)
-	  Originator Timestamp: 2940977707.456013199 (1993/03/13 03:15:07)
-	  Receive Timestamp:    3803996712.382267967 (2020/07/17 19:45:12)
-	  Transmit Timestamp:   3803996712.382303028 (2020/07/17 19:45:12)
-	    Originator - Receive Timestamp:  +863019004.926254768
-	    Originator - Transmit Timestamp: +863019004.926289829
-19:45:12.401893 IP (tos 0x0, ttl 56, id 48830, offset 0, flags [DF], proto UDP (17), length 76)
-    82-64-165-222.subs.proxad.net.ntp > ZoeurK.lan.51345: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 1 (primary reference), poll 0 (1s), precision -23
-	Root Delay: 0.000015, Root dispersion: 0.000030, Reference-ID: GPS^@
-	  Reference Timestamp:  3803996694.344041114 (2020/07/17 19:44:54)
-	  Originator Timestamp: 2547359860.319355718 (1980/09/21 09:57:40)
-	  Receive Timestamp:    3803996712.390047512 (2020/07/17 19:45:12)
-	  Transmit Timestamp:   3803996712.390123845 (2020/07/17 19:45:12)
-	    Originator - Receive Timestamp:  +1256636852.070691794
-	    Originator - Transmit Timestamp: +1256636852.070768127
-19:45:12.407128 IP (tos 0x0, ttl 50, id 15448, offset 0, flags [DF], proto UDP (17), length 76)
-    ntp.tuxfamily.net.ntp > ZoeurK.lan.50344: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -21
-	Root Delay: 0.028900, Root dispersion: 0.038009, Reference-ID: 210-65-119-71.HINET-IP.hinet.net
-	  Reference Timestamp:  3803995713.779167621 (2020/07/17 19:28:33)
-	  Originator Timestamp: 3542477085.201547060 (2012/04/03 23:24:45)
-	  Receive Timestamp:    3803996712.389377422 (2020/07/17 19:45:12)
-	  Transmit Timestamp:   3803996712.389417989 (2020/07/17 19:45:12)
-	    Originator - Receive Timestamp:  +261519627.187830361
-	    Originator - Transmit Timestamp: +261519627.187870929
-19:45:13.408393 IP (tos 0x10, ttl 64, id 2699, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.47814 > ns0.serverhouse.com.ntp: [bad udp cksum 0x5098 -> 0xca64!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   3259221225.126272143 (2003/04/13 13:13:45)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 3259221225.126272143 (2003/04/13 13:13:45)
-19:45:13.408445 IP (tos 0x10, ttl 64, id 370, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.33241 > master.servme.fr.ntp: [bad udp cksum 0xe257 -> 0xb851!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   2401494215.356566464 (1976/02/07 02:43:35)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 2401494215.356566464 (1976/02/07 02:43:35)
-19:45:13.408569 IP (tos 0x10, ttl 64, id 14486, offset 0, flags [DF], proto UDP (17), length 76)
-    ZoeurK.lan.39194 > ns.rail.eu.org.ntp: [bad udp cksum 0x48f6 -> 0xacbf!] NTPv4, length 48
-	Client, Leap indicator:  (0), Stratum 0 (unspecified), poll 0 (1s), precision 0
-	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
-	  Reference Timestamp:  0.000000000
-	  Originator Timestamp: 0.000000000
-	  Receive Timestamp:    0.000000000
-	  Transmit Timestamp:   219339262.524061218 (2043/01/19 23:02:38)
-	    Originator - Receive Timestamp:  0.000000000
-	    Originator - Transmit Timestamp: 219339262.524061218 (2043/01/19 23:02:38)
-19:45:13.424035 IP (tos 0x0, ttl 55, id 45167, offset 0, flags [DF], proto UDP (17), length 76)
-    ns0.serverhouse.com.ntp > ZoeurK.lan.47814: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -18
-	Root Delay: 0.023071, Root dispersion: 0.029953, Reference-ID: ntps1-0.eecsit.tu-berlin.de
-	  Reference Timestamp:  3803995798.992085033 (2020/07/17 19:29:58)
-	  Originator Timestamp: 3259221225.126272143 (2003/04/13 13:13:45)
-	  Receive Timestamp:    3803996713.416369282 (2020/07/17 19:45:13)
-	  Transmit Timestamp:   3803996713.416443495 (2020/07/17 19:45:13)
-	    Originator - Receive Timestamp:  +544775488.290097139
-	    Originator - Transmit Timestamp: +544775488.290171351
-19:45:13.425212 IP (tos 0x0, ttl 54, id 29587, offset 0, flags [DF], proto UDP (17), length 76)
-    master.servme.fr.ntp > ZoeurK.lan.33241: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 3 (secondary reference), poll 3 (8s), precision -23
-	Root Delay: 0.011062, Root dispersion: 0.024673, Reference-ID: ntp0.ovh.net
-	  Reference Timestamp:  3803996503.588862088 (2020/07/17 19:41:43)
-	  Originator Timestamp: 2401494215.356566464 (1976/02/07 02:43:35)
-	  Receive Timestamp:    3803996713.418047960 (2020/07/17 19:45:13)
-	  Transmit Timestamp:   3803996713.418066178 (2020/07/17 19:45:13)
-	    Originator - Receive Timestamp:  +1402502498.061481496
-	    Originator - Transmit Timestamp: +1402502498.061499714
-19:45:13.426270 IP (tos 0x0, ttl 56, id 38918, offset 0, flags [none], proto UDP (17), length 76)
-    ns.rail.eu.org.ntp > ZoeurK.lan.39194: [udp sum ok] NTPv4, length 48
-	Server, Leap indicator:  (0), Stratum 2 (secondary reference), poll 3 (8s), precision -24
-	Root Delay: 0.008590, Root dispersion: 0.035705, Reference-ID: 136.231.192.35.bc.googleusercontent.com
-	  Reference Timestamp:  3803995471.152411247 (2020/07/17 19:24:31)
-	  Originator Timestamp: 219339262.524061218 (2043/01/19 23:02:38)
-	  Receive Timestamp:    3803996713.420169176 (202
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0xb6d (0xb6d)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => ntp1.omdc.pl (92.222.117.115)
+Port Src:49003
+Port Dst:123
+Checksum:0x9357 (0xc61f)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.575432715 ()
+	Transmit timestamp: 2728459907.648438752 (1986/06/18 11:31:47)
+	Originator - Received timestamp: +0.575432715
+	Originator - Transmit timestamp: 1986/06/18 11:31:47
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0xebdb (0xebdb)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => ns0.serverhouse.com (212.83.187.62)
+Port Src:47814
+Port Dst:123
+Checksum:0x5098 (0x465a)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.975559031 ()
+	Transmit timestamp: 855449919.648438752 (2063/03/18 08:26:55)
+	Originator - Received timestamp: +0.975559031
+	Originator - Transmit timestamp: 2063/03/18 08:26:55
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x2c18 (0x2c18)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => pob01.aplu.fr (151.80.124.104)
+Port Src:51411
+Port Dst:123
+Checksum:0xd4be (0x79a2)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.347233131 ()
+	Transmit timestamp: 29893929.648438752 (2037/01/18 07:20:25)
+	Originator - Received timestamp: +0.347233131
+	Originator - Transmit timestamp: 2037/01/18 07:20:25
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x5f6f (0x5f6f)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => master.servme.fr (178.33.111.48)
+Port Src:33241
+Port Dst:123
+Checksum:0xe257 (0xa3e9)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.331242206 ()
+	Transmit timestamp: 1932509737.648438752 (2097/05/04 08:43:53)
+	Originator - Received timestamp: +0.331242206
+	Originator - Transmit timestamp: 2097/05/04 08:43:53
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x9993 (0x9993)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => ntp.tuxfamily.net (212.85.158.10)
+Port Src:50344
+Port Dst:123
+Checksum:0x3366 (0xf934)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.738112849 ()
+	Transmit timestamp: 3024978703.003906799 (1995/11/10 08:51:43)
+	Originator - Received timestamp: +0.738112849
+	Originator - Transmit timestamp: 1995/11/10 08:51:43
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x1947 (0x1947)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => ntp.roothost.com (188.165.50.34)
+Port Src:39481
+Port Dst:123
+Checksum:0xafcd (0x597a)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.896374375 ()
+	Transmit timestamp: 910774918.003906799 (2064/12/17 16:30:14)
+	Originator - Received timestamp: +0.896374375
+	Originator - Transmit timestamp: 2064/12/17 16:30:14
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x710a (0x710a)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => 62-210-213-21.rev.poneytelecom.eu (62.210.213.21)
+Port Src:41368
+Port Dst:123
+Checksum:0xd4ed (0xc1b0)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.732134469 ()
+	Transmit timestamp: 24034581.427496519 (2036/11/11 11:44:37)
+	Originator - Received timestamp: +0.732134469
+	Originator - Transmit timestamp: 2036/11/11 11:44:37
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0xf453 (0xf453)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => y.ns.gin.ntt.net (129.250.35.251)
+Port Src:52841
+Port Dst:123
+Checksum:0x66fb (0xde94)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.552852608 ()
+	Transmit timestamp: 3840120388.427496519 (2021/09/08 22:06:28)
+	Originator - Received timestamp: +0.552852608
+	Originator - Transmit timestamp: 2021/09/08 22:06:28
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0xb02 (0xb02)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => 82-64-165-222.subs.proxad.net (82.64.165.222)
+Port Src:51345
+Port Dst:123
+Checksum:0xb924 (0x7538)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.365926962 ()
+	Transmit timestamp: 3522056722.648438752 (2011/08/11 15:05:22)
+	Originator - Received timestamp: +0.365926962
+	Originator - Transmit timestamp: 2011/08/11 15:05:22
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x654f (0x654f)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => ntp-3.arkena.net (95.81.173.155)
+Port Src:52736
+Port Dst:123
+Checksum:0xcdf2 (0x2608)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.347814340 ()
+	Transmit timestamp: 2117854904.648438752 (2103/03/20 12:30:00)
+	Originator - Received timestamp: +0.347814340
+	Originator - Transmit timestamp: 2103/03/20 12:30:00
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x50f7 (0x50f7)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => ntp.univ-angers.fr (194.57.169.1)
+Port Src:40345
+Port Dst:123
+Checksum:0x2c41 (0xf56a)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.215277841 ()
+	Transmit timestamp: 835666242.648438752 (2062/08/01 09:58:58)
+	Originator - Received timestamp: +0.215277841
+	Originator - Transmit timestamp: 2062/08/01 09:58:58
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0xc1c2 (0xc1c2)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => ns.rail.eu.org (212.83.179.156)
+Port Src:39194
+Port Dst:123
+Checksum:0x48f6 (0x1e4e)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.698689579 ()
+	Transmit timestamp: 1927177268.648438752 (2097/03/03 14:29:24)
+	Originator - Received timestamp: +0.698689579
+	Originator - Transmit timestamp: 2097/03/03 14:29:24
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x11fe (0x11fe)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => fr-sbg1.burble.com (37.187.174.185)
+Port Src:43084
+Port Dst:123
+Checksum:0x957a (0xfee9)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.099230678 ()
+	Transmit timestamp: 3226507100.648438752 (2002/03/30 20:58:20)
+	Originator - Received timestamp: +0.099230678
+	Originator - Transmit timestamp: 2002/03/30 20:58:20
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0xe037 (0xe037)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => fr-rbx1.burble.com (37.59.47.71)
+Port Src:60804
+Port Dst:123
+Checksum:0x1588 (0x50f2)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.229189451 ()
+	Transmit timestamp: 3841015746.648438752 (2021/09/19 06:49:06)
+	Originator - Received timestamp: +0.229189451
+	Originator - Transmit timestamp: 2021/09/19 06:49:06
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x34c7 (0x34c7)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => a.ams.pobot.net (51.158.186.98)
+Port Src:52711
+Port Dst:123
+Checksum:0xaf06 (0xe1d4)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.229952353 ()
+	Transmit timestamp: 3785111743.003906799 (2019/12/12 04:55:43)
+	Originator - Received timestamp: +0.229952353
+	Originator - Transmit timestamp: 2019/12/12 04:55:43
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0xd16a (0xd16a)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => villisika.miuku.net (92.243.6.5)
+Port Src:44015
+Port Dst:123
+Checksum:0x23fe (0x21a1)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.438781107 ()
+	Transmit timestamp: 1348220068.003906799 (2078/10/28 18:02:44)
+	Originator - Received timestamp: +0.438781107
+	Originator - Transmit timestamp: 2078/10/28 18:02:44
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x4f26 (0x4f26)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => ntp.univ-angers.fr (194.57.169.1)
+Port Src:40345
+Port Dst:123
+Checksum:0x2c41 (0x2f8d)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.810639949 ()
+	Transmit timestamp: 2594922282.000140815 (1982/03/25 20:44:42)
+	Originator - Received timestamp: +0.810639949
+	Originator - Transmit timestamp: 1982/03/25 20:44:42
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0xbf4c (0xbf4c)
+Packet Length:56
+Offset:0
+Time to live:53
+Protocol:17
+Flags:DF
+ntp.univ-angers.fr (194.57.169.1) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:40345
+Checksum:0x58b1 (0x58b1)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;2;137
+	Reference clock id: 226.188.94.119
+	Clock precision: -23
+	Root delay: 0.034713
+	Root dispersion: -28178.055327
+	Reference timestamp: 3180716651.810639949 (2000/10/16 22:24:11)
+	Received timestamp: 613114352.885687000 (2055/07/13 14:00:48)
+	Transmit timestamp: 613176209.003906259 (2055/07/14 07:11:45)
+	Originator - Received timestamp: -1981807930.000000000
+	Originator - Transmit timestamp: -1981746073.881780741
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0xe743 (0xe743)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => ns0.serverhouse.com (212.83.187.62)
+Port Src:47814
+Port Dst:123
+Checksum:0x5098 (0x3de6)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.241350710 ()
+	Transmit timestamp: 2589954524.000580395 (1982/01/27 08:48:44)
+	Originator - Received timestamp: +0.241350710
+	Originator - Transmit timestamp: 1982/01/27 08:48:44
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x2b80 (0x2b80)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => pob01.aplu.fr (151.80.124.104)
+Port Src:51411
+Port Dst:123
+Checksum:0xd4be (0xe3e7)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.160451087 ()
+	Transmit timestamp: 2571912677.000580395 (1981/07/02 14:11:17)
+	Originator - Received timestamp: +0.160451087
+	Originator - Transmit timestamp: 1981/07/02 14:11:17
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x980d (0x980d)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => ntp.tuxfamily.net (212.85.158.10)
+Port Src:50344
+Port Dst:123
+Checksum:0x3366 (0x52a8)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.794949942 ()
+	Transmit timestamp: 2411618159.000580395 (1976/06/03 07:55:59)
+	Originator - Received timestamp: +0.794949942
+	Originator - Transmit timestamp: 1976/06/03 07:55:59
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0xe04 (0xe04)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => fr-sbg1.burble.com (37.187.174.185)
+Port Src:43084
+Port Dst:123
+Checksum:0x957a (0x3a59)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.873048537 ()
+	Transmit timestamp: 1989014074.000580395 (2099/02/17 07:22:50)
+	Originator - Received timestamp: +0.873048537
+	Originator - Transmit timestamp: 2099/02/17 07:22:50
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x3260 (0x3260)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => a.ams.pobot.net (51.158.186.98)
+Port Src:52711
+Port Dst:123
+Checksum:0xaf06 (0xe620)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.456916627 ()
+	Transmit timestamp: 1595877426.000580395 (2086/09/03 03:45:22)
+	Originator - Received timestamp: +0.456916627
+	Originator - Transmit timestamp: 2086/09/03 03:45:22
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0x4b10 (0x4b10)
+Packet Length:56
+Offset:0
+Time to live:55
+Protocol:17
+Flags:DF
+ns0.serverhouse.com (212.83.187.62) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:47814
+Checksum:0x986a (0x986a)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;5;232
+	Reference clock id: 226.188.94.150
+	Clock precision: -18
+	Root delay: 0.029815
+	Root dispersion: -32107.001190
+	Reference timestamp: 4260972775.241350710 (2035/01/09 20:32:55)
+	Received timestamp: 714381885.885687001 (2058/09/27 15:53:01)
+	Transmit timestamp: 714669565.000580395 (2058/09/30 23:47:41)
+	Originator - Received timestamp: -1875572639.000000000
+	Originator - Transmit timestamp: -1875284959.885106605
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0xc3ce (0xc3ce)
+Packet Length:56
+Offset:0
+Time to live:54
+Protocol:17
+Flags:DF
+pob01.aplu.fr (151.80.124.104) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:51411
+Checksum:0xc165 (0xc165)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;6;89
+	Reference clock id: 226.188.97.61
+	Clock precision: -24
+	Root delay: 0.010040
+	Root dispersion: 22885.048263
+	Reference timestamp: 760460538.160451087 (2060/03/13 22:30:34)
+	Received timestamp: 711598121.885687001 (2058/08/26 10:36:57)
+	Transmit timestamp: 711703615.000580395 (2058/08/27 15:55:11)
+	Originator - Received timestamp: -1860314556.000000000
+	Originator - Transmit timestamp: -1860209062.885106605
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0x64d9 (0x64d9)
+Packet Length:56
+Offset:0
+Time to live:55
+Protocol:17
+Flags:DF
+fr-sbg1.burble.com (37.187.174.185) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:43084
+Checksum:0x8d5e (0x8d5e)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;4;10
+	Reference clock id: 226.188.97.224
+	Clock precision: -26
+	Root delay: 0.000076
+	Root dispersion: 21959.034057
+	Reference timestamp: 2976567019.873048537 (1994/04/29 02:10:19)
+	Received timestamp: 743750714.885687001 (2059/09/02 13:53:30)
+	Transmit timestamp: 743970371.000580395 (2059/09/05 02:54:27)
+	Originator - Received timestamp: -1245263360.000000000
+	Originator - Transmit timestamp: -1245043703.885106605
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0xf33 (0xf33)
+Packet Length:56
+Offset:0
+Time to live:52
+Protocol:17
+Flags:DF
+a.ams.pobot.net (51.158.186.98) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:52711
+Checksum:0x142a (0x142a)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;2;65
+	Reference clock id: 226.188.95.248
+	Clock precision: -24
+	Root delay: 0.000717
+	Root dispersion: 4605.005570
+	Reference timestamp: 3426998020.456916627 (2008/08/06 09:53:40)
+	Received timestamp: 754605103.885687001 (2060/01/06 03:59:59)
+	Transmit timestamp: 754608840.000580395 (2060/01/06 05:02:16)
+	Originator - Received timestamp: -841272323.000000000
+	Originator - Transmit timestamp: -841268586.885106605
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0xda4c (0xda4c)
+Packet Length:56
+Offset:0
+Time to live:50
+Protocol:17
+Flags:DF
+ntp.tuxfamily.net (212.85.158.10) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:50344
+Checksum:0x1daf (0x1daf)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;7;102
+	Reference clock id: 226.188.94.65
+	Clock precision: -21
+	Root delay: 0.037887
+	Root dispersion: -11711.007175
+	Reference timestamp: 3346499452.794949942 (2006/01/17 16:10:52)
+	Received timestamp: 770677480.885687001 (2060/07/10 05:32:56)
+	Transmit timestamp: 770819315.000580395 (2060/07/11 20:56:51)
+	Originator - Received timestamp: -1640940679.000000000
+	Originator - Transmit timestamp: -1640798844.885106605
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x590f (0x590f)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => master.servme.fr (178.33.111.48)
+Port Src:33241
+Port Dst:123
+Checksum:0xe257 (0x93ec)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.399895367 ()
+	Transmit timestamp: 3901033042.000140815 (2023/08/14 22:17:22)
+	Originator - Received timestamp: +0.399895367
+	Originator - Transmit timestamp: 2023/08/14 22:17:22
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0xdd34 (0xdd34)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => fr-rbx1.burble.com (37.59.47.71)
+Port Src:60804
+Port Dst:123
+Checksum:0x1588 (0x9e1e)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.774945150 ()
+	Transmit timestamp: 1180917806.000140815 (2073/07/10 09:11:42)
+	Originator - Received timestamp: +0.774945150
+	Originator - Transmit timestamp: 2073/07/10 09:11:42
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0xef91 (0xef91)
+Packet Length:56
+Offset:0
+Time to live:54
+Protocol:17
+Flags:DF
+master.servme.fr (178.33.111.48) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:33241
+Checksum:0x6bfe (0x6bfe)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;2;213
+	Reference clock id: 226.188.97.87
+	Clock precision: -23
+	Root delay: 0.024551
+	Root dispersion: -10757.028088
+	Reference timestamp: 2529143413.399895367 (1980/02/23 12:50:13)
+	Received timestamp: 882279766.885687001 (2064/01/22 21:11:02)
+	Transmit timestamp: 882361700.000005081 (2064/01/23 19:56:36)
+	Originator - Received timestamp: +1276214020.000000000
+	Originator - Transmit timestamp: +1276295953.114318080
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0x86b1 (0x86b1)
+Packet Length:56
+Offset:0
+Time to live:54
+Protocol:17
+Flags:DF
+fr-rbx1.burble.com (37.59.47.71) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:60804
+Checksum:0xcf8b (0xcf8b)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;1;119
+	Reference clock id: 226.188.98.22
+	Clock precision: -25
+	Root delay: 0.000030
+	Root dispersion: 21959.034102
+	Reference timestamp: 2881044794.774945150 (1991/04/19 12:13:14)
+	Received timestamp: 882946315.885687001 (2064/01/30 14:20:11)
+	Transmit timestamp: 883214382.000015259 (2064/02/02 16:47:58)
+	Originator - Received timestamp: -297971491.000000000
+	Originator - Transmit timestamp: -297703424.885671742
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x7ae (0x7ae)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => ntp1.omdc.pl (92.222.117.115)
+Port Src:49003
+Port Dst:123
+Checksum:0x9357 (0xb83f)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.515662261 ()
+	Transmit timestamp: 1103862356.000140815 (2071/01/30 11:54:12)
+	Originator - Received timestamp: +0.515662261
+	Originator - Transmit timestamp: 2071/01/30 11:54:12
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x16a3 (0x16a3)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => ntp.roothost.com (188.165.50.34)
+Port Src:39481
+Port Dst:123
+Checksum:0xafcd (0x3bd8)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.873815791 ()
+	Transmit timestamp: 3537190811.000140815 (2012/02/02 18:00:11)
+	Originator - Received timestamp: +0.873815791
+	Originator - Transmit timestamp: 2012/02/02 18:00:11
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x70d4 (0x70d4)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => 62-210-213-21.rev.poneytelecom.eu (62.210.213.21)
+Port Src:41368
+Port Dst:123
+Checksum:0xd4ed (0xe61)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.722126840 ()
+	Transmit timestamp: 3844303721.000140815 (2021/10/27 08:08:41)
+	Originator - Received timestamp: +0.722126840
+	Originator - Transmit timestamp: 2021/10/27 08:08:41
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0xf1c4 (0xf1c4)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => y.ns.gin.ntt.net (129.250.35.251)
+Port Src:52841
+Port Dst:123
+Checksum:0x66fb (0xa738)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.393131556 ()
+	Transmit timestamp: 3192035261.000140815 (2001/02/24 21:27:41)
+	Originator - Received timestamp: +0.393131556
+	Originator - Transmit timestamp: 2001/02/24 21:27:41
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0xbd5f (0xbd5f)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => ns.rail.eu.org (212.83.179.156)
+Port Src:39194
+Port Dst:123
+Checksum:0x48f6 (0x2eb6)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.909131294 ()
+	Transmit timestamp: 2158333449.000140815 (2104/07/01 01:32:25)
+	Originator - Received timestamp: +0.909131294
+	Originator - Transmit timestamp: 2104/07/01 01:32:25
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0x8ef4 (0x8ef4)
+Packet Length:56
+Offset:0
+Time to live:53
+Protocol:17
+Flags:DF
+ntp.roothost.com (188.165.50.34) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:39481
+Checksum:0xc95b (0xc95b)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;1;8
+	Reference clock id: 226.188.95.14
+	Clock precision: -25
+	Root delay: 0.001052
+	Root dispersion: -22289.045974
+	Reference timestamp: 2393450077.873815791 (1975/11/06 00:14:37)
+	Received timestamp: 979605515.885687001 (2067/02/22 08:06:51)
+	Transmit timestamp: 979774764.046875059 (2067/02/24 07:07:40)
+	Originator - Received timestamp: +1737382000.000000000
+	Originator - Transmit timestamp: +1737551248.161188058
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0x5217 (0x5217)
+Packet Length:56
+Offset:0
+Time to live:55
+Protocol:17
+Flags:DF
+ntp1.omdc.pl (92.222.117.115) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:49003
+Checksum:0xb9a5 (0xb9a5)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;7;21
+	Reference clock id: 226.188.93.141
+	Clock precision: -24
+	Root delay: 0.022842
+	Root dispersion: -6882.059188
+	Reference timestamp: 3967762439.515662261 (2025/09/25 06:13:59)
+	Received timestamp: 981128420.885687001 (2067/03/11 23:08:36)
+	Transmit timestamp: 981396066.046875059 (2067/03/15 01:29:22)
+	Originator - Received timestamp: -122733936.000000000
+	Originator - Transmit timestamp: -122466290.838811941
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0x839e (0x839e)
+Packet Length:56
+Offset:0
+Time to live:55
+Protocol:17
+Flags:DF
+62-210-213-21.rev.poneytelecom.eu (62.210.213.21) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:41368
+Checksum:0xfdb1 (0xfdb1)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;5;112
+	Reference clock id: 226.188.95.11
+	Clock precision: -24
+	Root delay: 0.028427
+	Root dispersion: 22514.050748
+	Reference timestamp: 1379836073.722126840 (2079/10/29 15:16:09)
+	Received timestamp: 982892738.885687001 (2067/04/01 10:13:54)
+	Transmit timestamp: 983108199.046875059 (2067/04/03 22:04:55)
+	Originator - Received timestamp: +1433556313.000000000
+	Originator - Transmit timestamp: +1433771773.161188058
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0xa809 (0xa809)
+Packet Length:56
+Offset:0
+Time to live:56
+Protocol:17
+Flags:
+ns.rail.eu.org (212.83.179.156) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:39194
+Checksum:0xcdee (0xcdee)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;2;51
+	Reference clock id: 226.188.93.79
+	Clock precision: -24
+	Root delay: 0.035598
+	Root dispersion: 9152.035491
+	Reference timestamp: 654601323.909131294 (2056/11/04 17:10:19)
+	Received timestamp: 988476042.885687001 (2067/06/05 01:08:58)
+	Transmit timestamp: 988512169.046875059 (2067/06/05 11:11:05)
+	Originator - Received timestamp: -1169857407.000000000
+	Originator - Transmit timestamp: -1169821280.838811941
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0xdbef (0xdbef)
+Packet Length:56
+Offset:0
+Time to live:56
+Protocol:17
+Flags:DF
+y.ns.gin.ntt.net (129.250.35.251) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:52841
+Checksum:0xf1a3 (0xf1a3)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;30;97
+	Reference clock id: 226.188.97.186
+	Clock precision: -23
+	Root delay: 0.022338
+	Root dispersion: -1568.062288
+	Reference timestamp: 2495250609.393131556 (1979/01/27 06:10:09)
+	Received timestamp: 992812983.885687001 (2067/07/25 05:51:19)
+	Transmit timestamp: 992916773.046875059 (2067/07/26 10:41:09)
+	Originator - Received timestamp: +2095745018.000000000
+	Originator - Transmit timestamp: +2095848807.161188058
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x658 (0x658)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => 82-64-165-222.subs.proxad.net (82.64.165.222)
+Port Src:51345
+Port Dst:123
+Checksum:0xb924 (0xeaa6)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.183538715 ()
+	Transmit timestamp: 2271106278.000580395 (1971/12/20 23:51:18)
+	Originator - Received timestamp: +0.183538715
+	Originator - Transmit timestamp: 1971/12/20 23:51:18
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x648f (0x648f)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => ntp-3.arkena.net (95.81.173.155)
+Port Src:52736
+Port Dst:123
+Checksum:0xcdf2 (0xa7e0)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.600362930 ()
+	Transmit timestamp: 3138838815.000580395 (1999/06/20 05:40:15)
+	Originator - Received timestamp: +0.600362930
+	Originator - Transmit timestamp: 1999/06/20 05:40:15
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0xcaea (0xcaea)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => villisika.miuku.net (92.243.6.5)
+Port Src:44015
+Port Dst:123
+Checksum:0x23fe (0x614e)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.482987144 ()
+	Transmit timestamp: 1694613189.000580395 (2089/10/19 22:21:25)
+	Originator - Received timestamp: +0.482987144
+	Originator - Transmit timestamp: 2089/10/19 22:21:25
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0xbc5d (0xbc5d)
+Packet Length:56
+Offset:0
+Time to live:54
+Protocol:17
+Flags:DF
+villisika.miuku.net (92.243.6.5) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:44015
+Checksum:0x35b1 (0x35b1)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;6;86
+	Reference clock id: 226.188.95.3
+	Clock precision: -18
+	Root delay: 0.000961
+	Root dispersion: 21959.034041
+	Reference timestamp: 2090630848.482987144 (2102/05/09 11:15:44)
+	Received timestamp: 1107476044.885687001 (2071/03/13 07:42:20)
+	Transmit timestamp: 1107618236.000580395 (2071/03/14 23:12:12)
+	Originator - Received timestamp: -587137145.000000000
+	Originator - Transmit timestamp: -586994953.885106606
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0xfb79 (0xfb79)
+Packet Length:56
+Offset:0
+Time to live:56
+Protocol:17
+Flags:DF
+ntp-3.arkena.net (95.81.173.155) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:52736
+Checksum:0xdac4 (0xdac4)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;6;222
+	Reference clock id: 226.188.94.165
+	Clock precision: -23
+	Root delay: 0.019454
+	Root dispersion: -30112.053544
+	Reference timestamp: 4269915391.600362930 (2035/04/23 09:36:31)
+	Received timestamp: 1098963631.885687001 (2070/12/04 19:08:47)
+	Transmit timestamp: 1099173268.000580395 (2070/12/07 05:22:44)
+	Originator - Received timestamp: -2039875184.000000000
+	Originator - Transmit timestamp: -2039665547.885106606
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x4b0d (0x4b0d)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => ntp.univ-angers.fr (194.57.169.1)
+Port Src:40345
+Port Dst:123
+Checksum:0x2c41 (0x1b60)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.024862432 ()
+	Transmit timestamp: 1775314044.000140815 (2092/05/10 23:15:40)
+	Originator - Received timestamp: +0.024862432
+	Originator - Transmit timestamp: 2092/05/10 23:15:40
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0xbe38 (0xbe38)
+Packet Length:56
+Offset:0
+Time to live:53
+Protocol:17
+Flags:DF
+ntp.univ-angers.fr (194.57.169.1) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:40345
+Checksum:0x5a7f (0x5a7f)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;2;137
+	Reference clock id: 226.188.94.119
+	Clock precision: -23
+	Root delay: 0.034790
+	Root dispersion: -28178.055327
+	Reference timestamp: 3180716651.024862432 (2000/10/16 22:24:11)
+	Received timestamp: 1240345702.885687001 (2075/05/29 04:56:38)
+	Transmit timestamp: 1240410187.003906259 (2075/05/29 22:51:23)
+	Originator - Received timestamp: -534968342.000000000
+	Originator - Transmit timestamp: -534903857.881780742
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x979 (0x979)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => fr-sbg1.burble.com (37.187.174.185)
+Port Src:43084
+Port Dst:123
+Checksum:0x957a (0x795e)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.526770951 ()
+	Transmit timestamp: 3732883906.000140815 (2018/04/16 18:11:46)
+	Originator - Received timestamp: +0.526770951
+	Originator - Transmit timestamp: 2018/04/16 18:11:46
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0x6270 (0x6270)
+Packet Length:56
+Offset:0
+Time to live:55
+Protocol:17
+Flags:DF
+fr-sbg1.burble.com (37.187.174.185) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:43084
+Checksum:0xae26 (0xae26)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;4;10
+	Reference clock id: 226.188.98.33
+	Clock precision: -26
+	Root delay: 0.000030
+	Root dispersion: 21959.034057
+	Reference timestamp: 1335803514.526770951 (2078/06/07 01:00:10)
+	Received timestamp: 1361927596.885687002 (2079/04/05 09:41:32)
+	Transmit timestamp: 1362213713.046875059 (2079/04/08 17:10:09)
+	Originator - Received timestamp: +1924010986.000000000
+	Originator - Transmit timestamp: +1924297102.161188057
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x284d (0x284d)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => pob01.aplu.fr (151.80.124.104)
+Port Src:51411
+Port Dst:123
+Checksum:0xd4be (0x8b24)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.615399338 ()
+	Transmit timestamp: 406007350.000580395 (2048/12/19 11:17:26)
+	Originator - Received timestamp: +0.615399338
+	Originator - Transmit timestamp: 2048/12/19 11:17:26
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x2dcc (0x2dcc)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => a.ams.pobot.net (51.158.186.98)
+Port Src:52711
+Port Dst:123
+Checksum:0xaf06 (0x24f)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.945308319 ()
+	Transmit timestamp: 1742555475.000580395 (2091/04/27 19:39:31)
+	Originator - Received timestamp: +0.945308319
+	Originator - Transmit timestamp: 2091/04/27 19:39:31
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0xbe3b (0xbe3b)
+Packet Length:56
+Offset:0
+Time to live:54
+Protocol:17
+Flags:DF
+pob01.aplu.fr (151.80.124.104) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:51411
+Checksum:0x1f4c (0x1f4c)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;6;89
+	Reference clock id: 226.188.97.61
+	Clock precision: -24
+	Root delay: 0.010131
+	Root dispersion: 22885.048263
+	Reference timestamp: 760460538.615399338 (2060/03/13 22:30:34)
+	Received timestamp: 1433623490.885687002 (2081/07/13 05:13:06)
+	Transmit timestamp: 1433760727.000015258 (2081/07/14 19:20:23)
+	Originator - Received timestamp: +1027616140.000000000
+	Originator - Transmit timestamp: +1027753376.114328256
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0xcde (0xcde)
+Packet Length:56
+Offset:0
+Time to live:52
+Protocol:17
+Flags:DF
+a.ams.pobot.net (51.158.186.98) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:52711
+Checksum:0x6ff2 (0x6ff2)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;2;65
+	Reference clock id: 226.188.95.248
+	Clock precision: -24
+	Root delay: 0.000717
+	Root dispersion: 4605.005570
+	Reference timestamp: 3426998020.945308319 (2008/08/06 09:53:40)
+	Received timestamp: 1457852805.885687002 (2082/04/19 15:35:01)
+	Transmit timestamp: 1457857014.000015258 (2082/04/19 16:45:10)
+	Originator - Received timestamp: -284702670.000000000
+	Originator - Transmit timestamp: -284698461.885671743
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x6ed5 (0x6ed5)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => 62-210-213-21.rev.poneytelecom.eu (62.210.213.21)
+Port Src:41368
+Port Dst:123
+Checksum:0xd4ed (0x75dc)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.839011084 ()
+	Transmit timestamp: 274766479.000140815 (2044/10/22 12:29:35)
+	Originator - Received timestamp: +0.839011084
+	Originator - Transmit timestamp: 2044/10/22 12:29:35
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0xdcd6 (0xdcd6)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => fr-rbx1.burble.com (37.59.47.71)
+Port Src:60804
+Port Dst:123
+Checksum:0x1588 (0x41f9)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.768517649 ()
+	Transmit timestamp: 3041954460.000140815 (1996/05/24 21:21:00)
+	Originator - Received timestamp: +0.768517649
+	Originator - Transmit timestamp: 1996/05/24 21:21:00
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0x7fd9 (0x7fd9)
+Packet Length:56
+Offset:0
+Time to live:55
+Protocol:17
+Flags:DF
+62-210-213-21.rev.poneytelecom.eu (62.210.213.21) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:41368
+Checksum:0x5da7 (0x5da7)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;5;112
+	Reference clock id: 226.188.95.11
+	Clock precision: -24
+	Root delay: 0.028518
+	Root dispersion: 22514.050748
+	Reference timestamp: 1379836073.839011084 (2079/10/29 15:16:09)
+	Received timestamp: 1542566729.885687002 (2084/12/25 02:13:45)
+	Transmit timestamp: 1542904988.000005079 (2084/12/29 00:11:24)
+	Originator - Received timestamp: +1267800250.000000000
+	Originator - Transmit timestamp: +1268138508.114318077
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0x8260 (0x8260)
+Packet Length:56
+Offset:0
+Time to live:54
+Protocol:17
+Flags:DF
+fr-rbx1.burble.com (37.59.47.71) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:60804
+Checksum:0x5a78 (0x5a78)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;1;119
+	Reference clock id: 226.188.98.22
+	Clock precision: -25
+	Root delay: 0.000045
+	Root dispersion: 21959.034102
+	Reference timestamp: 2881044794.768517649 (1991/04/19 12:13:14)
+	Received timestamp: 1557076602.885687002 (2085/06/11 01:44:58)
+	Transmit timestamp: 1557210949.000015258 (2085/06/12 15:04:05)
+	Originator - Received timestamp: -1484877858.000000000
+	Originator - Transmit timestamp: -1484743511.885671743
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x538 (0x538)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => ntp1.omdc.pl (92.222.117.115)
+Port Src:49003
+Port Dst:123
+Checksum:0x9357 (0x5b63)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.684749732 ()
+	Transmit timestamp: 1958561777.000140815 (2098/03/01 20:24:33)
+	Originator - Received timestamp: +0.684749732
+	Originator - Transmit timestamp: 2098/03/01 20:24:33
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x95ae (0x95ae)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => ntp.tuxfamily.net (212.85.158.10)
+Port Src:50344
+Port Dst:123
+Checksum:0x3366 (0x5dcf)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.824797219 ()
+	Transmit timestamp: 865638034.000140815 (2063/07/14 07:28:50)
+	Originator - Received timestamp: +0.824797219
+	Originator - Transmit timestamp: 2063/07/14 07:28:50
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x60c (0x60c)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => 82-64-165-222.subs.proxad.net (82.64.165.222)
+Port Src:51345
+Port Dst:123
+Checksum:0xb924 (0x84ac)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.593103435 ()
+	Transmit timestamp: 1371622366.000140815 (2079/07/26 14:41:02)
+	Originator - Received timestamp: +0.593103435
+	Originator - Transmit timestamp: 2079/07/26 14:41:02
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0x4ebd (0x4ebd)
+Packet Length:56
+Offset:0
+Time to live:55
+Protocol:17
+Flags:DF
+ntp1.omdc.pl (92.222.117.115) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:49003
+Checksum:0xe07d (0xe07d)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;7;21
+	Reference clock id: 226.188.93.141
+	Clock precision: -24
+	Root delay: 0.022933
+	Root dispersion: -6882.059188
+	Reference timestamp: 3967762439.684749732 (2025/09/25 06:13:59)
+	Received timestamp: 1641828418.885687002 (2088/02/16 22:55:14)
+	Transmit timestamp: 1641979004.000015259 (2088/02/18 16:45:00)
+	Originator - Received timestamp: -316733359.000000000
+	Originator - Transmit timestamp: -316582773.885671743
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0xcb07 (0xcb07)
+Packet Length:56
+Offset:0
+Time to live:56
+Protocol:17
+Flags:DF
+82-64-165-222.subs.proxad.net (82.64.165.222) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:51345
+Checksum:0x9684 (0x9684)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: primary server (1)
+	Leap : no warning; poll: 0;0;0;1
+	Reference clock id: â¼b
+	Clock precision: -23
+	Root delay: 0.000030
+	Root dispersion: 18256.062074
+	Reference timestamp: 1477645337.593103435 (2082/12/04 16:30:33)
+	Received timestamp: 1675241311.885687002 (2089/03/09 16:16:47)
+	Transmit timestamp: 1675569159.023437559 (2089/03/13 11:20:55)
+	Originator - Received timestamp: +303618945.000000000
+	Originator - Transmit timestamp: +303946792.137750556
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0xd92c (0xd92c)
+Packet Length:56
+Offset:0
+Time to live:50
+Protocol:17
+Flags:DF
+ntp.tuxfamily.net (212.85.158.10) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:50344
+Checksum:0xfa41 (0xfa41)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;7;102
+	Reference clock id: 226.188.94.65
+	Clock precision: -21
+	Root delay: 0.038009
+	Root dispersion: -11711.007175
+	Reference timestamp: 3346499452.824797219 (2006/01/17 16:10:52)
+	Received timestamp: 1672363294.885687002 (2089/02/04 08:49:50)
+	Transmit timestamp: 1672537531.003906799 (2089/02/06 09:13:47)
+	Originator - Received timestamp: +806725260.000000000
+	Originator - Transmit timestamp: +806899496.118219797
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0xdfb7 (0xdfb7)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => ns0.serverhouse.com (212.83.187.62)
+Port Src:47814
+Port Dst:123
+Checksum:0x5098 (0xca64)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.758846575 ()
+	Transmit timestamp: 542334728.000140815 (2053/04/15 09:00:24)
+	Originator - Received timestamp: +0.758846575
+	Originator - Transmit timestamp: 2053/04/15 09:00:24
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x5711 (0x5711)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => master.servme.fr (178.33.111.48)
+Port Src:33241
+Port Dst:123
+Checksum:0xe257 (0xb851)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.559141443 ()
+	Transmit timestamp: 1531441302.000140815 (2084/08/18 08:49:58)
+	Originator - Received timestamp: +0.559141443
+	Originator - Transmit timestamp: 2084/08/18 08:49:58
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0xb94e (0xb94e)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => ns.rail.eu.org (212.83.179.156)
+Port Src:39194
+Port Dst:123
+Checksum:0x48f6 (0xacbf)
+UDP Length:56
+Version: 4; Mode: client (3);Stratum: unspecified or invalid (0)
+	Leap : no warning; poll: 0;0;0;0
+	Reference clock id: unspecified
+	Clock precision: 0
+	Root delay: 0.000000
+	Root dispersion: 0.000000
+	Reference timestamp: 0.000000000 ()
+	Received timestamp: 0.051068901 ()
+	Transmit timestamp: 2250825794.000140815 (1971/04/30 06:23:14)
+	Originator - Received timestamp: +0.051068901
+	Originator - Transmit timestamp: 1971/04/30 06:23:14
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0x42e3 (0x42e3)
+Packet Length:56
+Offset:0
+Time to live:55
+Protocol:17
+Flags:DF
+ns0.serverhouse.com (212.83.187.62) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:47814
+Checksum:0x523 (0x523)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;5;232
+	Reference clock id: 226.188.94.150
+	Clock precision: -18
+	Root delay: 0.029953
+	Root dispersion: -32107.001190
+	Reference timestamp: 4260972775.758846575 (2035/01/09 20:32:55)
+	Received timestamp: 1788292453.885687003 (2092/10/08 04:22:29)
+	Transmit timestamp: 1788611194.046875059 (2092/10/11 20:54:50)
+	Originator - Received timestamp: +1245957725.000000000
+	Originator - Transmit timestamp: +1246276465.161188056
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0xeeff (0xeeff)
+Packet Length:56
+Offset:0
+Time to live:54
+Protocol:17
+Flags:DF
+master.servme.fr (178.33.111.48) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:33241
+Checksum:0xdaa4 (0xdaa4)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;2;213
+	Reference clock id: 226.188.97.87
+	Clock precision: -23
+	Root delay: 0.024673
+	Root dispersion: -10757.028088
+	Reference timestamp: 2529143413.559141443 (1980/02/23 12:50:13)
+	Received timestamp: 1795502320.885687003 (2092/12/30 14:06:56)
+	Transmit timestamp: 1795580563.003906799 (2092/12/31 11:50:59)
+	Originator - Received timestamp: +264061018.000000000
+	Originator - Transmit timestamp: +264139260.118219796
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0xa1ee (0xa1ee)
+Packet Length:56
+Offset:0
+Time to live:56
+Protocol:17
+Flags:
+ns.rail.eu.org (212.83.179.156) => ZoeurK.lan (192.168.0.20)
+Port Src:123
+Port Dst:39194
+Checksum:0x3941 (0x3941)
+UDP Length:56
+Version: 4; Mode: server (4);Stratum: secondary server (2)
+	Leap : no warning; poll: 0;0;2;51
+	Reference clock id: 226.188.93.79
+	Clock precision: -24
+	Root delay: 0.035705
+	Root dispersion: 9152.035491
+	Reference timestamp: 654601323.051068901 (2056/11/04 17:10:19)
+	Received timestamp: 1804612872.885687003 (2093/04/15 01:49:28)
+	Transmit timestamp: 1804660354.000015259 (2093/04/15 15:00:50)
+	Originator - Received timestamp: -446212922.000000000
+	Originator - Transmit timestamp: -446165440.885671744
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0xc7d2 (0xc7d2)
+Packet Length:56
+Offset:0
+Time to live:64
+Protocol:17
+Flags:DF
+ZoeurK.lan (192.168.0.20) => villisika.miuku.net (92.243.6.5)
+Port Src:44015
+Po

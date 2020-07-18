@@ -13,7 +13,8 @@ enum ARGS_OPTIONS{
 	NOOPTIONS	= 32,
 	NODATA		= 64,
 	NODATAHEX	= 128,
-	VERBEUX		= 256
+	VERBEUX		= 256,
+	PROTO		= 512,
 };
 struct arguments{
 	char *interface;
@@ -84,10 +85,7 @@ struct output{
 	char *options;
 	char *data;
 	union {
-		union {
-			struct icmp4output icmp4;
-			struct icmp4output icmp6;
-		};
+		struct icmp4output icmp4;
 		struct udp4output udp4;
 		struct tcp4output tcp4;
 	};
