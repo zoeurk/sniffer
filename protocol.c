@@ -19,7 +19,7 @@ void *analyse(void *buf){
 			myoutput.ihl = ip4->ihl *4;
 			temp = ip4->checksum;
 			myoutput.ipchecksum = ntohs(ip4->checksum);
-			myoutput.length = htons(ip4->length) - sizeof(struct ipv4header);
+			myoutput.length = htons(ip4->length);
 			ip4->checksum = 0;
 			myoutput.re_ipchecksum = htons(checksum_calculation(ip4, myoutput.ihl));
 			ip4->checksum = myoutput.ipchecksum;
@@ -57,7 +57,7 @@ void *analyse(void *buf){
 			break;
 		case IPV6:
 			myoutput.protocol = ((struct ipv6header *)ip6)->next_header;
-			myoutput.length = myoutput.sizeread - LINK_LAYER - sizeof(struct ipv6header);
+			myoutput.length = myoutput.sizeread - LINK_LAYER;
 			myoutput.ihl = sizeof(struct ipv6header);
 			memcpy(src6.s6_addr, ip6->src_ip, sizeof(src6.s6_addr));
 			memcpy(dst6.s6_addr, ip6->dst_ip, sizeof(dst6.s6_addr));

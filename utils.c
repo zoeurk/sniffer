@@ -26,5 +26,4 @@ int ___getnameinfo___(void *sa,unsigned long int sa_sz,char **addr,unsigned long
 		return ret;
 	else **addr = '\0';
 	return -1;
-	
 }
