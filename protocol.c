@@ -179,7 +179,6 @@ int show_it(struct optflags *poptflags,struct output *myoutput){
 				}
 			}
 			if(prt_ == prt){
-				printf("%u\n",poptflags->port);
 				break;
 			}
 			poptflags = poptflags->next;
