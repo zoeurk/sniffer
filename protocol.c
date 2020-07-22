@@ -126,9 +126,9 @@ int show_it(struct optflags *poptflags,struct output *myoutput){
 		i,j,k;
 	poptflags = args.opt;
 	if(poptflags){
-		prt_ = 0;
-		prt = 0;
 		while(poptflags){
+			prt_ = 0;
+			prt = 0;
 			if(poptflags->version != 0)
 				prt_++;
 			if(poptflags->protoflag != 0)
@@ -179,6 +179,7 @@ int show_it(struct optflags *poptflags,struct output *myoutput){
 				}
 			}
 			if(prt_ == prt){
+				printf("%u\n",poptflags->port);
 				break;
 			}
 			poptflags = poptflags->next;
