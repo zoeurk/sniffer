@@ -44,15 +44,27 @@ void print_data(char *data,unsigned long int len){
 		printf("print_data():\n\tNo data.\n");
 }
 void print_data_hex(char *data,unsigned long int len){
-	unsigned long int i;
+	unsigned long int i,k;
 	char *pdata;
 	if(len > 0){
 		printf("Data (%lu octet) (in hexadecimal):\n", len);
-		for(i = 0, pdata = data; i < len; i++, pdata++)
-			if(*pdata > 31 && *pdata != 127)
+		for(i = 0, k = 1, pdata = data; i < len; i++, pdata++,k++){
+			/*if(*pdata > 31 && *pdata != 127)
 				printf("\tOctet %lu:\'%c\'\n", i+1, *pdata&0xFF);
 			else
-				printf("\tOctet %lu:0x%02x\n", i+1, *pdata&0xFF);
+				printf("\tOctet %lu:0x%02x\n", i+1, *pdata&0xFF);*/
+			if((k-1)%16==0)
+				printf("octets:%lu\t",i);
+			if(*pdata > 31 && *pdata != 127)
+				printf("c::%c",*pdata&0xFF);
+			else
+				printf("0x%02x", *pdata&0xFF);
+			if(k == len || k%8 == 0){
+				if(k%16 == 0 || k == len)
+					printf("\n");
+				else	printf("  ");
+			}else	printf(" ");
+		}
 		printf("End of data.\n");
 	}else
 		printf("print_data_hex():\n\tNo data.\n");
