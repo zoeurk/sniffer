@@ -148,8 +148,8 @@ void dns_type(int type, unsigned char **pdata,unsigned char *data, int *len){
 			break;
 		default:*pdata = (*pdata + sizeof(struct answer));
  			printf("\tTYPE (unknow): %u\n",type);
-			ReadName(*pdata,data,&stop, buf);
-			*pdata = (*pdata + stop);
+			//ReadName(*pdata,data,&stop, buf);
+			*pdata = (*pdata + *len);
 			break;
 	}
 }
