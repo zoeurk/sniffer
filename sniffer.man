@@ -39,7 +39,7 @@ Quitter apres \fIcount\fR packet recu.
 .BR \-C , " \-\-count_selected " \fIcount\fR
 Quitter apres \fIcount\fR packet recu et analyse.
 .TP
-.BR \-r , "\-\-count_received " \f\Icount\fR
+.BR \-r , "\-\-count_received " \fIcount\fR
 Quitter apres \fIcount\fR packet recu par la socket.
 .TP
 .BR \-R , " \-\-noresolve"
@@ -54,13 +54,14 @@ Cette option permet de selectionner les packets qui seront affichee.
 ex: ./sniffer -f "TCPFLAGS:S|SA|A" -f "protocol:udp;port=123"
 Attention certains etats son exclusif en effet TCPFLAGS selection le protocle TCP donc on ne peut pas faire 
 ex: ./sniffer -f "protocol:udp;tcpflags:S|A" (ne fonctionne pas)
+un autre exemple qui fonctionne: ./sniffer -f "protocol:tcp;host:8.8.8.8,8.8.4.4" -R
 voici la list de drapeau:
 VERSION,
 PROTOCOL,
 HOST (ip ou nom d'hote)
 PORT
 TCPFLAGS.
-Lesprotcol reconu sont:
+Les protcol reconu sont:
 udp
 tcp
 icmp

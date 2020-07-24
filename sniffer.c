@@ -308,6 +308,7 @@ int main(int argc, char **argv){
 	struct tpacket_stats		stats = {};
 	socklen_t 			len = sizeof(stats),fromlen = sizeof(from);
 	int				loopback;
+	char				*ptr;
 	if(argp_parse(&argp,argc, argv, 0, 0, &args) < 0)
 		exit(EXIT_FAILURE);
 	if((s = socket(AF_PACKET, SOCK_RAW,htons(ETH_P_ALL))) < 0){
@@ -363,12 +364,30 @@ int main(int argc, char **argv){
 			print_it(&myoutput);
 			if((args.options&VERBEUX) == 0)
 				goto end;
-			if(myoutput.protocol == UDP && myoutput.udp4.src_port == DNS_PORT){
+			/*if(myoutput.protocol == UDP && myoutput.udp4.src_port == DNS_PORT){
 				services_udp_src(myoutput.data);
 				goto end;
 			}
 			if(myoutput.protocol == UDP && myoutput.udp4.dst_port == DNS_PORT){
 				services_udp_dst(myoutput.data);
+				goto end;
+			}*/
+			if((myoutput.protocol == UDP && myoutput.udp4.src_port == DNS_PORT) || (myoutput.datalen > 0 && myoutput.tcp4.src_port == DNS_PORT)){
+				if(myoutput.protocol == UDP && myoutput.udp4.src_port == DNS_PORT)
+					services_udp_src(myoutput.data);
+				else{
+					ptr = (char *)(myoutput.data + 2);
+					services_udp_src(ptr);
+				}
+				goto end;
+			}
+			if((myoutput.protocol == UDP && myoutput.udp4.dst_port == DNS_PORT) || (myoutput.datalen > 0 && myoutput.tcp4.dst_port == DNS_PORT)){
+				if(myoutput.protocol == UDP && myoutput.udp4.dst_port == DNS_PORT)
+					services_udp_dst(myoutput.data);
+				else{
+					ptr = (char *)(myoutput.data + 2);
+					services_udp_dst(ptr);
+				}
 				goto end;
 			}
 			if(myoutput.protocol == UDP && (myoutput.udp4.dst_port == NTP_PORT || myoutput.udp4.src_port == NTP_PORT)){

@@ -4,6 +4,7 @@
 #include "protocol-definition.h"
 #include "protocol.h"
 #include "others.h"
+
 void *analyse(void *buf){
 	static unsigned long int	sz = 0;
 	struct ipv4header 		*ip4 = (struct ipv4header *)buf;
@@ -118,6 +119,42 @@ void print_it(void *output){
 	myoutput.print_data = NULL;
 	myoutput.print_data_hex = NULL;
 }
+int hostcmp(char *host1, char *host2){
+	struct addrinfo *result, *rr;
+	int s, s_, ret = -1;
+	char buf[NI_MAXHOST];
+	s = getaddrinfo(host1,NULL, NULL, &result);
+	if(s != 0){
+		/*fprintf(stderr,"getaddrinfo(): %s\n",gai_strerror(s));
+		exit(EXIT_FAILURE);*/
+		return -1;
+	}
+	for(rr = result; rr != NULL; rr = rr->ai_next){
+		/*af = rr->ai_family;
+		switch(af){
+			case AF_INET:
+				ptr = &((struct sockaddr_in *)rr->ai_addr)->sin_addr;
+				break;
+			case AF_INET6:
+				ptr = &((struct sockaddr_in6 *)rr->ai_addr)->sin6_addr;
+				break;
+		}*/
+		memset(buf,0,NI_MAXHOST);
+		//if(inet_ntop(af, ptr, buffer, 45)){
+		s_ = getnameinfo(rr->ai_addr,rr->ai_addrlen,buf,NI_MAXHOST, NULL, 0, 0);
+		if(s_ == 0)
+			if(strcmp(buf, host2) == 0){
+				ret = 0;
+				break;
+			}
+		/*}else{
+				printf("getnameinfo(): %s; %i\n", gai_strerror(s_), s_);
+			}*/
+		//}
+	}
+	freeaddrinfo(result);
+	return ret;
+}
 int show_it(struct optflags *poptflags,struct output *myoutput){
 	struct tcpflags *pflags;
 	struct host *phost;
@@ -151,8 +188,14 @@ int show_it(struct optflags *poptflags,struct output *myoutput){
 			if(poptflags->host){
 				phost = poptflags->host;
 				while(phost){
-					if(strcmp(phost->host,myoutput->src_hostname) == 0 || strcmp(phost->host,myoutput->dst_hostname) == 0
+					/*if(strcmp(phost->host,myoutput->src_hostname) == 0 || strcmp(phost->host,myoutput->dst_hostname) == 0
 						|| strcmp(phost->host,myoutput->src_addr) == 0 || strcmp(phost->host,myoutput->dst_addr) == 0
+					)*/
+					if((	!(args.options&NORESOLV) && (
+								hostcmp(phost->host, myoutput->src_hostname) == 0 || 
+								hostcmp(phost->host, myoutput->dst_hostname) == 0 )
+						) || 
+							strcmp(phost->host,myoutput->src_addr) == 0 || strcmp(phost->host,myoutput->dst_addr) == 0
 					)
 					{
 					prt++;

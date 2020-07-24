@@ -59,5 +59,6 @@ enum TCPFLAGS{
 };
 void *analyse(void *buf);
 void print_it(void *output);
+int hostcmp(char *host1, char *host2);
 int show_it(struct optflags *poptflags,struct output *myoutput);
 #endif

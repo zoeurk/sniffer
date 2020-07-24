@@ -67,8 +67,9 @@ void dns_type(int type, unsigned char **pdata,unsigned char *data, int *len){
 	struct in_addr s;
 	struct in6_addr s6;
 	unsigned char buf[NI_MAXHOST];
-	char address[45];
-	int stop;
+	char address[45],
+		*issuetag[3] = {"issue", "issuewild", "iodef"};
+	int stop, i;
 	switch(type){
 		case ADDRESS:
 			*pdata = (*pdata + sizeof(struct answer));
@@ -137,6 +138,14 @@ void dns_type(int type, unsigned char **pdata,unsigned char *data, int *len){
 		case OPT:
 			dns_type_41(*pdata);
 			break;
+		case CAA:*pdata = (*pdata + sizeof(struct answer));
+			memset(address,0,45);
+			for(i = 0; i < 3 && strstr(&((char *)*pdata)[1],issuetag[i]) == NULL; i++);;
+			i = strlen(issuetag[i]);
+			memcpy(address, &((char *)*pdata)[7], *len-i-2);
+			printf("\tCAA = %u issue \"%s\"\n",**pdata, address);
+			*pdata = (*pdata + *len);
+			break;
 		default:*pdata = (*pdata + sizeof(struct answer));
  			printf("\tTYPE (unknow): %u\n",type);
 			ReadName(*pdata,data,&stop, buf);
@@ -197,6 +206,14 @@ void services_udp_dst(char *data){
 	printf("ID:%u\nqdcount:%u\nAncount:%u\nNscount:%u\nArcount:%u\n",
 		ntohs(d->id),ntohs(d->Qdcount),ntohs(d->Ancount),ntohs(d->Nscount),ntohs(d->Arcount)
 	);
+	/*for(i = 0; i < 29;i++){
+		d = (struct dns *)((char *)data +i);
+		printf("==>%li;ID:%u\nqdcount:%u\nAncount:%u\nNscount:%u\nArcount:%u\n",
+			i,ntohs(d->id),ntohs(d->Qdcount),ntohs(d->Ancount),ntohs(d->Nscount),ntohs(d->Arcount)
+		);
+	}
+	printf("EXIT\n");
+	exit(EXIT_FAILURE);*/
 	for(i = 0; i < 4; i++){
 		if(count[i]>0)
 			printf("%s\n",text[i]);
@@ -231,6 +248,9 @@ void services_udp_dst(char *data){
 					break;
 				case OPT:
 					dns_type_41(q);
+					break;
+				case ALL:
+					printf("\tRequest for all registery\n");
 					break;
 				default:printf("\tTYPE (unknow):%u\n", ntohs(q->qtype));
 					break;

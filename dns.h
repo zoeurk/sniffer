@@ -8,6 +8,9 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 
+//#include <stdlib.h>
+//#include <unistd.h>
+
 #define ADDRESS 1
 #define NS 2
 #define CNAME 5
@@ -17,7 +20,8 @@
 #define TXT 16
 #define ADDRESS6 28
 #define OPT 41
-
+#define ALL 255
+#define CAA 257
 struct dns{
 	unsigned short int  id;
 	unsigned char Rd:1,Tc:1,Aa:1,opcode:4,qr:1;
