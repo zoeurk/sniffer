@@ -54,7 +54,7 @@ Cette option permet de selectionner les packets qui seront affichee.
 ex: ./sniffer -f "TCPFLAGS:S|SA|A" -f "protocol:udp;port=123"
 Attention certains etats son exclusif en effet TCPFLAGS selection le protocle TCP donc on ne peut pas faire 
 ex: ./sniffer -f "protocol:udp;tcpflags:S|A" (ne fonctionne pas)
-un autre exemple qui fonctionne: ./sniffer -f "protocol:tcp;host:8.8.8.8,8.8.4.4" -R
+un autre exemple qui fonctionne: ./sniffer -f "protocol:tcp;host:8.8.8.8,8.8.4.4" -Rv
 voici la list de drapeau:
 VERSION,
 PROTOCOL,
