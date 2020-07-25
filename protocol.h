@@ -13,6 +13,8 @@
 #define IPV4 4
 #define IPV6 6
 
+#define IP 0
+#define HOPBYHOP 0
 #define ICMP 1
 #define TCP 6
 #define UDP 17

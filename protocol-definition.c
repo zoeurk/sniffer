@@ -36,8 +36,7 @@ void *c_alloc(void *check, unsigned long int size){
 	}
 	return check;
 }
-void  protocol_icmpv6(void *ip,unsigned long int *sz){
-	struct icmp4header *ip4 = (struct icmp4header *)ip;
+void  protocol_icmpv6(void *ip6, void *ip,unsigned long int *sz){
 	struct icmp4header *icmp4, *c_icmp6;
 	struct pseudo_icmp6header *pseudo_icmp6;
 	unsigned long int size;
@@ -50,14 +49,17 @@ void  protocol_icmpv6(void *ip,unsigned long int *sz){
 	}
 	pseudo_icmp6 = check;
 	c_icmp6 = (struct icmp4header *)((char *)check + sizeof(struct pseudo_icmp6header));
-	memcpy(pseudo_icmp6->ip_src, ((struct ipv6header *)ip4)->src_ip, 16);
-	memcpy(pseudo_icmp6->ip_dst, ((struct ipv6header *)ip4)->dst_ip, 16);
+	memcpy(pseudo_icmp6->ip_src, ((struct ipv6header *)ip6)->src_ip, 16);
+	memcpy(pseudo_icmp6->ip_dst, ((struct ipv6header *)ip6)->dst_ip, 16);
+	//inet_ntop(AF_INET6,((struct ipv6header *)ip6)->src_ip,buffer,45);
+	//printf("===>%s\n",buffer);
+	//printf("==>%s;%s\n",((struct ipv6header *)ip6)->src_ip,((struct ipv6header *)ip6)->dst_ip);
 	pseudo_icmp6->zero[0] = pseudo_icmp6->zero[1] = pseudo_icmp6->zero[2] = 0;
 	pseudo_icmp6->next_header = myoutput.protocol;
 	ptr = (char *)&pseudo_icmp6->length;
 	((unsigned short int *)ptr)[0] = 0;
-	ptr[2] = myoutput.length/256;
-	ptr[3] = myoutput.length%256;
+	ptr[2] = (myoutput.length-sizeof(struct ipv6header) - LINK_LAYER)/256;
+	ptr[3] = (myoutput.length-sizeof(struct ipv6header) - LINK_LAYER)%256;
 	memcpy(c_icmp6, icmp4, myoutput.sizeread - myoutput.ihl - LINK_LAYER);
 	c_icmp6->checksum = 0;
 	myoutput.icmp4.type = icmp4->type;
@@ -78,7 +80,7 @@ void protocol_icmp4(void *ip){
 	myoutput.icmp4.checksum = ntohs(icmp4->checksum);
 	icmp4->checksum = 0; 
 	myoutput.icmp4.re_checksum =
-		htons(checksum_calculation((unsigned short int *)icmp4, myoutput.length));
+		htons(checksum_calculation((unsigned short int *)icmp4, myoutput.length - sizeof(struct ipv4header) - LINK_LAYER));
 	myoutput.icmp4.type = icmp4->type;
 	myoutput.icmp4.code = icmp4->code;
 	myoutput.icmp4.id = ntohs(icmp4->id);
@@ -249,5 +251,7 @@ void protocol_udp6(struct ipv6header *ip6, void *ip, unsigned long int *sz){
 	myoutput.print_pkt = print_udp4;
 	myoutput.print_data = print_data;
 	myoutput.print_data_hex = print_data_hex;
+}
+void protocol_hop_by_hop(void *ip6, void *ip, unsigned long int *sz){
 }
 

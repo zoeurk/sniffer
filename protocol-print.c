@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
+#include "protocol.h"
 #include "protocol-print.h"
+#include "protocol-definition.h"
 #include "others.h"
 void print_ipv4hdr(struct output *out){
 	printf("Version:%u\nInternet header length:%u\nIP checksum:0x%x (0x%x)\nPacket Length:%u\nOffset:%u\nTime to live:%u\nProtocol:%u\nFlags:%s\n",
@@ -8,7 +10,7 @@ void print_ipv4hdr(struct output *out){
 }
 void print_ipv6hdr(struct output *out){
 	
-	printf("Version:%u\nInternet header length;%u\nPacket length:%u\n",
+	printf("Version:%u\nInternet header length:%u\nPacket length:%u\n",
 		out->version, out->ihl, out->length);
 }
 
@@ -120,5 +122,12 @@ void print_udp4(struct output *out){
 		out->udp4.src_port, out->udp4.dst_port,
 		out->udp4.checksum, out->udp4.re_checksum,
 		out->udp4.length);
+}
+void print_hop_by_hop(char *data, unsigned long int len){
+	struct hop_by_hop *h = (struct hop_by_hop *)data;
+	//struct icmp4header *icmp;
+	printf("\tNext header: %u; Hdr ext len: %u;\n\tOptions: %u\n",h->next_header, h->hdr_ext_len, ntohs(h->options));
+	//icmp = (struct icmp4header *)(data +8);
+	//printf("%u\n",icmp->type);
 }
 

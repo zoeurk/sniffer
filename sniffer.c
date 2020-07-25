@@ -61,7 +61,7 @@ static error_t parse_opt(int key, char *arg, struct argp_state *state){
 		*save2, *ptr2, *pstr2, *pchar,
 		*allopt[] = {"VERSION:","HOST:", "PORT:", "PROTOCOL:", "TCPFLAGS:", NULL},
 		*flags, *protocol, 
-		*no_protocols[] = {"TCP","UDP","ICMP","ICMPv6", NULL};
+		*no_protocols[] = {"TCP","UDP","ICMP","ICMPv6", "IP", "HOP-BY-HOP", NULL};
 	int i, ok;
 	switch(key){
 		case 'i':	_args_->interface = arg;
@@ -177,6 +177,24 @@ static error_t parse_opt(int key, char *arg, struct argp_state *state){
 												}
 												poptflags->protoflag = 1;
 												poptflags->protocol = ICMPv6;
+												break;
+											case 4:	if(poptflags->protoflag)
+												{
+													ok  = -3;
+													break;
+												}
+												poptflags->protoflag = 1;
+												poptflags->protocol = IP;
+												poptflags->version = 4;
+												break;
+											case 5:	if(poptflags->protoflag)
+												{
+													ok  = -3;
+													break;
+												}
+												poptflags->protoflag = 1;
+												poptflags->protocol = HOPBYHOP;
+												poptflags->version = 6;
 												break;
 										}
 										if(ok != 0)break;
