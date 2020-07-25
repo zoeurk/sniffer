@@ -111,13 +111,6 @@ void print_it(void *output){
 		o->print_data(o->data, o->datalen);
 	if(o->print_data_hex && (args.options&NODATAHEX) == 0)
 		o->print_data_hex(o->data, o->datalen);
-	myoutput.print_addr = NULL;
-	myoutput.print_linklayer = NULL;
-	myoutput.print_hdr = NULL;
-	myoutput.print_pkt = NULL;
-	myoutput.print_options = NULL;
-	myoutput.print_data = NULL;
-	myoutput.print_data_hex = NULL;
 }
 int hostcmp(char *host1, char *host2){
 	struct addrinfo *result, *rr;

@@ -405,6 +405,13 @@ int main(int argc, char **argv){
 			(args.count_selected > 0 && selected >= args.count_selected) ||
 			(args.count_captured > 0 && captured >= args.count_captured)
 		)break;
+		myoutput.print_addr = NULL;
+		myoutput.print_linklayer = NULL;
+		myoutput.print_hdr = NULL;
+		myoutput.print_pkt = NULL;
+		myoutput.print_options = NULL;
+		myoutput.print_data = NULL;
+		myoutput.print_data_hex = NULL;
 	}while( 1 );
 	finish(-1);
 	return 0;
