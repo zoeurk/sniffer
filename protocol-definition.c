@@ -250,7 +250,7 @@ void protocol_hop_by_hop(void *ip6, void *ip, unsigned long int *sz){
 	int i = 8;
 	len = ((struct hop_by_hop *)ip6)->hdr_ext_len;
 	icmp4 = (struct icmp4header *)((char *)ip + 8 + len);
-	size = myoutput.sizeread + sizeof(struct pseudo_icmp6header) - myoutput.ihl - LINK_LAYER -i;
+	size = myoutput.sizeread + sizeof(struct pseudo_icmp6header) - myoutput.ihl - LINK_LAYER - i -len;
 	if(*sz < (unsigned long int)size || *sz == 0){
 		check = c_alloc(check, size);
 		*sz = size;
@@ -262,7 +262,7 @@ void protocol_hop_by_hop(void *ip6, void *ip, unsigned long int *sz){
 	pseudo_icmp6->zero[0] = pseudo_icmp6->zero[1] = pseudo_icmp6->zero[2] = 0;
 	pseudo_icmp6->next_header =((struct hop_by_hop *)ip)->next_header;
 	pseudo_icmp6->length = htonl(myoutput.length-(8+len));
-	memcpy(c_icmp6, ((char *)ip+(8+len)), myoutput.sizeread - myoutput.ihl - LINK_LAYER -i);
+	memcpy(c_icmp6, ((char *)ip+(8+len)), myoutput.sizeread - myoutput.ihl - LINK_LAYER - i - len);
 	c_icmp6->checksum = 0;
 	myoutput.icmp4.type = icmp4->type;
 	myoutput.icmp4.code = icmp4->code;
@@ -270,7 +270,7 @@ void protocol_hop_by_hop(void *ip6, void *ip, unsigned long int *sz){
 	myoutput.icmp4.seq = ntohs(icmp4->seq);
 	myoutput.icmp4.checksum = icmp4->checksum;
 	myoutput.icmp4.re_checksum = checksum_calculation(check,size);
-	myoutput.datalen =  myoutput.sizeread - 8 - myoutput.ihl - LINK_LAYER;
+	myoutput.datalen =  myoutput.sizeread - 8 - myoutput.ihl - LINK_LAYER - len;
 	myoutput.data = ip;
 	myoutput.print_hop_by_hop = print_hop_by_hop;
 	myoutput.print_data = print_data;
