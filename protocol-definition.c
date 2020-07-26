@@ -273,4 +273,6 @@ void protocol_hop_by_hop(void *ip6, void *ip, unsigned long int *sz){
 	myoutput.datalen =  myoutput.sizeread - 8 - myoutput.ihl - LINK_LAYER;
 	myoutput.data = ip;
 	myoutput.print_hop_by_hop = print_hop_by_hop;
+	myoutput.print_data = print_data;
+	myoutput.print_data_hex = print_data_hex;
 }

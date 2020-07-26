@@ -123,7 +123,7 @@ void print_udp4(struct output *out){
 }
 void print_hop_by_hop(char *data){
 	struct hop_by_hop *h = (struct hop_by_hop *)data;
-	printf("hop to hop:\n\tNext header: %u; Hdr ext len: %u;\n\tOptions: %u\n",h->next_header, h->hdr_ext_len, ntohs(h->options));
+	printf("hop by hop:\n\tNext header: %u; Hdr ext len: %u;\n\tOptions: %u\n",h->next_header, h->hdr_ext_len, ntohs(h->options));
 	print_icmp4(&myoutput);
 }
 
