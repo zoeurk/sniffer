@@ -10,7 +10,7 @@ const char 			*argp_program_bug_address = "zoeurk@gmail.com";
 struct output		myoutput = {0, {'\0'}, 0, 0, 0, 0 ,0, 0, 0, 0, 0,
 						"\0","\0","\0", "\0", "\0", "\0", "\0",
 						0, 0, NULL, NULL, {{0,0,0,0,0,0}},
-						NULL, NULL, NULL, NULL, NULL, NULL, NULL
+						NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL
 				};
 int 			s;
 unsigned long int 	captured = 0, statsrecv = 0, statsdrops = 0, selected = 0;

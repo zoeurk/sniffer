@@ -26,8 +26,8 @@ unsigned char *ReadName(unsigned char* reader,unsigned char* buffer,int* count, 
             jumped = 1; //we have jumped to another location so counting wont go up!
         }
         else
-        { 	
-		name[p++]=*reader;
+        { 	//if(p<buflen)
+			name[p++]=*reader;
         }
 
         reader = reader+1;
@@ -66,7 +66,7 @@ void dns_type_41(void *pdata){
 void dns_type(int type, unsigned char **pdata,unsigned char *data, int *len){
 	struct in_addr s;
 	struct in6_addr s6;
-	unsigned char buf[NI_MAXHOST];
+	unsigned char buf[655535];
 	char address[45],
 		*issuetag[3] = {"issue", "issuewild", "iodef"};
 	int stop, i;
@@ -155,7 +155,7 @@ void dns_type(int type, unsigned char **pdata,unsigned char *data, int *len){
 }
 void services_udp_src(char *data){
 	unsigned long int i, j;
-	unsigned char buf[NI_MAXHOST];
+	unsigned char buf[65535];
 	struct dns *d = (struct dns *)data;
 	struct answer *a;
 	int stop = 0,k = 0,l;
@@ -198,7 +198,7 @@ void services_udp_src(char *data){
 void services_udp_dst(char *data){
 	struct dns *d = (struct dns *)data;
 	struct question * q = (struct question *)(data+sizeof(struct dns));
-	unsigned char buf[NI_MAXHOST];
+	unsigned char buf[65535];
 	char *text[4] = {"Question:","Answers records:","Authoritive records:","Additional records:"};
 	long int i, j;
 	int stop = 0,
@@ -206,14 +206,6 @@ void services_udp_dst(char *data){
 	printf("ID:%u\nqdcount:%u\nAncount:%u\nNscount:%u\nArcount:%u\n",
 		ntohs(d->id),ntohs(d->Qdcount),ntohs(d->Ancount),ntohs(d->Nscount),ntohs(d->Arcount)
 	);
-	/*for(i = 0; i < 29;i++){
-		d = (struct dns *)((char *)data +i);
-		printf("==>%li;ID:%u\nqdcount:%u\nAncount:%u\nNscount:%u\nArcount:%u\n",
-			i,ntohs(d->id),ntohs(d->Qdcount),ntohs(d->Ancount),ntohs(d->Nscount),ntohs(d->Arcount)
-		);
-	}
-	printf("EXIT\n");
-	exit(EXIT_FAILURE);*/
 	for(i = 0; i < 4; i++){
 		if(count[i]>0)
 			printf("%s\n",text[i]);

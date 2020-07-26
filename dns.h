@@ -8,9 +8,6 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 
-//#include <stdlib.h>
-//#include <unistd.h>
-
 #define ADDRESS 1
 #define NS 2
 #define CNAME 5

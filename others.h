@@ -92,6 +92,7 @@ struct output{
 	void (*print_addr)(struct output *);
 	void (*print_linklayer)(struct output *);
 	void (*print_pkt)(struct output *);
+	void (*print_hop_by_hop)(char *);
 	void (*print_options)(char *,unsigned long int);
 	void (*print_data)(char *, unsigned long int);
 	void (*print_data_hex)(char *, unsigned long int);

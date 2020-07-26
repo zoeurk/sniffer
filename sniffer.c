@@ -430,6 +430,7 @@ int main(int argc, char **argv){
 		myoutput.print_options = NULL;
 		myoutput.print_data = NULL;
 		myoutput.print_data_hex = NULL;
+		myoutput.print_hop_by_hop = NULL;
 	}while( 1 );
 	finish(-1);
 	return 0;
