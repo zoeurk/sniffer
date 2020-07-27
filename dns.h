@@ -54,7 +54,7 @@ struct soa{
 };
 unsigned char *ReadName(unsigned char* reader,unsigned char* buffer,int* count, unsigned char *name);
 void dns_type_41(void *pdata);
-void dns_type(int type, unsigned char **pdata,unsigned char *data, int *len);
+void dns_type(int type, unsigned char **pdata,unsigned char *data, int *len, unsigned char *host);
 void services_udp_src(char *data);
 void services_udp_dst(char *data);
 #endif

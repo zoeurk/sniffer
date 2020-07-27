@@ -63,11 +63,11 @@ void dns_type_41(void *pdata){
 	printf("\tOPT:\n\t\ttype: %u\n\t\tLength: %u\n\t\tDO: %u\n\t\tTTL: %u\n",
 		ntohs(opt->type), ntohs(opt->class), (ntohs(opt->DO)&0x8000) ? 1 : 0, ntohs(opt->ttl));
 }
-void dns_type(int type, unsigned char **pdata,unsigned char *data, int *len){
+void dns_type(int type, unsigned char **pdata,unsigned char *data, int *len, unsigned char *host){
 	struct in_addr s;
 	struct in6_addr s6;
-	unsigned char buf[655535];
-	char address[45],
+	unsigned char buf[655535], *h;
+	char address[NI_MAXHOST],
 		*issuetag[3] = {"issue", "issuewild", "iodef"};
 	int stop, i;
 	switch(type){
@@ -81,13 +81,13 @@ void dns_type(int type, unsigned char **pdata,unsigned char *data, int *len){
 		case NS:
 			*pdata = (*pdata + sizeof(struct answer));
  			ReadName(*pdata,data,&stop, buf);
-			printf("\tMX: %s\n",buf);
+			printf("\tMX: %s\n", buf);
 			*pdata = (*pdata + stop);
 			break;
 		case CNAME:
 			*pdata = (*pdata + sizeof(struct answer));
  			ReadName(*pdata,data,&stop, buf);
-			printf("\tCNAME: %s\n",buf);
+			printf("\tCNAME: %s\n", buf);
 			*pdata += stop;
 			break;
 		case SOA:
@@ -114,18 +114,18 @@ void dns_type(int type, unsigned char **pdata,unsigned char *data, int *len){
  			*pdata = (*pdata + sizeof(short int));
 			ReadName(*pdata,data,&stop, buf);
 			*pdata = (*pdata + stop);
-			printf("\tMX: %s\n",buf);
+			printf("\tMX: %s\n", buf);
 			break;
 		case TXT:
 			*pdata = (*pdata + sizeof(struct answer));
  			ReadName(*pdata,data,&stop, buf);
-			while(*((char *)buf) == 0){
-				*len -= stop;
-				*pdata = (*pdata + stop);
-				ReadName(*pdata,data,&stop, buf);
+			memset(address, 0, NI_MAXHOST);
+			if((h = (unsigned char *)strstr(address, (char *)host))){
+				memcpy(address, *pdata, *len-strlen((char *)h));
+			}else{
+				memcpy(address, *pdata, *len);
 			}
-			buf[*len-1] = 0;
-			printf("\ttext: %s\n", buf);
+			printf("\tText: %s\n", &address[1]);
 			*pdata = (*pdata + (*len));
 			break;
 		case ADDRESS6:
@@ -143,7 +143,7 @@ void dns_type(int type, unsigned char **pdata,unsigned char *data, int *len){
 			for(i = 0; i < 3 && strstr(&((char *)*pdata)[1],issuetag[i]) == NULL; i++);;
 			i = strlen(issuetag[i]);
 			memcpy(address, &((char *)*pdata)[7], *len-i-2);
-			printf("\tCAA = %u issue \"%s\"\n",**pdata, address);
+			printf("\tCAA = %u issue \"%s\"\n", **pdata, address);
 			*pdata = (*pdata + *len);
 			break;
 		default:*pdata = (*pdata + sizeof(struct answer));
@@ -177,7 +177,7 @@ void services_udp_src(char *data){
 					a = (struct answer *)(((char *)a + stop));
 					k = ntohs(((struct answer *)a)->len);
 					j = ntohs(((struct answer *)a)->type);
-					dns_type(j, (unsigned char **)&a, (unsigned char *)data, &k);
+					dns_type(j, (unsigned char **)&a, (unsigned char *)data, &k, buf);
 				}
 			}
 			break;
