@@ -136,8 +136,8 @@ void print_hop_by_hop(char *data){
 			printf("\n");
 
 	}
-	myoutput.data += (sizeof(struct hop_by_hop) + 8 + h->hdr_ext_len);
-	myoutput.datalen -= (sizeof(struct hop_by_hop) + 8 + h->hdr_ext_len);
+	myoutput.data += (8 + h->hdr_ext_len);
+	myoutput.datalen -= (8 + h->hdr_ext_len);
 	print_icmp4(&myoutput);
 }
 

@@ -88,8 +88,6 @@ struct hop_by_hop{
 	unsigned char next_header;
 	unsigned char hdr_ext_len;
 	unsigned short int options;
-//	unsigned int moreoption_padding;
-//	unsigned int padding;
 };
 unsigned short int checksum_calculation(const void *buffer,unsigned long int bufsize);
 void *c_alloc(void *check, unsigned long int size);
