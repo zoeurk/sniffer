@@ -1,0 +1,2178 @@
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x6f17 (0x6f17)
+Packet Length:74
+Offset:0
+Time to live:64
+Protocol:6
+Flags:DF
+ZoeurK.lan (192.168.0.20) => dns.google (8.8.8.8)
+Port Src:49093
+Port Dst:53
+Checksum:0xd0fa (0xb704)
+TCP Length:40
+Sequence:2966771327
+Acknowledgement:0
+Flags:.S.....
+Window:64240
+urgptr:0
+Header size:40
+tcp4 options (option lenght 20):
+	Octet 1:0xbf
+	Octet 2:0xc5
+	Octet 3:0x0
+	Octet 4:0x35
+	Octet 5:0xb0
+	Octet 6:0xd5
+	Octet 7:0x56
+	Octet 8:0x7f
+	Octet 9:0x0
+	Octet 10:0x0
+	Octet 11:0x0
+	Octet 12:0x0
+	Octet 13:0xa0
+	Octet 14:0x2
+	Octet 15:0xfa
+	Octet 16:0xf0
+	Octet 17:0xd0
+	Octet 18:0xfa
+	Octet 19:0x0
+	Octet 20:0x0
+print_data():
+	No data.
+print_data_hex():
+	No data.
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0x594c (0x594c)
+Packet Length:74
+Offset:0
+Time to live:119
+Protocol:6
+Flags:
+dns.google (8.8.8.8) => ZoeurK.lan (192.168.0.20)
+Port Src:53
+Port Dst:49093
+Checksum:0xee29 (0xee29)
+TCP Length:40
+Sequence:2357865519
+Acknowledgement:2966771328
+Flags:.S..A..
+Window:60192
+urgptr:0
+Header size:40
+tcp4 options (option lenght 20):
+	Octet 1:0x0
+	Octet 2:0x35
+	Octet 3:0xbf
+	Octet 4:0xc5
+	Octet 5:0x8c
+	Octet 6:0x8a
+	Octet 7:0x2c
+	Octet 8:0x2f
+	Octet 9:0xb0
+	Octet 10:0xd5
+	Octet 11:0x56
+	Octet 12:0x80
+	Octet 13:0xa0
+	Octet 14:0x12
+	Octet 15:0xeb
+	Octet 16:0x20
+	Octet 17:0xee
+	Octet 18:0x29
+	Octet 19:0x0
+	Octet 20:0x0
+print_data():
+	No data.
+print_data_hex():
+	No data.
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x6f1e (0x6f1e)
+Packet Length:66
+Offset:0
+Time to live:64
+Protocol:6
+Flags:DF
+ZoeurK.lan (192.168.0.20) => dns.google (8.8.8.8)
+Port Src:49093
+Port Dst:53
+Checksum:0xd0f2 (0x5c3)
+TCP Length:32
+Sequence:2966771328
+Acknowledgement:2357865520
+Flags:....A..
+Window:502
+urgptr:0
+Header size:32
+tcp4 options (option lenght 12):
+	Octet 1:0xbf
+	Octet 2:0xc5
+	Octet 3:0x0
+	Octet 4:0x35
+	Octet 5:0xb0
+	Octet 6:0xd5
+	Octet 7:0x56
+	Octet 8:0x80
+	Octet 9:0x8c
+	Octet 10:0x8a
+	Octet 11:0x2c
+	Octet 12:0x30
+print_data():
+	No data.
+print_data_hex():
+	No data.
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x6f02 (0x6f02)
+Packet Length:93
+Offset:0
+Time to live:64
+Protocol:6
+Flags:DF
+ZoeurK.lan (192.168.0.20) => dns.google (8.8.8.8)
+Port Src:49093
+Port Dst:53
+Checksum:0xd10d (0x38de)
+TCP Length:59
+Sequence:2966771328
+Acknowledgement:2357865520
+Flags:...PA..
+Window:502
+urgptr:0
+Header size:32
+tcp4 options (option lenght 12):
+	Octet 1:0xbf
+	Octet 2:0xc5
+	Octet 3:0x0
+	Octet 4:0x35
+	Octet 5:0xb0
+	Octet 6:0xd5
+	Octet 7:0x56
+	Octet 8:0x80
+	Octet 9:0x8c
+	Octet 10:0x8a
+	Octet 11:0x2c
+	Octet 12:0x30
+Data (27 octet):
+...............gmx.net.....
+End of data.
+Data (27 octet) (in hexadecimal):
+octets:0	0x00 0x19 0xf1 0xe4 0x01 0x00 0x00 0x01  0x00 0x00 0x00 0x00 0x00 0x00 0x03 c::g
+octets:16	c::m c::x 0x03 c::n c::e c::t 0x00 0x00  0xff 0x00 0x01
+End of data.
+ID:61924
+qdcount:1
+Ancount:0
+Nscount:0
+Arcount:0
+Question:
+	Request for all registery
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0x5940 (0x5940)
+Packet Length:66
+Offset:0
+Time to live:119
+Protocol:6
+Flags:
+dns.google (8.8.8.8) => ZoeurK.lan (192.168.0.20)
+Port Src:53
+Port Dst:49093
+Checksum:0x6a2 (0x6a2)
+TCP Length:32
+Sequence:2357865520
+Acknowledgement:2966771355
+Flags:....A..
+Window:236
+urgptr:0
+Header size:32
+tcp4 options (option lenght 12):
+	Octet 1:0x0
+	Octet 2:0x35
+	Octet 3:0xbf
+	Octet 4:0xc5
+	Octet 5:0x8c
+	Octet 6:0x8a
+	Octet 7:0x2c
+	Octet 8:0x30
+	Octet 9:0xb0
+	Octet 10:0xd5
+	Octet 11:0x56
+	Octet 12:0x9b
+print_data():
+	No data.
+print_data_hex():
+	No data.
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0x5390 (0x5390)
+Packet Length:1484
+Offset:0
+Time to live:119
+Protocol:6
+Flags:
+dns.google (8.8.8.8) => ZoeurK.lan (192.168.0.20)
+Port Src:53
+Port Dst:49093
+Checksum:0x3a29 (0x3a29)
+TCP Length:1450
+Sequence:2357865520
+Acknowledgement:2966771355
+Flags:....A..
+Window:236
+urgptr:0
+Header size:32
+tcp4 options (option lenght 12):
+	Octet 1:0x0
+	Octet 2:0x35
+	Octet 3:0xbf
+	Octet 4:0xc5
+	Octet 5:0x8c
+	Octet 6:0x8a
+	Octet 7:0x2c
+	Octet 8:0x30
+	Octet 9:0xb0
+	Octet 10:0xd5
+	Octet 11:0x56
+	Octet 12:0x9b
+Data (1418 octet):
+...............gmx.net.............T_..R..W........T_........Q._*Wc_..c6Q.gmx.net..[V.......]U.......-..l..-.O...T....$..*......F..Z..P'/..1......`g..2m..P.^...4..X.tC|....N..c0..<:.8.(.b.../..[...D.O...R.`z......3Z.........{[|6..Mg........t..+e{L.t..:.+...FPk.D...6...2....I.k.O1;.....(.y|...0Orj|.#.D.7.g.w..,..l.9z...;..l.-`....R.(..w.........T_...ns-gmx.ui-dns.de.........T_...ns-gmx.ui-dns.biz.........T_...ns-gmx.ui-dns.com.........T_...ns-gmx.ui-dns.org.........T_........Q._*Wc_..c6Q.gmx.net.YskH..O.^..p.'......t..So..JL.....p3.....%~w..w...eH.....V..P~..F....<R8....D:.L.b..p\..(.4.....2m......~.U._sb.....t.D*} ...R.%..P.&......a..!...k...:.O..m..K...t.{.sg....:..O...Ne...
+f....a..Pa1..,....................e..!J.#?*..[.c)f)aeG...W.....:.2.*...........T_.'...dnsadmin.1und1.jw.I....X... ..:....X........T_........Q._*Wc_..c6Q.gmx.net..O.L5.....P.Q~..nX#5...u+0..(Q6.a...3.D.?.N2`;.i..d]..x.i.e......l..OHF..KMNV!]K..J/...@.mC##8[D..I?..QU..h....[&.zye...p(........F;...v;K.......]}Ad..>
+. ..!.C...8.....<C.i....-..s...
+...6.........N.p.....vY.2....?..4R.......n....)......"...L..~g..i.....d.........W...
+.mx00.emig...........W...
+.mx01._.........W.........X_*Wc_..c6Q.gmx.net.;...|G.....|.d5........m0.3..&..a{..?.n..7...R......w|.1.....O.j.......H...............9......_|O.82D..........- ..j..C8x<....t(.B....
+^h./.Vf..F.......UF...z.?......*....CI.:...@..B|.._J[....nn".0..U.........?....Fy.[!..VuK.T.E..
+End of data.
+Data (1418 octet) (in hexadecimal):
+octets:0	0x0e 0xe7 0xf1 0xe4 0x81 0x80 0x00 0x01  0x00 0x1a 0x00 0x00 0x00 0x00 0x03 c::g
+octets:16	c::m c::x 0x03 c::n c::e c::t 0x00 0x00  0xff 0x00 0x01 0xc0 0x0c 0x00 0x01 0x00
+octets:32	0x01 0x00 0x00 c::T c::_ 0x00 0x04 c::R  0xa5 0xe5 c::W 0xc0 0x0c 0x00 c::. 0x00
+octets:48	0x01 0x00 0x00 c::T c::_ 0x01 0x1b 0x00  0x01 0x08 0x02 0x00 0x01 c::Q 0x80 c::_
+octets:64	c::* c::W c::c c::_ 0x17 0xe2 c::c c::6  c::Q 0x03 c::g c::m c::x 0x03 c::n c::e
+octets:80	c::t 0x00 0x95 c::[ c::V 0xf6 0xcf 0xbc  0xc0 0xe5 0x8b 0xf3 c::] c::U 0xcb 0x08
+octets:96	0xeb 0x8f 0x08 0x95 0xeb c::- 0xce 0x08  c::l 0x90 0x1d c::- 0xc2 c::O 0x0c 0x8c
+octets:112	0x11 c::T 0xeb 0xe6 0xe6 0x04 c::$ 0xe2  0xc1 c::* 0x80 0x83 0xac 0xe3 0xff 0xdb
+octets:128	c::F 0xba 0x13 c::Z 0xd3 0xd6 c::P c::'  c::/ 0x04 0x9b c::1 0xfb 0xf7 0xc2 0x11
+octets:144	0x1c 0x90 c::` c::g 0xb9 0xe1 c::2 c::m  0xd4 0xdc c::P 0x81 c::^ 0xe4 0xd3 0xf2
+octets:160	c::4 0xcf 0xbb c::X 0xf4 c::t c::C c::|  0xd8 0x10 0xd0 0x10 c::N 0xbf 0xc2 c::c
+octets:176	c::0 0xdb 0x8f c::< c::: 0xc5 c::8 0xb4  c::( 0x05 c::b 0x81 0xf5 0x98 c::/ 0x8f
+octets:192	0x87 c::[ 0x9d 0xe9 0xad c::D 0xd8 c::O  0xf1 0xdb 0x8a c::R 0xc6 c::` c::z 0x02
+octets:208	0xf6 0x9a 0x86 0x83 0xa2 c::3 c::Z 0xb1  0xdd 0xe5 0xae 0x09 0xd9 0x0d 0x88 0xf6
+octets:224	c::{ c::[ c::| c::6 0xde 0xb7 c::M c::g  0x19 0x01 0x8a 0xd4 0x1d 0x17 0x89 0xd7
+octets:240	c::t 0xe1 0x05 c::+ c::e c::{ c::L 0xe6  c::t 0x0b 0x05 c::: 0xe6 c::+ 0xac 0xb1
+octets:256	0x0d c::F c::P c::k 0x91 c::D 0xd8 0xb9  0x18 c::6 0xc4 0x92 0x1a c::2 0x92 0x12
+octets:272	0x9e 0xf3 c::I 0xfb c::k 0x1f c::O c::1  c::; 0x0b 0xc5 0x96 0xcf 0x1d c::( 0x92
+octets:288	c::y c::| 0xa5 0xa4 0x86 c::0 c::O c::r  c::j c::| 0xe4 c::# 0x12 c::D 0x1f c::7
+octets:304	0x00 c::g 0xfa c::w 0x8f 0x89 c::, 0xfe  0xa9 c::l 0xd9 c::9 c::z 0x9b 0x82 0xc6
+octets:320	c::; 0x08 0x18 c::l 0xbe c::- c::` 0xfc  0xfd 0xd8 0x18 c::R 0x83 c::( 0xa3 0x96
+octets:336	c::w 0xd2 0xc0 0x0c 0x00 0x02 0x00 0x01  0x00 0x00 c::T c::_ 0x00 0x12 0x06 c::n
+octets:352	c::s c::- c::g c::m c::x 0x06 c::u c::i  c::- c::d c::n c::s 0x02 c::d c::e 0x00
+octets:368	0xc0 0x0c 0x00 0x02 0x00 0x01 0x00 0x00  c::T c::_ 0x00 0x13 0x06 c::n c::s c::-
+octets:384	c::g c::m c::x 0x06 c::u c::i c::- c::d  c::n c::s 0x03 c::b c::i c::z 0x00 0xc0
+octets:400	0x0c 0x00 0x02 0x00 0x01 0x00 0x00 c::T  c::_ 0x00 0x13 0x06 c::n c::s c::- c::g
+octets:416	c::m c::x 0x06 c::u c::i c::- c::d c::n  c::s 0x03 c::c c::o c::m 0x00 0xc0 0x0c
+octets:432	0x00 0x02 0x00 0x01 0x00 0x00 c::T c::_  0x00 0x13 0x06 c::n c::s c::- c::g c::m
+octets:448	c::x 0x06 c::u c::i c::- c::d c::n c::s  0x03 c::o c::r c::g 0x00 0xc0 0x0c 0x00
+octets:464	c::. 0x00 0x01 0x00 0x00 c::T c::_ 0x01  0x1b 0x00 0x02 0x08 0x02 0x00 0x01 c::Q
+octets:480	0x80 c::_ c::* c::W c::c c::_ 0x17 0xe2  c::c c::6 c::Q 0x03 c::g c::m c::x 0x03
+octets:496	c::n c::e c::t 0x00 c::Y c::s c::k c::H  0x87 0x8c c::O 0xd5 c::^ 0x0f 0xfd c::p
+octets:512	0xa1 c::' 0x0e 0xf0 0x84 0xfe 0x8a 0xe6  c::t 0xc8 0xa0 c::S c::o 0xb7 0x1b c::J
+octets:528	c::L 0x13 0xb5 0xc4 0xaa 0x94 c::p c::3  0xfa 0xef 0xf1 0x02 0xc1 c::% c::~ c::w
+octets:544	0x1d 0xb8 c::w 0xaf 0x93 0x14 c::e c::H  0xd1 0xdd 0xc4 0xfd 0x06 c::V 0x00 0x02
+octets:560	c::P c::~ 0xe9 0x9a c::F 0xd1 c::. 0x94  0x95 c::< c::R c::8 0xcf 0x81 0x00 0xde
+octets:576	c::D c::: 0xf7 c::L 0x97 c::b 0xac 0x1c  c::p c::\ 0x83 0xf4 c::( 0x8f c::4 0xd0
+octets:592	0xbd 0x83 0xae 0x87 c::2 c::m 0xd5 0x89  0x94 0x00 0x10 0xad c::~ 0xcc c::U 0x00
+octets:608	c::_ c::s c::b 0xbc 0xbe 0xbb 0x9e 0xaf  c::t 0xbc c::D c::* c::} c::  0xc9 0x98
+octets:624	0x87 c::R 0x01 c::% 0xed 0x86 c::P 0x90  c::& 0xb7 0xd6 0x1f 0xd2 0xd1 0x0c c::a
+octets:640	0xd1 0xd2 c::! 0xa5 0xaa 0xe7 c::k 0x0e  0x8c 0xe3 c::: 0x93 c::O 0xad 0x9d c::m
+octets:656	0x1e 0x92 c::K 0xe6 0xc8 0xc3 c::t 0xd4  c::{ 0xd4 c::s c::g 0xb4 0x8e 0xdb 0xda
+octets:672	c::: 0xf2 0x9f c::O 0xf1 0xfb 0xf0 c::N  c::e 0x17 0xbd 0xa6 0x0a c::f 0xea 0xaa
+octets:688	0x9d c::. c::a 0xaf 0xb8 c::P c::a c::1  0x99 0xda c::, 0x9a 0x18 0x8b 0x14 0x8e
+octets:704	0xf2 0xbd 0xed 0xe9 0xb3 0xde 0x0b 0x01  0xa0 0x01 0xdb 0xe9 0x96 0xc7 0xa8 c::e
+octets:720	0xe7 0xa5 c::! c::J 0xd7 c::# c::? c::*  0x91 0x96 c::[ 0xdb c::c c::) c::f c::)
+octets:736	c::a c::e c::G 0xe0 0xf7 0xff c::W 0x89  0x95 0xa9 0xd0 0x93 c::: 0xc9 c::2 0xe1
+octets:752	c::* 0xe1 0xa6 0xb4 0xc0 0x0c 0x00 0x06  0x00 0x01 0x00 0x00 c::T c::_ 0x00 c::'
+octets:768	0xc1 0xb8 0x08 c::d c::n c::s c::a c::d  c::m c::i c::n 0x05 c::1 c::u c::n c::d
+octets:784	c::1 0xc1 c::j c::w 0xfd c::I 0xda 0x00  0x00 0x02 c::X 0x00 0x00 0x1c c::  0x00
+octets:800	0x09 c::: 0x80 0x00 0x00 0x02 c::X 0xc0  0x0c 0x00 c::. 0x00 0x01 0x00 0x00 c::T
+octets:816	c::_ 0x01 0x1b 0x00 0x06 0x08 0x02 0x00  0x01 c::Q 0x80 c::_ c::* c::W c::c c::_
+octets:832	0x17 0xe2 c::c c::6 c::Q 0x03 c::g c::m  c::x 0x03 c::n c::e c::t 0x00 0xb2 c::O
+octets:848	0xaa c::L c::5 0xfe 0xab 0xd6 0x95 0xa9  c::P 0x89 c::Q c::~ 0xfc 0x18 c::n c::X
+octets:864	c::# c::5 0xc9 0x1b 0x8e c::u c::+ c::0  0xfb 0xa0 c::( c::Q c::6 0x85 c::a 0xaa
+octets:880	0xec 0x92 c::3 0x16 c::D 0xe5 c::? 0xe7  c::N c::2 c::` c::; 0xdd c::i 0xb3 0xf1
+octets:896	c::d c::] 0x9c 0xcc c::x 0x1a c::i 0xb3  c::e 0xc5 0xcd 0x0f 0xb4 0xe3 0xd5 c::l
+octets:912	0x1f 0xc9 c::O c::H c::F 0xf3 0xba c::K  c::M c::N c::V c::! c::] c::K 0x95 0xd7
+octets:928	c::J c::/ 0xfb 0xac 0xe5 c::@ 0xf3 c::m  c::C c::# c::# c::8 c::[ c::D 0xca 0x1a
+octets:944	c::I c::? 0xcc 0xf2 c::Q c::U 0x05 0xa2  c::h 0x83 0x87 0xed 0xe6 c::[ c::& 0xc4
+octets:960	c::z c::y c::e 0x05 0xce 0xa5 c::p c::(  0xfe 0x8c 0xd5 0xdc 0x08 0xbd 0xf0 0xf3
+octets:976	c::F c::; 0xcc 0x01 0xe2 c::v c::; c::K  0x85 0x80 0xf6 0xf0 0x10 0xff 0x8e c::]
+octets:992	c::} c::A c::d 0x07 0x99 c::> 0x0a 0xb0  c::  0xe2 0x82 c::! 0x8b c::C 0xf9 0xfb
+octets:1008	0xab c::8 0x14 0x09 0xf6 0x7f 0xb6 c::<  c::C 0xc8 c::i 0x1c c::. 0xb1 0x9c c::-
+octets:1024	0xe0 0xca c::s 0x0e 0xc4 0xa8 0x0a 0xd8  0xff 0xc7 c::6 0x80 0x7f 0x00 0x8e 0xe2
+octets:1040	0xde 0xdf 0xa8 0xcc c::N 0xc0 c::p 0x93  0x10 0xed 0xa0 0x1e c::v c::Y 0x0c c::2
+octets:1056	0x03 0xe1 0x11 0x0f c::? 0xb9 0xc2 c::4  c::R 0x00 0xd8 0xfa 0xed 0xa2 0xa5 0xfb
+octets:1072	c::n 0xd6 0x82 0xb7 0x98 c::) 0xb7 0x8b  0x03 0xd8 0xe4 0xdc c::" 0xa7 0x09 0xa5
+octets:1088	c::L 0x1d 0xa0 c::~ c::g 0x1a 0x1d c::i  0xfe 0x92 0x05 0xb2 0xac c::d 0xc0 0x0c
+octets:1104	0x00 0x0f 0x00 0x01 0x00 0x00 0x02 c::W  0x00 0x0e 0x00 0x0a 0x04 c::m c::x c::0
+octets:1120	c::0 0x04 c::e c::m c::i c::g 0xc0 0x0c  0xc0 0x0c 0x00 0x0f 0x00 0x01 0x00 0x00
+octets:1136	0x02 c::W 0x00 0x09 0x00 0x0a 0x04 c::m  c::x c::0 c::1 0xc4 c::_ 0xc0 0x0c 0x00
+octets:1152	c::. 0x00 0x01 0x00 0x00 0x02 c::W 0x01  0x1b 0x00 0x0f 0x08 0x02 0x00 0x00 0x02
+octets:1168	c::X c::_ c::* c::W c::c c::_ 0x17 0xe2  c::c c::6 c::Q 0x03 c::g c::m c::x 0x03
+octets:1184	c::n c::e c::t 0x00 c::; 0x98 0xe1 0x99  c::| c::G 0xfe 0xbd 0x1a 0x8d 0xb2 c::|
+octets:1200	0xc2 c::d c::5 0xcd 0xdf 0x89 0x92 0xbc  0xa5 0xd9 0x85 c::m c::0 0xb1 c::3 0x87
+octets:1216	0xc3 c::& 0x0c 0xc8 c::a c::{ 0x8e 0xcf  c::? 0x05 c::n 0xdc 0xf6 c::7 0x85 0xf7
+octets:1232	0xe9 c::R 0xa0 0x9a 0xd2 0x8f 0x98 0xfb  c::w c::| 0xd6 c::1 0xcc 0xf8 0x8a 0xf6
+octets:1248	0x99 c::O 0xfe c::j 0xd4 0x9e 0xbe 0x87  0xf7 0xd8 0xd0 c::H 0x97 0x1d 0x88 0xfa
+octets:1264	0x85 0x1a 0x9a 0xd7 0xcd 0xc1 0x05 0x0b  0xae 0xe8 0xcc c::9 0x15 0xa8 0x9e 0x95
+octets:1280	0x19 0xad c::_ c::| c::O 0x8b c::8 c::2  c::D 0xdb 0xa6 0xd0 0x8b 0xc6 0x17 0xf3
+octets:1296	0x05 0x93 0x88 c::- c::  0x80 0x8c c::j  0x0e 0xd6 c::C c::8 c::x c::< 0xac 0xf2
+octets:1312	0x04 0x1b c::t c::( 0xdf c::B 0x1a 0xba  0xf0 0x87 0x0a c::^ c::h 0x88 c::/ 0xde
+octets:1328	c::V c::f 0xc8 0xda c::F 0x10 0x97 0xe4  0x80 0x88 0xae 0xc1 c::U c::F 0x1f 0x03
+octets:1344	0xf9 c::z 0xc6 c::? 0xbc 0x9f 0xe0 0x9c  0xd6 0xdb c::* 0x96 0xbd 0x02 0xa0 c::C
+octets:1360	c::I 0xf9 c::: 0x8e 0xa8 0xc5 c::@ 0x0d  0x84 c::B c::| 0xc8 0x8c c::_ c::J c::[
+octets:1376	0xdb 0x1d 0xd8 0xd0 c::n c::n c::" 0xe5  c::0 0x02 0xee c::U 0x93 0xaf 0x09 0xfa
+octets:1392	0xf7 0x0b 0xc2 0xd4 0xcd c::? 0x11 0xef  0xa1 0x06 c::F c::y 0xd4 c::[ c::! 0x92
+octets:1408	0x11 c::V c::u c::K 0xfa c::T 0xf6 c::E  0x8b 0xfc
+End of data.
+ID:61924
+qdcount:1
+Ancount:26
+Nscount:0
+Arcount:0
+Answers records:
+	NAME: gmx.net
+	Address: 82.165.229.87
+	NAME: gmx.net
+	TYPE (unknow): 46
+	NAME: gmx.net
+	MX: ns-gmx.ui-dns.de
+	NAME: gmx.net
+	MX: ns-gmx.ui-dns.biz
+	NAME: gmx.net
+	MX: ns-gmx.ui-dns.com
+	NAME: gmx.net
+	MX: ns-gmx.ui-dns.org
+	NAME: gmx.net
+	TYPE (unknow): 46
+	NAME: gmx.net
+	SOA: ns-gmx.ui-dns.org
+	MX: dnsadmin.1und1.de
+	Serial: 2013088218
+	Refresh: 600
+	Retry: 7200
+	Expire: 604800
+	Minimum: 600
+	NAME: gmx.net
+	TYPE (unknow): 46
+	NAME: gmx.net
+	MX: mx00.emig.gmx.net
+	NAME: gmx.net
+	MX: mx01.emig.gmx.net
+	NAME: gmx.net
+	TYPE (unknow): 46
+	NAME: st-Modified: 2020-06-08T16:20:51Z
+Artist: Vile
+Album: The New Age Of Chaos
+Date: 2005
+Tra.k: 3
+Title: The new age of chaos
+Genre: Death Metal
+Time: 203
+duration: 202.893
+Pos: 17138
+Id: 1713.
+file: Vile/2005 - The New Age Of Chaos/04 - Suicide warf.re.ogg
+Last-Modified: 2020-06-08T16:20:51Z
+Artist: Vile
+Album: The New Age Of Chaos
+Date: 2005
+Tr.ck: 4
+Title: Suicide warfare
+Genre: Death Metal
+Time: 212
+duration: 212.346
+Pos: 17139
+Id: 17140
+.ile: Vile/2005 - The New Age Of Chaos/05 - Sentenced to live.ogg
+Last-Modified: 2020-06-08T16:20:51Z
+A.tist: Vile
+Album: The New Age Of Chaos
+Date: 2005
+Track: 5
+Title: Sentenced to live
+Genre: Death Metal
+Time: 220
+d.ration: 219.986
+Pos: 17140
+Id: 17141
+file: Vile/2005 - The New Age Of Chaos/06 - The burning shrines.ogg
+Last-Modifie.: 2020-06-08T16:20:51Z
+Artist: Vile
+Album: The New Age Of Chaos
+Date: 2005
+Track: 6
+Title: The burni.g shrines
+Genre: Death Metal
+Time: 248
+duration: 247.813
+Pos: 17141
+Id: 17142
+file: Vile/2005 - The New Age Of.Chaos/07 - Ritual decapitation.o.g
+Last-Modified: 2020-06-08T16:20:51Z
+Artist: Vile
+Album: The New Age Of Chaos
+Date: 2005
+Track: 7
+Titl.: Ritual decapitation
+Genre: Death Metal
+Time: 223
+duration: 223.120
+Pos: 17142
+Id: 17143
+file: Vile/.005 - The New Age Of Chaos/08 - Worldhunt.ogg
+Last.Modified: 2020-06-08T16:20:51Z
+Artist: Vile
+A.bum: The New Age Of Chaos
+Date: 2005
+Track: 8
+Title: Worldhunt
+Genre: Death Metal
+Time: 186
+duration: 185.72.
+Pos: 17143
+Id: 17144
+file: Vile/2005 - The New .ge Of Chaos/09 - Forlorn.ogg
+Last-Modified: 2020-06-08T16:20:51Z
+.rtist: Vile
+Album: The New Age Of Chaos
+Date: 2005
+Track: 9
+Title. Forlorn
+Genre: Death Metal
+Time: 99
+duration: 98.573
+Pos:.17144
+Id: 17145
+file: Vile/2011 . Metamorphosis/01 - March towards the dawn.og.
+Last-Modified: 2020-06-08T16:20:53Z
+Artist: Vile
+Album: Metamorphosis
+Date: 2011
+Track: 1
+Title: March.towards the dawn
+Genre: Death Me.al
+Time: 215
+duration: 215.225
+Pos: 17145
+Id: 17146
+file: Vile/2011 - Metamorphosis/02 - The revealing.ogg
+Last-Modi.ied: 2020-06-08T16:20:53Z
+Artist: Vile
+Album: Metamorphosis
+Date: 2011
+Track: 2
+Title: The revealing
+G.nre: Death Metal
+Time: 230
+duration: 229.842
+Pos: 17146
+Id: 17147
+file: Vile/2011 - Metamorphosis/03 . What lies beyond.ogg
+Last-Modified: 2020-06-.8T16:20:53Z
+Artist: Vile
+Album: Metamorphosis
+Da.e: 2011
+Track: 3
+Title: What lies beyond
+Genre: Death Metal
+Time: 216
+duration: 216.235
+Pos: 17147
+Id: 17148
+file: V.le/2011 - Metamorphosis/04 - Rise.ogg
+Last-Modified: 2020-06-08T16:20:52Z
+Artist: Vile
+Album: Metamorphos.s
+Date: 2011
+Track: 4
+Title: Rise
+Genre: Death Metal
+Time: 204
+duration: 203.569
+Pos: 17148
+Id: 17149
+fil.: Vile/2011 - Metamorphosis/05 - I am alive.ogg
+Last-Modified: 2020-06-08T16:20:53Z
+Artist: Vile
+Albu.: Metamorphosis
+Date: 2011
+Track: 5
+Title: I am alive
+Genre: Death Metal
+Time: 231
+duration: 230.852
+Pos: 171.9
+Id: 17150
+file: Vile/2011 - Metamorphosis/06 - Wol. at your door.ogg
+Last-Modified: 2020-06-08T16:20:53Z
+Artist: Vile
+Album: Metamorphosis
+Date: 2011
+Tra.k: 6
+Title: Wolf at your door
+Genre: Death Metal
+Time: 131
+duration: 131.157
+Pos: 17150
+Id: 17151
+f.le: Vile/2011 - Metamorphosis/07 - I am become death.ogg
+Last-Modified: 2020-06-08T16:20:53Z
+Artist: Vile.Album: Met.morphosis
+Date: 2011
+Track: 7
+Title: I am become death
+Genre: Death Metal
+Time: 125
+duration: 125.283
+Pos: 17151
+Id: 17152
+file: Vile/2011 - Met.morphosis/08 - Shadow work.ogg
+Last-Modified: 2020-06-08T16:20:53Z
+Artist: Vile
+Album: Metamorpho.is
+Date: 2011
+Track: 8
+Title: Shadow work
+Genre: Death Metal
+Time: 295
+duration: 295.044
+Pos: 17152
+Id: 17153
+file:.Vile/2011 - Metamorphosis/09 - P.ophetic betrayal.ogg
+Last-Modified: 2020-06-08T16:20:53Z
+Artist: Vile
+Album: Metamorphosis
+Date: 2011
+Track: 9
+Tit.e: Prophetic betrayal
+Genre: Death Metal
+Time: 275
+duration: 275.319
+Pos: 17153
+Id: 17154
+file: Vile/2011 - .etamorphosis/10 - As one.ogg
+Last-Modified: 2020-06-08T16:20:53Z
+Artist: Vile.Album: Met.morphosis
+Date: 2011
+Track: 10
+Title: As one
+Genre: Death Metal
+Time: 207
+duration: 206.622
+Pos: .7154
+Id: 17155
+file: Vile/2011 - Metamorphosis/11.- Redemption.ogg
+Last-Modified: .020-06-08T16:20:53Z
+Artist: Vile
+Album: Metamorpho.is
+Date: 2011
+Track: 11
+Title: Redemption
+Genre: Death Metal
+Time: 171
+duration: 170.840
+Pos: 17155
+Id: 17156
+file:.Violent Hate/1992 - Curse of the.Evil One - In Between the Truth . Krisiun & Violent Hate/05 - Every which way..gg
+Last-Modified: 2020-06-08T16:25:09Z
+Artist: Violent Hate
+Album: Curse of the Evil One - In Between the Truth.- Krisiun & Violent Hate
+Date: 1.92
+Track: 5
+Title: Every which way
+Genre: Death Metal
+Tim.: 333
+duration: 333.374
+Pos: 17156
+Id: 17157
+file: Violent Hate/1992 - Curse of the Evil One - In Bet.een the Truth - Krisiun & Violent Hate/06 - Just a bitch.ogg
+Last-Modified: 2020-06-08T16:25:09Z
+Artist: Violent Hate
+A.bum: Curse of the Evil One - In Between the Truth - Krisiun & Violent Hate
+Date: 1992
+Track: 6
+Title: Just a.bitch
+Genre: Death Metal
+Time: 2.2
+duration: 252.003
+Pos: 17157
+Id: 17158
+file: Violen. Hate/1992 - Curse of the Evil One - In Between the Truth - Krisiun & Violent Hate/07 - Hands of a witch.ogg
+Last-Mo.ified: 2020-06-08T16:25:09Z
+Artist: Violent Hate
+Album: Curse of the Evil One - In Between the Truth.- Krisiun & Violent Hate
+Date: 1.92
+Track: 7
+Title: Hands of a witch
+Genre: Death Metal
+Ti.e: 354
+duration: 354.011
+Pos: 17158
+Id: 17159
+file: Violent Hate/1992 - Curse of the Evil One - In Between th. Truth - Krisiun & Violent Hate/08 - Creation of war.ogg
+Last-Modified: 2020-06-08T16:25:09Z
+Artist: .iolent Hate
+Album: Curse of the Evil One - In Between the Truth - Krisiun & Violent Ha.e
+Date: 1992
+Track: 8
+Title: Creation of war
+Genre: Death Metal
+Time: 351
+duration: 350.511
+Pos: 17159
+Id: 17160
+fil.: Vital Remains/1989 - Reduced To Ashes (demo)/1 - Vital remains.ogg
+Last-Modified: 2020-06-08T16:26:.3Z
+Artist: Vital Remains
+Album: Reduced To Ashes.(demo)
+Date: 1989
+Track: 1
+Title. Vital remains
+Genre: Death Metal
+Time: 309
+duration: 308..62
+Pos: 17160
+Id: 17161
+file: Vital Remains/1989 - Red.ced To Ashes (demo)/2 - Smoldering burial.ogg
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Remains
+Album: Reduce. To Ashes (demo)
+Date: 1989
+Track: 2
+Title: Smoldering burial
+Genre: Death Metal
+Time: 180
+duration:.179.696
+Pos: 17161
+Id: 17162
+fil.: Vital Remains/1989 - Reduced To Ashes (demo)/3 - Morbid death.ogg
+Last-Modified: 2020-06-08T16:26:0.Z
+Artist: Vital Remains
+Album: Reduced To Ashes (de.o)
+Date: 1989
+Track: 3
+Title: Morbid death
+Genre: Death Metal
+Time: 158
+duration: 158.119
+Pos: 17162
+Id: 1716.
+file: Vital Remains/1989 - Reduced To Ashes (demo).4 - Reduced to ashes.ogg
+Last-Modified: 2020-06.08T16:26:03Z
+Artist: Vital Remains
+Album: Red.ced To Ashes (demo)
+Date: 1989
+Track: 4
+Title: Reduced to ashes
+Genre: Death Metal
+Time: 126
+duration: 126.458
+Pos: 1.163
+Id: 17164
+file: Vital Remains/1989 - Reduced To Ash.s (demo)/5 - More brains.ogg
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Remains
+Album: Reduced.To Ashes (demo)
+Date: 1989
+Track. 5
+Title: More brains
+Genre: Death Metal
+Time: 278
+duratio.: 277.864
+Pos: 17164
+Id: 17165
+file: Vital Remains/1989 - Reduced To Ashes (demo)/6 - Slaughter shack.ogg
+Last.Modified: 2020-06-08T16:26:03Z
+Artist: Vital .emains
+Album: Reduced To Ashes (demo)
+Date: 1989
+Track: 6
+Title: Slaughter shack
+G.nre: Death Metal
+Time: 278
+duration: 277.864
+Pos: 17165
+Id: 17166
+file: Vital Remains/1990 - Excrucia.ing Pain/01 - Intro - human sacrifice.ogg
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Remains
+Album: Excruciat.ng Pain
+Date: 1990
+Track: 1
+Title: Intro - human sacrifice
+Genre: Death Metal
+Time: 301
+duration: 300.982.Pos: 17166.Id: 17167
+.ile: Vital Remains/1990 - Excruciating Pain/02 - Ressurrected.ogg
+Last-Modified: 2020-06-08T16:26:04Z
+.rtist: Vital Remains
+Album: Excruciating Pain
+Date: 1990
+Track: 2.Title: Res.urrected
+Genre: Death Metal
+Time: 398
+duration: 397.740
+Pos: 17167
+Id: 17168
+file: Vital Remains/1990 - Excruciatin. Pain/03 - Fallen angels.ogg
+Last-Modified: 2020-06-08T16:26:04Z
+Artist: Vital Remains
+Album: Excruciat.ng Pain
+Date: 1990
+Track: 3
+Title: Fallen angels
+Genre: Death Metal
+Time: 249
+duration: 248.764
+Pos: 1716.
+Id: 17169
+file: Vital Remains/1990 - Excruciating Pain/.4 - Excruciating pain.ogg
+Last-Modified: 2020-06.08T16:26:03Z
+Artist: Vital Remains
+Album: Exc.uciating Pain
+Date: 1990
+Track: 4
+Title: Excruciating pain
+Genre: Death Metal
+Time: 225
+duration: 225.175
+Pos: 171.9
+Id: 17170
+file: Vital Remains/1990 - Excruciating Pa.n/05 - Nocturnal blasphemy.ogg
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Remains
+Album: Excruciat.ng Pain
+Date: 1990
+Track: 5
+Title: Nocturnal blasphemy
+Genre: Death Metal
+Time: 314
+duration: 313.600
+Pos. 17170
+Id: 17171
+file: Vital Remains/1991 - The Black Mass.(Single)/01 - Of pure unholyness.ogg
+Last-Modified: 2020-06-08T16:26:05Z
+Artist. Vital Remains
+Album: The Black Mass (Single)
+Date: 1991
+T.ack: 1
+Title: Of pure unholyness
+Genre: Death Metal
+Time: 361
+duration: 361.456
+Pos: 17171
+Id: 17172
+file: Vital R.mains/1991 - The Black Mass (Single)/02 - Frozen terror.ogg
+Last-Modified: 2020-06-08T16:26:05Z
+Artis.: Vital Remains
+Album: The Black Mass (Single)
+Date: 1991
+Track: 2
+Title: Frozen terror
+Genre: Death Metal
+Time: 320.duration: .20.209
+Pos: 17172
+Id: 17173
+file: Vital Remains/199. - Let Us Pray/01 - War in paradise.ogg
+Last-Modif.ed: 2020-06-08T16:26:03Z
+Artist: Vital Remains
+Album: Let Us Pray
+Date: 1992
+Track: 1
+Title: War in parad.se
+Genre: Death Metal
+Time: 465
+duration: 464.826
+Pos: 17173
+Id: 17174
+file: Vital Remains/1992 - Let Us .ray/02 - Of pure unholiness.ogg
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vita. Remains
+Album: Let Us Pray
+Date: 1992
+Track: 2
+Title: Of pure unholiness
+Genre: Death Metal
+Time: 400
+durat.on: 399.640
+Pos: 17174
+Id: 17175
+file: Vital Remains/1992 - Let Us Pray/03 - Ceremony of the seventh circ.e.ogg
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Remains
+Album: Let Us Pray
+Date: 1992
+Track: 3
+Title. Ceremony of the seventh circle
+Genre: Death Metal
+Time: 4.8
+duration: 418.040
+Pos: 17175
+Id: 17176
+file: Vi.al Remains/1992 - Let Us Pray/04 - Uncultivated grave.ogg
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Remains
+.lbum: Let Us Pray
+Date: 1992
+Track: 4
+Title: Uncultivated grave
+G.nre: Death Metal
+Time: 422
+duration: 421.626
+Pos: 17176
+Id: 17177
+file: Vital Remains/1992 - Let Us P.ay/05 - Malevolent invocation.ogg
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Remains
+Album: Let Us Pray
+Dat.: 1992
+Track: 5
+Title: Malevolent invocation
+Genre: Death Metal
+Time: 251
+duration: 250.826
+Pos: 1717.
+Id: 17178
+file: Vital Remains/1992 - Let Us Pray/06 - .solated magick.ogg
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Rema.ns
+Album: Let Us Pray
+Date: 1992
+Track: 6
+Title: Isolated magick
+Genre: Death Metal
+Time: 314
+duration: 3.3.733
+Pos: 17178
+Id: 17179
+file: Vital Remains/19.2 - Let Us Pray/07 - Cult of the dead.ogg
+Last-Modified: .020-06-08T16:26:03Z
+Artist: Vital Remains
+Album: L.t Us Pray
+Date: 1992
+Track: 7
+Title: Cult of the dead
+Genre: Death Metal
+Time: 429
+duration: 429.066
+.os: 17179
+Id: 17180
+file: Vital Remains/1992 - Let Us Pray/08 - Frozen terror.og.
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Remains
+Album: Let Us Pray
+Date: 1992
+Track: 8
+Title. Frozen terror
+Genre: Death Metal
+Time: 347
+duration: 347..53
+Pos: 17180
+Id: 17181
+file: Vital Remains/1992 - L.t Us Pray/09 - Amulet of the conquering.ogg
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Remains.Album: Let.Us Pray
+Date: 1992
+Track: 9
+Titl.: Amulet of the conquering
+Genre: Death Metal
+Time: 334
+duration: 334.013
+Pos: 17181
+Id: 17182
+file: .ital Remains/1995 - Into Cold Darkness/01 - Immortal crusade.ogg
+Last-Modified: 2020-0.-08T16:26:02Z
+Artist: Vital Remains
+Album: Into Cold D.rkness
+Date: 1995
+Track: 1
+Title: Immortal crusade
+Genre: Death Metal
+Time: 536
+duration: 535.902.Pos: 17182.Id: 17183
+.ile: Vital Remains/1995 - Into Cold Darkness/02 - Under the moon's fog.ogg
+Last-Modified: 2020-06-08T1.:26:02Z
+Artist: Vital Remains
+Album: Into Cold Darknes.
+Date: 1995
+Track: 2
+Title: Under the moon's fog
+Genre: Death Metal
+Time: 405
+duration: 404.584
+Pos: 17183
+Id: 1718.
+file: Vital Remains/1995 - Into Cold Darkness/03 - .rown of the black hearts.ogg
+Last-Modified: 2020-06-08T16:26:02Z
+Ar.ist: Vital Remains
+Album: Into Cold Darkness
+Date: 1995
+Track: 3
+Title: Crown of the black hearts
+Genre: Death Metal.Time: 220
+.uration: 219.742
+Pos: 17184
+Id: 17185
+file: Vital Remains/1995 - Into Cold Darkness/04 - Scrolls of . millenium past.ogg
+Last-Modified: 2020-06-08T16:26:02Z
+Artist: Vital Remains
+Album: Into Cold Da.kness
+Date: 1995
+Track: 4
+Title: Scrolls of a millenium past
+Genre: Death Metal
+Time: 319
+duration: 318.511
+Pos: 1.185
+Id: 17186
+file: Vital Remains/1995 - Into Cold Dark.ess/05 - Into cold darkness.ogg
+Last-Modified: 2020-06-08T16:26:02Z
+Artist: Vital Remains
+Album: Into Cold Dar.ness
+Date: 1995
+Track: 5
+Title: Into cold darkness
+Genre: Death Metal
+Time: 231
+duration: 230.739
+Pos: 1718.
+Id: 17187
+file: Vital Remains/1995 - Into Cold Darkne.s/06 - Descent into hell.ogg
+Last-Modified: 2020-06-08T16:26:02Z
+Artist: Vital Remains
+Album: Into Cold Darkness
+Da.e: 1995
+Track: 6
+Title: Descent into hell
+Genre: Death Metal
+Time: 242
+duration: 241.502
+Pos: 17187
+Id: 17188
+file: .ital Remains/1995 - Into Cold Darkness/07 - Angels of blasphemy.ogg
+Last-Modified: 202.-06-08T16:26:02Z
+Artist: Vital Remains
+Album: In.o Cold Darkness
+Date: 1995
+Track: 7
+Title: Angels of blasphemy
+Genre: Death Metal
+Time: 233
+duration: 232.803
+Pos: 1.188
+Id: 17189
+file: Vital Remains/1995 - Into Cold Dark.ess/08 - Dethroned emperor.ogg
+Last-Modified: 2020-06-08T16:26:02Z
+Artist: Vital Remains
+Album: Into Cold Dark.ess
+Date: 1995
+Track: 8
+Title: Dethroned emperor
+Genre: Death Metal
+Time: 282
+duration: 281.678
+Pos: 17189
+Id:.17190
+file: Vital Remains/1997 -.Forever Underground/01 - Forever.underground.ogg
+Last-Modified: 2.20-06-08T16:26:04Z
+Artist: Vital Remains
+Album: .orever Underground
+Date: 1997
+Track: 1
+Title: Forever underground
+Genr.: Death Metal
+Time: 557
+duration: 556.826
+Pos: 17190
+Id: 17191
+file: Vital Remains/1997 - Forever Und.rground/02 - Battle ground.ogg
+Last-Modified: 2020-06-08T16:26:04Z
+Artist: Vital Remains
+Album: Forev.r Underground
+Date: 1997
+Track: 2
+Title: Battle ground
+Genre: Death Metal
+Time: 409
+duration: 408.693.Pos: 17191.Id: 17192
+.ile: Vital Remains/1997 - Forever Underground/03 - I am god.ogg
+Last-Modified: 2020-06-08T16:26:04Z
+Ar.ist: Vital Remains
+Album: Forever Underground
+Date: 1997
+Track: 3
+Title: I am god
+Genre: Death Metal
+Time: 577
+durat.on: 577.026
+Pos: 17192
+Id: 17193
+file: Vital Remains/1997 - Forever Underground/04 - Farewell to the mess.ah.ogg
+Last-Modified: 2020-06-08T16:26:04Z
+Artist: Vital Remains
+Album: Forever Underground
+Date: 1997
+Tr.ck: 4
+Title: Farewell to the messiah
+Genre: Death Metal
+Time: 90
+duration: 89.906
+Pos: 17193
+Id: .7194
+file: Vital Remains/1997 - Forever Undergrou.d/05 - Eastern journey.ogg
+Last-Modified: 2020-06-08T16:26:04Z
+Artist: Vital Remains
+Album: Forever Undergroun.
+Date: 1997
+Track: 5
+Title: Eastern journey
+Genre: Death Metal
+Time: 434
+duration: 433.506
+Pos: 1719.
+Id: 17195
+file: Vital Remains/1997 - Forever Underg.ound/06 - Divine in fire.ogg
+Last-Modified: 2020-06-08T16:26:04Z
+Artist: Vital Remains
+Album: Forever Underground
+.ate: 1997
+Track: 6
+Title: Divine in fire
+Genre: Death Metal
+Time: 49.
+duration: 491.160
+Pos: 17195
+Id: 17196
+file: Vit.l Remains/2000 - Dawn Of The Apocalypse/01 - Intro.ogg
+Last-Modified: 2020-06-08T16:26:05Z
+Artist. Vital Remains
+Album: Dawn Of The Apocalypse
+Date: 2000
+Tr.ck: 1
+Title: Intro
+Genre: Death Metal
+Time: 49
+duration: 48.786
+Pos: 17196
+Id: 17197
+file: Vital .emains/2000 - Dawn Of The Apocalypse/02 - Black magick curse.ogg
+Last-Modified: 20.0-06-08T16:26:05Z
+Artist: Vital Remains
+Album: Daw. Of The Apocalypse
+Date: 2000
+Track: 2
+Title: Black magick curse
+Genre: Death Metal
+Time: 526
+duration: 526.14.
+Pos: 17197
+Id: 17198
+file: Vital Remains/2000 - Dawn .f The Apocalypse/03 - Dawn of the apocalypse.ogg
+Last-Modified: 2020-06-08T16:2.:05Z
+Artist: Vital Remains
+Album: Dawn Of The Apocalyp.e
+Date: 2000
+Track: 3
+Title: Dawn of the apocalypse
+Genre: Death Metal
+Time: 527
+duration: 527.266
+Pos: 17198
+Id: 1.199
+file: Vital Remains/2000 - Dawn Of The Apocalypse/0. - Sanctity in blasphemous ruin.ogg
+Last-Modified: 2.20-06-08T16:26:05Z
+Artist: Vital Remains
+Album: .awn Of The Apocalypse
+Date: 2000
+Track: 4
+Title: Sanctity in blasphe.ous ruin
+Genre: Death Metal
+Time: 519
+duration: 519.200
+Pos: 17199
+Id: 17200
+file: Vital Remains/2000 - Dawn .f The Apocalypse/05 - Came no ray of light.ogg
+Last-Modified: 2020-06-08T16:26:.5Z
+Artist: Vital Remains
+Album: Dawn Of The Apoc.lyp
+	TYPE (unknow): 59315
+	NAME: 19
+Pos: 17153
+Id: 17154
+file: Vile/2011 - Metamorph.sis/10 - As one.ogg
+Last-Modified: 2020-06-08T16:20:53Z
+Artist: Vile
+Album: Metamorphosis
+Date: 2011
+Track: 10
+.itle: As one
+Genre: Death Metal
+Time: 207
+duration: 206.622
+Pos: 17154
+Id: 17155
+fil.: Vile/2011 - Metamorphosis/11 - Redemption.ogg
+Last-Modified: 2020-06-08T16:20:53Z
+Artist: Vile
+Albu.: Metamorphosis
+Date: 2011
+Track: 11
+Title: Redemption
+Genre: Death Metal
+Time: 171
+duration: 170.840
+Pos: 17.55
+Id: 17156
+file: Violent Hate/1992 - Curse of t.e Evil One - In Between the Truth - Krisiun & Violent Hate/05 - Every which way.ogg
+Last-Modified: 2020-.6-08T16:25:09Z
+Artist: Violent Hate
+Album: Curse.of the Evil One - In Between the.Truth - Krisiun & Violent Hate
+D.te: 1992
+Track: 5
+Title: Every which way
+Genre: Death Metal
+Time: 333
+duration: 333.374
+Pos: 1715.
+Id: 17157
+file: Violent Hate/1992 - Curse of the Evil.One - In Between the Truth - Kri.iun & Violent Hate/06 - Just a bitch.ogg
+Last-Modified: 2020-06-08T16:25:09Z
+Artist: Violent Hate
+Album: Curse of t.e Evil One - In Between the Truth - Krisiun & Violent Hate
+Date: 1992
+Track: 6
+Title: Just a bitch
+Genre. Death Metal
+Time: 252
+duration: 252.003
+Pos: 17157
+Id: 17.58
+file: Violent Hate/1992 - Curse of the Evil On. - In Between the Truth - Krisiun & Violent Hate/07 - Hands of a witch.ogg
+Last-Modified: 2020-06-08T.6:25:09Z
+Artist: Violent Hate
+Album: Curse of the.Evil One - In Between the Truth . Krisiun & Violent Hate
+Date: 1992
+Track: 7
+T.tle: Hands of a witch
+Genre: Death Metal
+Time: 354
+duration: 354.011
+Pos: 17158
+Id: 17159
+file: Violent H.te/1992 - Curse of the Evil One - In Between the Truth - Krisiun & Violent Hate/08 - Creation of .ar.ogg
+Last-Modified: 2020-06-08T16:25:09Z
+Artist: Violent Hate
+Album: Curse of the Evil One - In Between the Truth - K.isiun & Violent Hate
+Date: 1992
+Track: 8
+Title: Creation of war
+Genre: Death Metal
+Time: 351
+duration: 350.511
+Pos. 17159
+Id: 17160
+file: Vital Remains/1989 - Reduced To Ash.s (demo)/1 - Vital remains.ogg
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Remains
+Album: Reduc.d To Ashes (demo)
+Date: 1989
+Track: 1
+Title: Vital remains
+Genre: Death Metal
+Time: 309
+duration: 308.662
+Pos: 17160
+Id: 17161
+file: Vital Remains/1.89 - Reduced To Ashes (demo)/2 - Smoldering burial.ogg
+La.t-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Remains
+Album: Reduced To Ashes (demo)
+Date: 1989
+Track: 2
+Title: Sm.ldering burial
+Genre: Death Metal
+Time: 180
+duration: 179.696
+Pos: 17161
+Id: 17162
+file: Vital Remains/1989 - R.duced To Ashes (demo)/3 - Morbid death.ogg
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Remains
+.lbum: Reduced To Ashes (demo)
+Date: 1989
+Track: 3
+Title: Morbid d.ath
+Genre: Death Metal
+Time: 158
+duration: 158.119
+Pos: 17162
+Id: 17163
+file: Vital Remains/1989 - Re.uced To Ashes (demo)/4 - Reduced to ashes.ogg
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Rema.ns
+Album: Reduced To Ashes (demo)
+Date: 1989
+Track: 4
+Title: Reduced to ashes
+Genre: Death Metal
+Time: 12.
+duration: 126.458
+Pos: 17163
+Id: 17164
+file: Vital Re.ains/1989 - Reduced To Ashes (demo)/5 - More brains.ogg
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Rem.ins
+Album: Reduced To Ashes (demo)
+Date: 1989
+Track: 5
+Title: More brains
+Genre: Death Metal
+Time. 278
+duration: 277.864
+Pos: 17164
+Id: 17165
+file: Vital Re.ains/1989 - Reduced To Ashes (demo)/6 - Slaughter shack.ogg
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital.Remains
+Album: Reduced To Ashes .demo)
+Date: 1989
+Track: 6
+Title: Slaught.r shack
+Genre: Death Metal
+Time: 278
+duration: 277.864
+Pos: 17165
+Id: 17166
+file: Vital Remains/1990 . Excruciating Pain/01 - Intro - human sacrifi.e.ogg
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Remains
+Album: Excruciating Pain
+Date: 1990.Track: 1
+T.tle: Intro - human sacrifice
+Genre: Death Metal
+Time: 301
+duration: 300.982
+Pos: 17166
+Id: 17167
+file: Vi.al Remains/1990 - Excruciating Pain/02 - Ressurrected.ogg
+Last-Modified: 2020-06-08T16:26:04Z
+Artist: Vital Remains
+.lbum: Excruciating Pain
+Date: 1990
+Track: 2
+Title: Ressurrected
+G.nre: Death Metal
+Time: 398
+duration: 397.740
+Pos: 17167
+Id: 17168
+file: Vital Remains/1990 - Excrucia.ing Pain/03 - Fallen angels.ogg
+Last-Modified: 2020-06-08T16:26:04Z
+Artist: Vital Remains
+Album: Excruciating Pain
+D.te: 1990
+Track: 3
+Title: Fallen angels
+Genre: Death Metal
+Time: 249
+duration: 248.764
+Pos: 17168
+.d: 17169
+file: Vital Remains/1990 - Excruciating Pain/04 - Excruciating p.in.ogg
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Remains
+Album: Excruciating Pain
+Date: 1.90
+Track: 4
+Title: Excruciating pain
+Genre: Death Metal
+T.me: 225
+duration: 225.175
+Pos: 17169
+Id: 17170
+file: Vital Remains/1990 - Excruciating Pain/05 - Nocturna. blasphemy.ogg
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Remains
+Album: Excruciating Pain
+Date: 1990.Track: 5
+T.tle: Nocturnal blasphemy
+Genre: Death Metal
+Time: 314
+duration: 313.600
+Pos: 17170
+Id: 17171
+file: Vital .emains/1991 - The Black Mass (Single)/01 - Of pure unholyness.ogg
+Last-Modified: 2.20-06-08T16:26:05Z
+Artist: Vital Remains
+Album: .he Black Mass (Single)
+Date: 1991
+Track: 1
+Title: Of pure unholyness
+Genre: Death Me.al
+Time: 361
+duration: 361.456
+Pos: 17171
+Id: 17172
+file: Vital Remains/1991 - The Black Mass (Single)/02 - Frozen t.rror.ogg
+Last-Modified: 2020-06-08T16:26:05Z
+Artist: Vital Remains
+Album: The Black Mass (Single)
+Dat.: 1991
+Track: 2
+Title: Frozen terror
+Genre: Death Metal
+Time: 320
+duration: 320.209
+Pos: 17172
+Id: 17.73
+file: Vital Remains/1992 - Let Us Pray/01 - Wa. in paradise.ogg
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Remains
+Album: Let Us Pray
+Date: 1992
+Track: 1
+.itle: War in paradise
+Genre: Death Metal
+Time: 465
+duration: 464.826
+Pos: 17173
+Id: .7174
+file: Vital Remains/1992 - Let Us Pray/02 - .f pure unholiness.ogg
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Remains.Album: Let.Us Pray
+Date: 1992
+Track: 2
+Titl.: Of pure unholiness
+Genre: Death Metal
+Time: 400
+duration: 399.640
+Pos: 17174
+Id: 17175
+file: Vital .emains/1992 - Let Us Pray/03 - Ceremony of the seventh circle.ogg
+Last-Modified: 2.20-06-08T16:26:03Z
+Artist: Vital Remains
+Album: .et Us Pray
+Date: 1992
+Track: 3
+Title: Ceremony of the seventh circle
+Genre: .eath Metal
+Time: 418
+duration: 418.040
+Pos: 17175
+Id: 17176
+file: Vi.al Remains/1992 - Let Us Pray/04 - Uncultivated grave.ogg
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Remains
+.lbum: Let Us Pray
+Date: 1992
+Track: 4
+Title: Uncultivated grave
+G.nre: Death Metal
+Time: 422
+duration: 421.626
+Pos: 17176
+Id: 17177
+file: Vital Remains/1992 - Let Us P.ay/05 - Malevolent invocation.ogg
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Remains
+Album: Let Us Pray
+Dat.: 1992
+Track: 5
+Title: Malevolent invocation
+Genre: Death Metal
+Time: 251
+duration: 250.826
+Pos: 1717.
+Id: 17178
+file: Vital Remains/1992 - Let Us Pray/06 - .solated magick.ogg
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Rema.ns
+Album: Let Us Pray
+Date: 1992
+Track: 6
+Title: Isolated magick
+Genre: Death Metal
+Time: 314
+duration: 3.3.733
+Pos: 17178
+Id: 17179
+file: Vital Remains/19.2 - Let Us Pray/07 - Cult of the dead.ogg
+Last-Modified: .020-06-08T16:26:03Z
+Artist: Vital Remains
+Album: L.t Us Pray
+Date: 1992
+Track: 7
+Title: Cult of the dead
+Genre: Death Metal
+Time: 429
+duration: 429.066
+.os: 17179
+Id: 17180
+file: Vital Remains/1992 - Let Us Pray/08 - Frozen terror.og.
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Remains
+Album: Let Us Pray
+Date: 1992
+Track: 8
+Title. Frozen terror
+Genre: Death Metal
+Time: 347
+duration: 347..53
+Pos: 17180
+Id: 17181
+file: Vital Remains/1992 - L.t Us Pray/09 - Amulet of the conquering.ogg
+Last-Modified: 2020-06-08T16:26:03Z
+Artist: Vital Remains.Album: Let.Us Pray
+Date: 1992
+Track: 9
+Titl.: Amulet of the conquering
+Genre: Death Metal
+Time: 334
+duration: 334.013
+Pos: 17181
+Id: 17182
+file: .ital Remains/1995 - Into Cold Darkness/01 - Immortal crusade.ogg
+Last-Modified: 2020-0.-08T16:26:02Z
+Artist: Vital Remains
+Album: Into Cold D.rkness
+Date: 1995
+Track: 1
+Title: Immortal crusade
+Genre: Death Metal
+Time: 536
+duration: 535.902.Pos: 17182.Id: 17183
+.ile: Vital Remains/1995 - Into Cold Darkness/02 - Under the moon's fog.ogg
+Last-Modified: 2020-06-08T1.:26:02Z
+Artist: Vital Remains
+Album: Into Cold Darknes.
+Date: 1995
+Track: 2
+Title: Under the moon's fog
+Genre: Death Metal
+Time: 405
+duration: 404.584
+Pos: 17183
+Id: 1718.
+file: Vital Remains/1995 - Into Cold Darkness/03 - .rown of the black hearts.ogg
+Last-Modified: 2020-06-08T16:26:02Z
+Ar.ist: Vital Remains
+Album: Into Cold Darkness
+Date: 1995
+Track: 3
+Title: Crown of the black hearts
+Genre: Death Metal.Time: 220
+.uration: 219.742
+Pos: 17184
+Id: 17185
+file: Vital Remains/1995 - Into Cold Darkness/04 - Scrolls of . millenium past.ogg
+Last-Modified: 2020-06-08T16:26:02Z
+Artist: Vital Remains
+Album: Into Cold Da.kness
+Date: 1995
+Track: 4
+Title: Scrolls of a millenium past
+Genre: Death Metal
+Time: 319
+duration: 318.511
+Pos: 1.185
+Id: 17186
+file: Vital Remains/1995 - Into Cold Dark.ess/05 - Into cold darkness.ogg
+Last-Modified: 2020-06-08T16:26:02Z
+Artist: Vital Remains
+Album: Into Cold Dar.ness
+Date: 1995
+Track: 5
+Title: Into cold darkness
+Genre: Death Metal
+Time: 231
+duration: 230.739
+Pos: 1718.
+Id: 17187
+file: Vital Remains/1995 - Into Cold Darkne.s/06 - Descent into hell.ogg
+Last-Modified: 2020-06-08T16:26:02Z
+Artist: Vital Remains
+Album: Into Cold Darkness
+Da.e: 1995
+Track: 6
+Title: Descent into hell
+Genre: Death Metal
+Time: 242
+duration: 241.502
+Pos: 17187
+Id: 17188
+file: .ital Remains/1995 - Into Cold Darkness/07 - Angels of blasphemy.ogg
+Last-Modified: 202.-06-08T16:26:02Z
+Artist: Vital Remains
+Album: In.o Cold Darkness
+Date: 1995
+Track: 7
+Title: Angels of blasphemy
+Genre: Death Metal
+Time: 233
+duration: 232.803
+Pos: 1.188
+Id: 17189
+file: Vital Remains/1995 - Into Cold Dark.ess/08 - Dethroned emperor.ogg
+Last-Modified: 2020-06-08T16:26:02Z
+Artist: Vital Remains
+Album: Into Cold Dark.ess
+Date: 1995
+Track: 8
+Title: Dethroned emperor
+Genre: Death Metal
+Time: 282
+duration: 281.678
+Pos: 17189
+Id:.17190
+file: Vital Remains/1997 -.Forever Underground/01 - Forever.underground.ogg
+Last-Modified: 2.20-06-08T16:26:04Z
+Artist: Vital Remains
+Album: .orever Underground
+Date: 1997
+Track: 1
+Title: Forever underground
+Genr.: Death Metal
+Time: 557
+duration: 556.826
+Pos: 17190
+Id: 17191
+file: Vital Remains/1997 - Forever Und.rground/02 - Battle ground.ogg
+Last-Modified: 2020-06-08T16:26:04Z
+Artist: Vital Remains
+Album: Forev.r Underground
+Date: 1997
+Track: 2
+Title: Battle ground
+Genre: Death Metal
+Time: 409
+duration: 408.693.Pos: 17191.Id: 17192
+.ile: Vital Remains/1997 - Forever Underground/03 - I am god.ogg
+Last-Modified: 2020-06-08T16:26:04Z
+Ar.ist: Vital Remains
+Album: Forever Underground
+Date: 1997
+Track: 3
+Title: I am god
+Genre: Death Metal
+Time: 577
+durat.on: 577.026
+Pos: 17192
+Id: 17193
+file: Vital Remains/1997 - Forever Underground/04 - Farewell to the mess.ah.ogg
+Last-Modified: 2020-06-08T16:26:04Z
+Artist: Vital Remains
+Album: Forever Underground
+Date: 1997
+Tr.ck: 4
+Title: Farewell to the messiah
+Genre: Death Metal
+Time: 90
+duration: 89.906
+Pos: 17193
+Id: .7194
+file: Vital Remains/1997 - Forever Undergrou.d/05 - Eastern journey.ogg
+Last-Modified: 2020-06-08T16:26:04Z
+Artist: Vital Remains
+Album: Forever Undergroun.
+Date: 1997
+Track: 5
+Title: Eastern journey
+Genre: Death Metal
+Time: 434
+duration: 433.506
+Pos: 1719.
+Id: 17195
+file: Vital Remains/1997 - Forever Underg.ound/06 - Divine in fire.ogg
+Last-Modified: 2020-06-08T16:26:04Z
+Artist: Vital Remains
+Album: Forever Underground
+.ate: 1997
+Track: 6
+Title: Divine in fire
+Genre: Death Metal
+Time: 49.
+duration: 491.160
+Pos: 17195
+Id: 17196
+file: Vit.l Remains/2000 - Dawn Of The Apocalypse/01 - Intro.ogg
+Last-Modified: 2020-06-08T16:26:05Z
+Artist. Vital Remains
+Album: Dawn Of The Apocalypse
+Date: 2000
+Tr.ck: 1
+Title: Intro
+Genre: Death Metal
+Time: 49
+duration: 48.786
+Pos: 17196
+Id: 17197
+file: Vital .emains/2000 - Dawn Of The Apocalypse/02 - Black magick curse.ogg
+Last-Modified: 20.0-06-08T16:26:05Z
+Artist: Vital Remains
+Album: Daw. Of The Apocalypse
+Date: 2000
+Track: 2
+Title: Black magick curse
+Genre: Death Metal
+Time: 526
+duration: 526.14.
+Pos: 17197
+Id: 17198
+file: Vital Remains/2000 - Dawn .f The Apocalypse/03 - Dawn of the apocalypse.ogg
+Last-Modified: 2020-06-08T16:2.:05Z
+Artist: Vital Remains
+Album: Dawn Of The Apocalyp.e
+Date: 2000
+Track: 3
+Title: Dawn of the apocalypse
+Genre: Death Metal
+Time: 527
+duration: 527.266
+Pos: 17198
+Id: 1.199
+file: Vital Remains/2000 - Dawn Of The Apocalypse/0. - Sanctity in blasphemous ruin.ogg
+Last-Modified: 2.20-06-08T16:26:05Z
+Artist: Vital Remains
+Album: .awn Of The Apocalypse
+Date: 2000
+Track: 4
+Title: Sanctity in blasphe.ous ruin
+Genre: Death Metal
+Time: 519
+duration: 519.200
+Pos: 17199
+Id: 17200
+file: Vital Remains/2000 - Dawn .f The Apocalypse/05 - Came no ray of light.ogg
+Last-Modified: 2020-06-08T16:26:.5Z
+Artist: Vital Remains
+Album: Dawn Of The Apoc.lyp
+	TYPE (unknow): 0
+	NAME: 
+	TYPE (unknow): 0
+	NAME: 
+	TYPE (unknow): 0
+	NAME: 
+	TYPE (unknow): 0
+	NAME: 
+	TYPE (unknow): 0
+	NAME: 
+	TYPE (unknow): 0
+	NAME: 
+	TYPE (unknow): 0
+	NAME: 
+	TYPE (unknow): 0
+	NAME: 
+	TYPE (unknow): 0
+	NAME: 
+	TYPE (unknow): 0
+	NAME: 
+	TYPE (unknow): 0
+	NAME: 
+	TYPE (unknow): 0
+	NAME: 
+	TYPE (unknow): 0
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x6f1c (0x6f1c)
+Packet Length:66
+Offset:0
+Time to live:64
+Protocol:6
+Flags:DF
+ZoeurK.lan (192.168.0.20) => dns.google (8.8.8.8)
+Port Src:49093
+Port Dst:53
+Checksum:0xd0f2 (0xffc6)
+TCP Length:32
+Sequence:2966771355
+Acknowledgement:2357866938
+Flags:....A..
+Window:493
+urgptr:0
+Header size:32
+tcp4 options (option lenght 12):
+	Octet 1:0xbf
+	Octet 2:0xc5
+	Octet 3:0x0
+	Octet 4:0x35
+	Octet 5:0xb0
+	Octet 6:0xd5
+	Octet 7:0x56
+	Octet 8:0x9b
+	Octet 9:0x8c
+	Octet 10:0x8a
+	Octet 11:0x31
+	Octet 12:0xba
+print_data():
+	No data.
+print_data_hex():
+	No data.
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0x538f (0x538f)
+Packet Length:1484
+Offset:0
+Time to live:119
+Protocol:6
+Flags:
+dns.google (8.8.8.8) => ZoeurK.lan (192.168.0.20)
+Port Src:53
+Port Dst:49093
+Checksum:0x5674 (0x5674)
+TCP Length:1450
+Sequence:2357866938
+Acknowledgement:2966771355
+Flags:....A..
+Window:236
+urgptr:0
+Header size:32
+tcp4 options (option lenght 12):
+	Octet 1:0x0
+	Octet 2:0x35
+	Octet 3:0xbf
+	Octet 4:0xc5
+	Octet 5:0x8c
+	Octet 6:0x8a
+	Octet 7:0x31
+	Octet 8:0xba
+	Octet 9:0xb0
+	Octet 10:0xd5
+	Octet 11:0x56
+	Octet 12:0x9b
+Data (1418 octet):
+@Sy..;..O..,.&o..:#....&{..........+.<;facebook-domain-verification=scdn4fwr0on3j97l5py9vp9raerciu.........+.A@Trustpilot-Verification-kqvVskCm6JQ9Vg1qAmahpBSJ5tvZORbriFyVIk4E.........+.EDgoogle-site-verification=J0NZ2F6kdhXzsguHSKZTm3CWujnrImftkDG3zhz14g0.........+.\[_telesec-domain-validation=EA103FC1B2FA0525DDB5E5671796024E8E423AA42A905B487FCA4A6D5BC3134E.........+...v=spf1 ip4:213.165.64.0/23 ip4:74.208.5.64/26 ip4:212.227.126.128/25 ip4:212.227.15.0/25 ip4:212.227.17.0/27 ip4:74.208.4.192/26 ip4:82.165.159.0/24 ip4:217.72.207.0/27 ip4:82.165.229.31 ip4:82.165.230.21 -all.........+.........,_*Wc_..c6Q.gmx.net............s_gb.0.....I.6W`{\.L]...J*......D.*7d}G.6.-..i.b._.........B..J...<.?v...+....[.......M...n~..<r...=....OL.#..w..?.T.P.s..w.64.;....T...='.....z7.wC.W...`.#..*.u.........*P...x...p>s....fq.....(..'.L.5>....z....-f.....Y...>.C...!c.0...@..^.,..1o...0.....W............R......z+...!.}..).6`,....g..n...|..;...N(}5%YC".........B...d|whql....C ..&5\.....t..<.B.2wYM.-.Z...s.v..IR_.%I$...OQ.d..cTxC...0|(t...@|q....4..D.....J#.4.5B...25'..n/.S..0.T..
+.....ByM..(...C}.x..L..0)P..,..=.?}...Y......g..3.i.z...~.6M.g!8.&.r....q.....0.....W.............\..o^..0...%
+........1?.+#...l.W.S@......}j....U..Gk...y.Z.........3..............M....[>.....X.......Xyw7O{IY.J;m.W.S
+,Q......H6.:...3q%A.C~..h....H........:..q.......{..-.......^..ea.>..cU..a2V.b....nF.......
+...Las....-.G*(..$..b.wH....I.)
+End of data.
+Data (1418 octet) (in hexadecimal):
+octets:0	c::@ c::S c::y 0x86 0xe7 c::; 0x9c 0xe7  c::O 0x0f 0x83 c::, 0x95 c::& c::o 0xf8
+octets:16	0x92 c::: c::# 0xbb 0xb8 0xf1 0xee c::&  c::{ 0xb8 0xc0 0x0c 0x00 0x10 0x00 0x01
+octets:32	0x00 0x00 0x01 c::+ 0x00 c::< c::; c::f  c::a c::c c::e c::b c::o c::o c::k c::-
+octets:48	c::d c::o c::m c::a c::i c::n c::- c::v  c::e c::r c::i c::f c::i c::c c::a c::t
+octets:64	c::i c::o c::n c::= c::s c::c c::d c::n  c::4 c::f c::w c::r c::0 c::o c::n c::3
+octets:80	c::j c::9 c::7 c::l c::5 c::p c::y c::9  c::v c::p c::9 c::r c::a c::e c::r c::c
+octets:96	c::i c::u 0xc0 0x0c 0x00 0x10 0x00 0x01  0x00 0x00 0x01 c::+ 0x00 c::A c::@ c::T
+octets:112	c::r c::u c::s c::t c::p c::i c::l c::o  c::t c::- c::V c::e c::r c::i c::f c::i
+octets:128	c::c c::a c::t c::i c::o c::n c::- c::k  c::q c::v c::V c::s c::k c::C c::m c::6
+octets:144	c::J c::Q c::9 c::V c::g c::1 c::q c::A  c::m c::a c::h c::p c::B c::S c::J c::5
+octets:160	c::t c::v c::Z c::O c::R c::b c::r c::i  c::F c::y c::V c::I c::k c::4 c::E 0xc0
+octets:176	0x0c 0x00 0x10 0x00 0x01 0x00 0x00 0x01  c::+ 0x00 c::E c::D c::g c::o c::o c::g
+octets:192	c::l c::e c::- c::s c::i c::t c::e c::-  c::v c::e c::r c::i c::f c::i c::c c::a
+octets:208	c::t c::i c::o c::n c::= c::J c::0 c::N  c::Z c::2 c::F c::6 c::k c::d c::h c::X
+octets:224	c::z c::s c::g c::u c::H c::S c::K c::Z  c::T c::m c::3 c::C c::W c::u c::j c::n
+octets:240	c::r c::I c::m c::f c::t c::k c::D c::G  c::3 c::z c::h c::z c::1 c::4 c::g c::0
+octets:256	0xc0 0x0c 0x00 0x10 0x00 0x01 0x00 0x00  0x01 c::+ 0x00 c::\ c::[ c::_ c::t c::e
+octets:272	c::l c::e c::s c::e c::c c::- c::d c::o  c::m c::a c::i c::n c::- c::v c::a c::l
+octets:288	c::i c::d c::a c::t c::i c::o c::n c::=  c::E c::A c::1 c::0 c::3 c::F c::C c::1
+octets:304	c::B c::2 c::F c::A c::0 c::5 c::2 c::5  c::D c::D c::B c::5 c::E c::5 c::6 c::7
+octets:320	c::1 c::7 c::9 c::6 c::0 c::2 c::4 c::E  c::8 c::E c::4 c::2 c::3 c::A c::A c::4
+octets:336	c::2 c::A c::9 c::0 c::5 c::B c::4 c::8  c::7 c::F c::C c::A c::4 c::A c::6 c::D
+octets:352	c::5 c::B c::C c::3 c::1 c::3 c::4 c::E  0xc0 0x0c 0x00 0x10 0x00 0x01 0x00 0x00
+octets:368	0x01 c::+ 0x00 0xd2 0xd1 c::v c::= c::s  c::p c::f c::1 c::  c::i c::p c::4 c:::
+octets:384	c::2 c::1 c::3 c::. c::1 c::6 c::5 c::.  c::6 c::4 c::. c::0 c::/ c::2 c::3 c:: 
+octets:400	c::i c::p c::4 c::: c::7 c::4 c::. c::2  c::0 c::8 c::. c::5 c::. c::6 c::4 c::/
+octets:416	c::2 c::6 c::  c::i c::p c::4 c::: c::2  c::1 c::2 c::. c::2 c::2 c::7 c::. c::1
+octets:432	c::2 c::6 c::. c::1 c::2 c::8 c::/ c::2  c::5 c::  c::i c::p c::4 c::: c::2 c::1
+octets:448	c::2 c::. c::2 c::2 c::7 c::. c::1 c::5  c::. c::0 c::/ c::2 c::5 c::  c::i c::p
+octets:464	c::4 c::: c::2 c::1 c::2 c::. c::2 c::2  c::7 c::. c::1 c::7 c::. c::0 c::/ c::2
+octets:480	c::7 c::  c::i c::p c::4 c::: c::7 c::4  c::. c::2 c::0 c::8 c::. c::4 c::. c::1
+octets:496	c::9 c::2 c::/ c::2 c::6 c::  c::i c::p  c::4 c::: c::8 c::2 c::. c::1 c::6 c::5
+octets:512	c::. c::1 c::5 c::9 c::. c::0 c::/ c::2  c::4 c::  c::i c::p c::4 c::: c::2 c::1
+octets:528	c::7 c::. c::7 c::2 c::. c::2 c::0 c::7  c::. c::0 c::/ c::2 c::7 c::  c::i c::p
+octets:544	c::4 c::: c::8 c::2 c::. c::1 c::6 c::5  c::. c::2 c::2 c::9 c::. c::3 c::1 c:: 
+octets:560	c::i c::p c::4 c::: c::8 c::2 c::. c::1  c::6 c::5 c::. c::2 c::3 c::0 c::. c::2
+octets:576	c::1 c::  c::- c::a c::l c::l 0xc0 0x0c  0x00 c::. 0x00 0x01 0x00 0x00 0x01 c::+
+octets:592	0x01 0x1b 0x00 0x10 0x08 0x02 0x00 0x00  0x01 c::, c::_ c::* c::W c::c c::_ 0x17
+octets:608	0xe2 c::c c::6 c::Q 0x03 c::g c::m c::x  0x03 c::n c::e c::t 0x00 0xa7 0x09 0xe1
+octets:624	0xba 0x0b 0xee 0x9b 0x8f 0xb8 0xb2 0x08  c::s c::_ c::g c::b 0xe4 c::0 0x8a 0xa6
+octets:640	0xcb 0x96 0xbb c::I 0xe9 c::6 c::W c::`  c::{ c::\ 0x8f c::L c::] 0xb9 0xd7 0x8b
+octets:656	c::J c::* 0x84 0xdf 0xff 0x9d 0xb8 0xec  c::D 0xbb c::* c::7 c::d c::} c::G 0xe9
+octets:672	c::6 0xe0 c::- 0x19 0xfe c::i 0x8d c::b  0xa3 c::_ 0xa7 0xcd 0xf6 0x98 0xfc 0x0e
+octets:688	0x07 0x15 0x89 c::B 0xd0 0xba c::J 0x8c  0xb7 0xdb c::< 0xcb c::? c::v 0xa2 0xf5
+octets:704	0xbb c::+ 0xe1 0x13 0xd7 0x02 c::[ 0xa3  0x1c 0xe3 0xfe 0xf5 0xb9 0xb4 c::M 0x95
+octets:720	0xd1 0x1a c::n c::~ 0x02 0xfc c::< c::r  0xf4 0xcb 0x95 c::= 0xc0 0xe8 0xd2 0xeb
+octets:736	c::O c::L 0xe2 c::# 0x1c 0xc9 c::w 0xcb  0xc6 c::? 0x89 c::T 0xfc c::P 0x87 c::s
+octets:752	0xf5 0x1f c::w 0x15 c::6 c::4 0x97 c::;  0xf4 0xaa 0xe4 0xb0 c::T 0x12 0xa7 0xa6
+octets:768	c::= c::' 0x1d 0xe0 0x14 0x8c 0xf0 c::z  c::7 0xfe c::w c::C 0x95 c::W 0xa6 0x18
+octets:784	0x89 c::` 0x88 c::# 0xee 0xac c::* 0xd4  c::u 0x01 0x87 0x0e 0xd1 0x0d 0x89 0xe3
+octets:800	0xe6 0xda c::* c::P 0xd9 0xa3 0xe3 c::x  0xea 0xc2 0x03 c::p c::> c::s 0x06 0xa9
+octets:816	c::. 0x94 c::f c::q 0xca 0xda 0xd6 0xc2  0xfb c::( 0xe5 0xa4 c::' 0xa2 c::L 0x10
+octets:832	c::5 c::> 0xd1 0xcd 0xb1 0xdf c::z 0x85  0xc5 0xe5 0xe2 c::- c::f 0xc2 0xd9 0xf8
+octets:848	0x97 0xb3 c::Y 0xa7 0xa4 0x98 c::> 0x11  c::C 0x07 0x05 0x07 c::! c::c 0xee c::0
+octets:864	0xd4 0xa0 0x84 c::@ 0x8e 0x0d c::^ 0xdb  c::, 0x17 0xe1 c::1 c::o 0xc0 0x0c 0x00
+octets:880	c::0 0x00 0x01 0x00 0x00 0x02 c::W 0x01  0x08 0x01 0x00 0x03 0x08 0x03 0x01 0x00
+octets:896	0x01 0xbf 0x11 c::R 0x13 0x01 0xfd 0x8a  0xc9 0xcb c::z c::+ 0x90 0xc2 0x0e c::!
+octets:912	0xbe c::} 0xc0 0xfe c::) 0x85 c::6 c::`  c::, 0xf7 0x9d 0xdc 0xa2 c::g 0x93 0xef
+octets:928	c::n 0x9f 0xee 0x18 c::| 0xc9 0xfe c::;  0xfe 0xe4 0xfd c::N c::( c::} c::5 c::%
+octets:944	c::Y c::C c::" 0xe8 0xf9 0x94 0x17 0xf4  0xaa 0x10 0xe1 0x81 c::B 0x9c 0x90 0xfd
+octets:960	c::d c::| c::w c::h c::q c::l 0x9a 0xc6  0xfc 0xa4 c::C c::  0x8c 0x1c c::& c::5
+octets:976	c::\ 0xa8 0x7f 0x12 0x1c 0xe4 c::t 0xd6  0xc0 c::< 0xb9 c::B 0x86 c::2 c::w c::Y
+octets:992	c::M 0xbb c::- 0x89 c::Z 0xe2 0xb8 0xcf  c::s 0xcf c::v 0xb8 0xdc c::I c::R c::_
+octets:1008	0x89 c::% c::I c::$ 0xab 0xad 0xae c::O  c::Q 0xe7 c::d 0x90 0xe8 c::c c::T c::x
+octets:1024	c::C 0x98 0xe9 0x1f c::0 c::| c::( c::t  0xf9 0xc3 0xd9 c::@ c::| c::q 0x12 0xaf
+octets:1040	0xbf 0xe1 c::4 0x86 0xb7 c::D 0xe3 0x81  0xbf 0xc5 0x04 c::J c::# 0x16 c::4 0xe3
+octets:1056	c::5 c::B 0xd2 0x0b 0xd9 c::2 c::5 c::'  0x9e 0xf5 c::n c::/ 0x1d c::S 0xb5 0xf3
+octets:1072	c::0 0xa3 c::T 0x1c 0x95 0x0a 0x01 0xbe  0x19 0x94 0xd9 c::B c::y c::M 0x80 0xbf
+octets:1088	c::( 0x1e 0xa7 0xbe c::C c::} 0x97 c::x  0xac 0xc3 c::L 0x83 0xd0 c::0 c::) c::P
+octets:1104	0xd0 0xe8 c::, 0x15 0x07 c::= 0xd7 c::?  c::} 0x10 0xd7 0xdf c::Y 0x0e 0xf5 0x16
+octets:1120	0x0e 0xd8 0x14 c::g 0xda 0x83 c::3 0xf3  c::i 0xa7 c::z 0xbe 0xba 0x9e c::~ 0x7f
+octets:1136	c::6 c::M 0xa5 c::g c::! c::8 0x96 c::&  0xcc c::r 0x97 0xf5 0xd6 0xe3 c::q 0xf7
+octets:1152	0x7f 0xc0 0x0c 0x00 c::0 0x00 0x01 0x00  0x00 0x02 c::W 0x01 0x08 0x01 0x01 0x03
+octets:1168	0x08 0x03 0x01 0x00 0x01 0xbf 0xe1 0x03  c::\ 0xf6 0xad c::o c::^ 0xaf 0xea c::0
+octets:1184	0xb3 0xf7 0xcc c::% 0x0a 0x9d 0xd8 0x09  0xf3 0x00 0xfa 0x90 0xbe c::1 c::? 0x95
+octets:1200	c::+ c::# 0xec 0xc9 0xfa c::l 0xa1 c::W  0xbf c::S c::@ 0xf3 0xf2 0x0c 0xa1 0xb1
+octets:1216	0xd4 c::} c::j 0xfa 0x09 0x7f 0xc3 c::U  0xe7 0xbc c::G c::k 0x9b 0x1c 0x87 c::y
+octets:1232	0x03 c::Z 0xb7 0x8d 0xe6 0xf2 0x06 0xf9  0xf7 0xc6 0xe5 c::3 0xbb 0x1e 0xde 0x1c
+octets:1248	0xb7 0x90 0xe4 0x01 0x01 0xda 0xd1 0x9d  0x1f 0xfd c::M 0xa4 0x0e 0x83 0xc6 c::[
+octets:1264	c::> 0x17 0xc6 0x09 0xf2 0xd9 c::X 0x8e  0x8e 0x0b 0x99 0x07 c::. 0x85 c::X c::y
+octets:1280	c::w c::7 c::O c::{ c::I c::Y 0xb2 c::J  c::; c::m 0x08 c::W 0x0e c::S 0x0a c::,
+octets:1296	c::Q 0xf1 0xbb 0xfd 0xaf 0xba 0xb1 c::H  c::6 0xf1 c::: 0xab 0xc9 0xc9 c::3 c::q
+octets:1312	c::% c::A 0x19 c::C c::~ 0x06 0xf4 c::h  0xe5 0x02 0x15 0xa8 c::H 0xc3 0xa0 0xd2
+octets:1328	0xfc 0x19 0xfc 0x82 0x88 c::: 0x82 0x86  c::q 0xa2 0x9c 0x13 0x98 0xb3 0xdd 0x1e
+octets:1344	c::{ 0xaa 0xe4 c::- 0xc1 0x80 0xc7 0xd4  0xcd 0x84 c::. c::^ 0xe3 0x85 c::e c::a
+octets:1360	0xa0 c::> 0x8f 0xd7 c::c c::U 0xf1 0xe9  c::a c::2 c::V 0xb7 c::b 0x09 0xf5 0xbe
+octets:1376	0x19 c::n c::F 0xdf 0xa2 0xd4 0xcf 0xb7  0xfd 0xc6 0x0a 0x89 0x93 0xbb c::L c::a
+octets:1392	c::s 0xd2 0xbd 0x9b 0xe0 c::- 0xe9 c::G  c::* c::( 0xde 0x06 c::$ 0xcf 0x19 c::b
+octets:1408	0x8e c::w c::H 0xe2 0xc5 0xa5 0xf6 c::I  0xf7 c::)
+End of data.
+ID:31110
+qdcount:40167
+Ancount:20239
+Nscount:33580
+Arcount:38182
+Reserve.
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x6f1b (0x6f1b)
+Packet Length:66
+Offset:0
+Time to live:64
+Protocol:6
+Flags:DF
+ZoeurK.lan (192.168.0.20) => dns.google (8.8.8.8)
+Port Src:49093
+Port Dst:53
+Checksum:0xd0f2 (0xfa3c)
+TCP Length:32
+Sequence:2966771355
+Acknowledgement:2357868356
+Flags:....A..
+Window:493
+urgptr:0
+Header size:32
+tcp4 options (option lenght 12):
+	Octet 1:0xbf
+	Octet 2:0xc5
+	Octet 3:0x0
+	Octet 4:0x35
+	Octet 5:0xb0
+	Octet 6:0xd5
+	Octet 7:0x56
+	Octet 8:0x9b
+	Octet 9:0x8c
+	Octet 10:0x8a
+	Octet 11:0x37
+	Octet 12:0x44
+print_data():
+	No data.
+print_data_hex():
+	No data.
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0x5543 (0x5543)
+Packet Length:1047
+Offset:0
+Time to live:119
+Protocol:6
+Flags:
+dns.google (8.8.8.8) => ZoeurK.lan (192.168.0.20)
+Port Src:53
+Port Dst:49093
+Checksum:0xba2d (0xba2d)
+TCP Length:1013
+Sequence:2357868356
+Acknowledgement:2966771355
+Flags:...PA..
+Window:236
+urgptr:0
+Header size:32
+tcp4 options (option lenght 12):
+	Octet 1:0x0
+	Octet 2:0x35
+	Octet 3:0xbf
+	Octet 4:0xc5
+	Octet 5:0x8c
+	Octet 6:0x8a
+	Octet 7:0x37
+	Octet 8:0x44
+	Octet 9:0xb0
+	Octet 10:0xd5
+	Octet 11:0x56
+	Octet 12:0x9b
+Data (981 octet):
+..!E................W...0.....X_*Wc_..cl..gmx.net........IC.\G........=.........;N..g_.i.t.\w....;.......YW......ab.8K..O.,Sl4...Jtf...]......V@6.U.W7f`...K..6...d.......e....]M["...nip.Y...c)G..tF.Ld}.6.Q.c...
+Q.s.,..-U.......u.b..[g.{'z.#T=.......WkWt..U)].o:ix.s>.......D....0....8..8....@'.&F.4.|.wH......3.....W.......S.P.8............W...3....Q._*Wc_..c6Q.gmx.net..I=.#G....U.....LOv..+.r1p6.8.5.../Q.yC..F..H.c.I.9.b....q.D.'nT.<...-..~....-..`..D....n...c.....u...
+~<....P...$T.^H..ol.U.`[.zV.U*.}..:....3.Uy.*2.C.>..K...;.oD..B.U>..".Tz.)..~$:.Q4..f.6..p......SZf.Ztj...X.!.!..H..&HY*E.....|..B..2n..@..^..m....k..w:'........T_....issueDigicert.com........T_....issuetelesec.de........T_........Q._*Wc_..c6Q.gmx.net....m.l.Y..y[.....`.?.t...pJ1..^M4..".`.[.U:6O......w]s.%+M....w.Q..... |..<....'.F..g...QV.1.D.f...e.OX5TN...............g...D/....C......{.}p...P.^|...>J..
+L..r{......%..Y..*Rq..I...Y.D.-.e;e......1.......'....^9%V.........Dg.r.......I..:. ..#QmJ....6....
+End of data.
+Data (981 octet) (in hexadecimal):
+octets:0	0x0f 0x84 c::! c::E 0x1e 0x8e 0x80 0x9c  0x8b 0xda 0xc5 0xc0 0x0c 0x00 c::. 0x00
+octets:16	0x01 0x00 0x00 0x02 c::W 0x01 0x1b 0x00  c::0 0x08 0x02 0x00 0x00 0x02 c::X c::_
+octets:32	c::* c::W c::c c::_ 0x17 0xe2 c::c c::l  0x85 0x03 c::g c::m c::x 0x03 c::n c::e
+octets:48	c::t 0x00 0xa7 0xdf 0x05 0xe1 0x9c c::.  0x1d c::I c::C 0x09 c::\ c::G 0x9d 0xea
+octets:64	0x80 0xa1 0x89 0xef 0x1e 0x14 c::= 0xd6  0x0f 0xea 0xed 0xea 0x08 0x0c 0xca 0x00
+octets:80	c::; c::N 0xee 0x9b c::g c::_ 0xb6 c::i  0xdb c::t 0x14 c::\ c::w 0x06 0x13 0xa4
+octets:96	0xe7 c::; 0x05 0xda 0x9a 0x89 0x1e 0xdc  0x89 c::Y c::W 0xa1 0xee 0xe2 0x01 0xe8
+octets:112	0x0f c::a c::b 0x14 c::8 c::K 0xe9 0x1c  c::O 0x10 c::, c::S c::l c::4 0xde 0x02
+octets:128	0xd7 c::J c::t c::f 0xda 0x02 0x8b c::]  0x9e 0x1d 0xe7 0xd3 0xc5 0xb2 c::V c::@
+octets:144	c::6 0x85 c::U 0xab c::W c::7 c::f c::`  0xdc 0xb0 0x9e c::K 0x9b 0xf8 c::6 0xf0
+octets:160	0x1c 0x1c c::d 0x8f 0xde 0xed 0xc7 0xea  0xe2 0x90 c::e 0xd1 0x9f 0xc4 0x90 c::]
+octets:176	c::M c::[ c::" 0xdb 0x12 0x0b c::n c::i  c::p 0xb9 c::Y 0xfc 0xe4 0x19 c::c c::)
+octets:192	c::G 0x08 0xdf c::t c::F 0xb1 c::L c::d  c::} 0x9a c::6 0xe8 c::Q 0xb5 c::c 0x9c
+octets:208	0xa5 0xb2 0x0a c::Q 0xbf c::s 0xd7 c::,  0x15 0xaa c::- c::U 0xb4 0xcc 0x9c 0xdd
+octets:224	0xe1 0x0b 0x12 c::u 0xad c::b 0xb5 0xdd  c::[ c::g 0xa9 c::{ c::' c::z 0xfc c::#
+octets:240	c::T c::= 0xaf 0x91 0x00 0xca 0xe0 0xba  0xcd c::W c::k c::W c::t 0x84 0xb2 c::U
+octets:256	c::) c::] 0xbb c::o c::: c::i c::x 0xcd  c::s c::> 0x86 0xb7 0xe2 0xf9 0x97 0xa9
+octets:272	0xae c::D 0xaa 0x09 0xb2 0x97 c::0 0xa2  0xd2 0xf8 0xe2 c::8 0xc5 0xa7 c::8 0xcf
+octets:288	0x9b 0x18 0xb1 c::@ c::' 0xf6 c::& c::F  0xb5 c::4 0xd7 c::| 0x85 c::w c::H 0xe2
+octets:304	0xa7 0xa9 0xc0 0x0c 0x00 c::3 0x00 0x01  0x00 0x00 0x02 c::W 0x00 0x0d 0x01 0x00
+octets:320	0x00 0x18 0x08 c::S 0xdb c::P 0xb2 c::8  0x08 0xa4 0xc3 0xc0 0x0c 0x00 c::. 0x00
+octets:336	0x01 0x00 0x00 0x02 c::W 0x01 0x1b 0x00  c::3 0x08 0x02 0x00 0x01 c::Q 0x80 c::_
+octets:352	c::* c::W c::c c::_ 0x17 0xe2 c::c c::6  c::Q 0x03 c::g c::m c::x 0x03 c::n c::e
+octets:368	c::t 0x00 0x11 c::I c::= 0xf4 c::# c::G  0x8f 0xf6 0xc6 0x84 c::U 0xe2 0xf1 0x0c
+octets:384	0xa6 0xd7 c::L c::O c::v 0x7f 0x84 c::+  0xc7 c::r c::1 c::p c::6 c::. c::8 0xc1
+octets:400	c::5 0x88 0x07 0x97 c::/ c::Q 0x99 c::y  c::C 0xf8 0x1a c::F 0xc5 0xad c::H 0xc6
+octets:416	c::c 0xbf c::I 0xbc c::9 0x88 c::b 0x89  0x1f 0xc7 0xb6 c::q 0x91 c::D 0xa7 c::'
+octets:432	c::n c::T 0xd5 c::< 0xb9 0xa1 0xbe c::-  0x88 0x90 c::~ 0x00 0xf7 0xe0 0xbc c::-
+octets:448	0xe9 0xe7 c::` 0xa1 0x94 c::D 0xef 0x09  0x09 0x0e c::n 0xfa 0x1e 0x02 c::c 0xe7
+octets:464	0xd3 0x94 0xb5 0x8a c::u 0xc8 0x9e 0xbb  0x0a c::~ c::< 0xce 0xa1 0x8a 0xc7 c::P
+octets:480	0xd7 0xfa 0xc9 c::$ c::T 0xe4 c::^ c::H  0xcc 0x91 c::o c::l 0x1d c::U 0xf5 c::`
+octets:496	c::[ 0x9b c::z c::V 0xd6 c::U c::* 0x9b  c::} 0x0f 0x9e c::: 0x8e 0xb6 0xfd 0x0e
+octets:512	c::3 0xbc c::U c::y 0xd2 c::* c::2 0x97  c::C 0xf8 c::> 0x02 0xe9 c::K 0xb8 0xc0
+octets:528	0xb0 c::; 0xed c::o c::D 0xbe 0xa9 c::B  0xb0 c::U c::> 0xaf 0xb9 c::" 0xc6 c::T
+octets:544	c::z 0xce c::) 0xf6 0xc7 c::~ c::$ c:::  0x15 c::Q c::4 0x0f 0x9f c::f 0x1b c::6
+octets:560	0xed 0x17 c::p 0xc1 0x96 0x85 0x82 0x0c  0xfb c::S c::Z c::f 0x87 c::Z c::t c::j
+octets:576	0x1a 0x93 0x15 c::X 0xe1 c::! 0xd5 c::!  0xb5 0xde c::H 0xd7 0xa7 c::& c::H c::Y
+octets:592	c::* c::E 0xaf 0x12 0x10 0xc7 0xeb c::|  0xec 0xa4 c::B 0xa4 0x06 c::2 c::n 0xd5
+octets:608	0xc2 c::@ 0xc3 0xc7 c::^ 0x90 0xd8 c::m  0xea 0xad 0x01 0xdc c::k 0xda 0xda c::w
+octets:624	c::: c::' 0xc0 0x0c 0x01 0x01 0x00 0x01  0x00 0x00 c::T c::_ 0x00 0x13 0x00 0x05
+octets:640	c::i c::s c::s c::u c::e c::D c::i c::g  c::i c::c c::e c::r c::t c::. c::c c::o
+octets:656	c::m 0xc0 0x0c 0x01 0x01 0x00 0x01 0x00  0x00 c::T c::_ 0x00 0x11 0x00 0x05 c::i
+octets:672	c::s c::s c::u c::e c::t c::e c::l c::e  c::s c::e c::c c::. c::d c::e 0xc0 0x0c
+octets:688	0x00 c::. 0x00 0x01 0x00 0x00 c::T c::_  0x01 0x1b 0x01 0x01 0x08 0x02 0x00 0x01
+octets:704	c::Q 0x80 c::_ c::* c::W c::c c::_ 0x17  0xe2 c::c c::6 c::Q 0x03 c::g c::m c::x
+octets:720	0x03 c::n c::e c::t 0x00 0xbb 0xe2 0x92  c::m 0x1a c::l 0xea c::Y 0x09 0xe1 c::y
+octets:736	c::[ 0x80 0xd8 0x08 0xf1 0xfa c::` 0xbb  c::? 0xd1 c::t 0xd9 0xfb 0x98 c::p c::J
+octets:752	c::1 0xc9 0x0c c::^ c::M c::4 0xb7 0xcf  c::" 0xf8 c::` 0x9a c::[ 0x82 c::U c:::
+octets:768	c::6 c::O 0x8e 0xd6 0xc5 0x90 0xf9 0xa6  c::w c::] c::s 0xd7 c::% c::+ c::M 0xfa
+octets:784	0xd4 0x1f 0xad c::w 0x16 c::Q 0x87 0x9e  0x88 0xb9 0x19 c::  c::| 0xa4 0xc8 c::<
+octets:800	0x17 0xc8 0x82 0x80 c::' 0x1a c::F 0xf8  0xa3 c::g 0x07 0x1f 0xa6 c::Q c::V 0xa3
+octets:816	c::1 0x17 c::D 0x0e c::f 0xb9 0xe8 0xab  c::e 0x17 c::O c::X c::5 c::T c::N 0xc1
+octets:832	0x0d 0xa8 0xf4 0x17 0x9e 0x1d 0x9c 0x8b  0xcb 0xf2 0xc0 0xe0 0xe8 0xbf c::g 0xc6
+octets:848	0xef 0x07 c::D c::/ 0xf5 0xae 0x09 0xd2  c::C 0xda 0xed 0xaa 0x0e 0xaf 0xf4 c::{
+octets:864	0x1a c::} c::p 0xa9 0xa4 0xd7 c::P 0xea  c::^ c::| 0x8c 0x94 0x01 c::> c::J 0xb7
+octets:880	0xf4 0x0a c::L 0xda 0xdb c::r c::{ 0xe9  0xf8 0xa8 0x96 0xf5 0x90 c::% 0xed 0xfd
+octets:896	c::Y 0xa1 0x91 c::* c::R c::q 0xa8 0x80  c::I 0x14 0x9c 0x9d c::Y 0xaf c::D 0xf2
+octets:912	c::- 0xf8 c::e c::; c::e 0x07 0x1b 0x9a  0xd0 0x02 0xe7 c::1 0xde 0xf7 0xee 0xa0
+octets:928	0x14 0xc1 0x96 c::' 0x97 0xb5 0x12 0xf9  c::^ c::9 c::% c::V 0xba 0xac 0xb5 0xa0
+octets:944	0xe1 0xa4 0x9e 0xc5 0x9f c::D c::g 0xc3  c::r 0xe3 0xb7 0x92 0xf6 0xcc 0x8f 0x95
+octets:960	c::I 0xf2 0xb8 c::: 0x1a c::  0xc3 0xae  c::# c::Q c::m c::J 0x08 0x0f 0xf2 0x8b
+octets:976	c::6 0xf9 0x93 0x9d 0x1f
+End of data.
+ID:8517
+qdcount:32924
+Ancount:35802
+Nscount:50624
+Arcount:3072
+Reserve.
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x6f1a (0x6f1a)
+Packet Length:66
+Offset:0
+Time to live:64
+Protocol:6
+Flags:DF
+ZoeurK.lan (192.168.0.20) => dns.google (8.8.8.8)
+Port Src:49093
+Port Dst:53
+Checksum:0xd0f2 (0xf666)
+TCP Length:32
+Sequence:2966771355
+Acknowledgement:2357869337
+Flags:....A..
+Window:493
+urgptr:0
+Header size:32
+tcp4 options (option lenght 12):
+	Octet 1:0xbf
+	Octet 2:0xc5
+	Octet 3:0x0
+	Octet 4:0x35
+	Octet 5:0xb0
+	Octet 6:0xd5
+	Octet 7:0x56
+	Octet 8:0x9b
+	Octet 9:0x8c
+	Octet 10:0x8a
+	Octet 11:0x3b
+	Octet 12:0x19
+print_data():
+	No data.
+print_data_hex():
+	No data.
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x6f19 (0x6f19)
+Packet Length:66
+Offset:0
+Time to live:64
+Protocol:6
+Flags:DF
+ZoeurK.lan (192.168.0.20) => dns.google (8.8.8.8)
+Port Src:49093
+Port Dst:53
+Checksum:0xd0f2 (0xf65b)
+TCP Length:32
+Sequence:2966771355
+Acknowledgement:2357869337
+Flags:F...A..
+Window:501
+urgptr:0
+Header size:32
+tcp4 options (option lenght 12):
+	Octet 1:0xbf
+	Octet 2:0xc5
+	Octet 3:0x0
+	Octet 4:0x35
+	Octet 5:0xb0
+	Octet 6:0xd5
+	Octet 7:0x56
+	Octet 8:0x9b
+	Octet 9:0x8c
+	Octet 10:0x8a
+	Octet 11:0x3b
+	Octet 12:0x19
+print_data():
+	No data.
+print_data_hex():
+	No data.
+MAC address info:
+0x50:0xe0:0x85:0xb9:0xd6:0x15 => 0x00:0x1f:0x33:0xce:0x5c:0xc4
+Version:4
+Internet header length:20
+IP checksum:0x5908 (0x5908)
+Packet Length:66
+Offset:0
+Time to live:119
+Protocol:6
+Flags:
+dns.google (8.8.8.8) => ZoeurK.lan (192.168.0.20)
+Port Src:53
+Port Dst:49093
+Checksum:0xf750 (0xf750)
+TCP Length:32
+Sequence:2357869337
+Acknowledgement:2966771356
+Flags:F...A..
+Window:236
+urgptr:0
+Header size:32
+tcp4 options (option lenght 12):
+	Octet 1:0x0
+	Octet 2:0x35
+	Octet 3:0xbf
+	Octet 4:0xc5
+	Octet 5:0x8c
+	Octet 6:0x8a
+	Octet 7:0x3b
+	Octet 8:0x19
+	Octet 9:0xb0
+	Octet 10:0xd5
+	Octet 11:0x56
+	Octet 12:0x9c
+print_data():
+	No data.
+print_data_hex():
+	No data.
+MAC address info:
+0x00:0x1f:0x33:0xce:0x5c:0xc4 => 0x50:0xe0:0x85:0xb9:0xd6:0x15
+Version:4
+Internet header length:20
+IP checksum:0x6f18 (0x6f18)
+Packet Length:66
+Offset:0
+Time to live:64
+Protocol:6
+Flags:DF
+ZoeurK.lan (192.168.0.20) => dns.google (8.8.8.8)
+Port Src:49093
+Port Dst:53
+Checksum:0xd0f2 (0xf639)
+TCP Length:32
+Sequence:2966771356
+Acknowledgement:2357869338
+Flags:....A..
+Window:501
+urgptr:0
+Header size:32
+tcp4 options (option lenght 12):
+	Octet 1:0xbf
+	Octet 2:0xc5
+	Octet 3:0x0
+	Octet 4:0x35
+	Octet 5:0xb0
+	Octet 6:0xd5
+	Octet 7:0x56
+	Octet 8:0x9c
+	Octet 9:0x8c
+	Octet 10:0x8a
+	Octet 11:0x3b
+	Octet 12:0x1a
+print_data():
+	No data.
+print_data_hex():
+	No data.
+
+Packet Selected:14
+Packet Captured:6370
+Packet Received By Kernel:6370
+Packet Dropped By Kernel:0

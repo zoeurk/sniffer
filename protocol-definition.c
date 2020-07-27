@@ -270,7 +270,7 @@ void protocol_hop_by_hop(void *ip6, void *ip, unsigned long int *sz){
 	myoutput.icmp4.seq = ntohs(icmp4->seq);
 	myoutput.icmp4.checksum = icmp4->checksum;
 	myoutput.icmp4.re_checksum = checksum_calculation(check,size);
-	myoutput.datalen =  myoutput.sizeread - 8 - myoutput.ihl - LINK_LAYER - len;
+	myoutput.datalen =  myoutput.sizeread - myoutput.ihl - LINK_LAYER;
 	myoutput.data = ip;
 	myoutput.print_hop_by_hop = print_hop_by_hop;
 	myoutput.print_data = print_data;
