@@ -31,7 +31,6 @@
 
 #define DNS_PORT 53
 #define NTP_PORT 123
-
 void delete_arguments(struct arguments *args){
 	struct optflags *opt_delete;
 	struct tcpflags *tcpflags_delete;
@@ -392,10 +391,11 @@ int main(int argc, char **argv){
 			}*/
 			if((myoutput.protocol == UDP && myoutput.udp4.src_port == DNS_PORT) || (myoutput.datalen > 0 && myoutput.tcp4.src_port == DNS_PORT)){
 				if(myoutput.protocol == UDP && myoutput.udp4.src_port == DNS_PORT)
-					services_udp_src(myoutput.data);
+					services_udp_src(myoutput.data,myoutput.datalen, UDP, 0, 0);
 				else{
-					ptr = (char *)(myoutput.data + 2);
-					services_udp_src(ptr);
+					//printf("==>%u\n",ntohs(*((unsigned short int *)myoutput.data)));
+					//ptr = (char *)(myoutput.data + 2);
+					services_udp_src(myoutput.data ,myoutput.datalen, TCP, myoutput.tcp4.seq, myoutput.tcp4.ack);
 				}
 				goto end;
 			}
@@ -403,6 +403,7 @@ int main(int argc, char **argv){
 				if(myoutput.protocol == UDP && myoutput.udp4.dst_port == DNS_PORT)
 					services_udp_dst(myoutput.data);
 				else{
+					//printf("==>%u\n",ntohs(*((unsigned short int *)myoutput.data)));
 					ptr = (char *)(myoutput.data + 2);
 					services_udp_dst(ptr);
 				}

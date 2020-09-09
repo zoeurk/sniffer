@@ -1,5 +1,7 @@
 #ifndef OTHERS_H
 #define OTHERS_H
+#include <stdlib.h>
+
 #include <argp.h>
 
 #include <netdb.h>
@@ -97,8 +99,30 @@ struct output{
 	void (*print_data)(char *, unsigned long int);
 	void (*print_data_hex)(char *, unsigned long int);
 };
+/*struct segmented_tcp_data{
+	unsigned int seq;
+	unsigned int ack;
+	int protocol;
+	int pad;
+	void *data;
+	struct segmented_tcp_data *next;
+};*/
+/*struct tcp_packet{
+	unsigned int cur_seq;
+	unsigned int cur_ack;
+	struct segmented_tcp_data *last_packet;
+};*/
+/*struct data_split{
+	unsigned int seq;
+	unsigned int ack;
+	unsigned int len;
+	unsigned int len_total;
+	void *data;
+	struct data_split *next;
+};*/
 extern const char 			*argp_program_version;
 extern const char 			*argp_program_bug_address;
+
 
 extern struct output		myoutput;
 extern int 			s;
@@ -110,4 +134,15 @@ extern char 			buffer[65535];
 extern char 			doc[];
 extern struct argp_option	options[];
 extern struct arguments		args;
+//extern struct tcp_packet	tcp_packet;
+//extern struct data_split 	s_data;
+struct data_split{
+	unsigned int seq;
+	unsigned int ack;
+	unsigned int len;
+	unsigned int len_total;
+	void *data;
+	struct data_split *next;
+};
+extern struct data_split *s_data;
 #endif

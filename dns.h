@@ -1,5 +1,6 @@
 #ifndef DNS_H
 #define DNS_H
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -7,6 +8,9 @@
 #include <netdb.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
+
+#include "others.h"
+#include "utils.h"
 
 #define ADDRESS 1
 #define NS 2
@@ -17,6 +21,7 @@
 #define TXT 16
 #define ADDRESS6 28
 #define OPT 41
+#define RRSIG 46
 #define ALL 255
 #define CAA 257
 struct dns{
@@ -52,9 +57,11 @@ struct soa{
 	unsigned int expire;
 	unsigned int minimum;
 };
-unsigned char *ReadName(unsigned char* reader,unsigned char* buffer,int* count, unsigned char *name);
+
+//int printlabel(unsigned char *buffer, int len);
+int ReadName(unsigned char *reader, unsigned char *buf, int lablen, unsigned char *buffer, int len);
 void dns_type_41(void *pdata);
-void dns_type(int type, unsigned char **pdata,unsigned char *data, int *len, unsigned char *host);
-void services_udp_src(char *data);
+void dns_type(int type, unsigned char **pdata, long int *datalen, unsigned char *data, int *len);
+void services_udp_src(char *data, unsigned long int length,int proto, unsigned int seq, unsigned int ack);
 void services_udp_dst(char *data);
 #endif

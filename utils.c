@@ -6,6 +6,7 @@
 #include <string.h>
 
 #include "utils.h"
+#include "others.h"
 
 int ___getnameinfo___(void *sa,unsigned long int sa_sz,char **addr,unsigned long int addrlen,char *addr_ip){
 	int ret;
@@ -26,4 +27,42 @@ int ___getnameinfo___(void *sa,unsigned long int sa_sz,char **addr,unsigned long
 		return ret;
 	else **addr = '\0';
 	return -1;
+}
+struct data_split *search_sdata(struct data_split *data,unsigned int seq, unsigned int ack){
+	struct data_split *d = data;
+	while(d){
+		if(d->ack == seq || d->ack == ack)
+			return d;
+		d = d->next;
+	}
+	return NULL;
+}
+struct data_split *add_sdata(struct data_split *data){
+	struct data_split *d = data;
+	if(data == NULL){
+		d = calloc(1,sizeof(struct data_split));
+	}else{
+		while(d->next)
+			d = d->next;
+		d->next = calloc(1,sizeof(struct data_split));
+		d = d->next;
+	}
+	return d;
+}
+struct data_split *free_sdata(struct data_split *ptr){
+	struct data_split *d, *start;
+	if(ptr == s_data){
+		d = ptr->next;
+		free(ptr->data);
+		free(ptr);
+		return d;
+	}else{
+		start = ptr;
+		while(d->next != ptr)
+			d = d->next;
+		d->next = d->next->next;
+		free(d->data);
+		free(d);
+		return start;
+	}
 }

@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 #include <argp.h>
 
 #include <netdb.h>
@@ -12,6 +14,7 @@ struct output		myoutput = {0, {'\0'}, 0, 0, 0, 0 ,0, 0, 0, 0, 0,
 						0, 0, NULL, NULL, {{0,0,0,0,0,0}},
 						NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL
 				};
+//struct tcp_packet	tcp_packet = {0, 0, NULL};
 int 			s;
 unsigned long int 	captured = 0, statsrecv = 0, statsdrops = 0, selected = 0;
 void 			*check = NULL;
@@ -37,3 +40,7 @@ struct argp_option	options[] = {
 						{0}
 				};
 struct arguments		args = { NULL, 0, 0, 0, 0, NULL };
+//struct data_split 		s_data = {0,0,0,0,NULL,NULL};
+struct  data_split *s_data = NULL;
+//struct  b z = { 0 };
+
