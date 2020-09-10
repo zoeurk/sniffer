@@ -186,6 +186,8 @@ void dns_type(int type, unsigned char **pdata,long int *pdatalen, unsigned char 
 			printf("\t\tExpiration: %s",ctime(&time));
 			time = ntohl(((unsigned int *)*pdata)[3]);
 			printf("\t\tInception: %s",ctime(&time));
+			stop = ReadName(&((unsigned char *)*pdata)[18],data,*len, buf,*len);
+			printf("\t\tOwner: %s\n",buf);
 			*pdata += *len;
 			*pdatalen -= (*len + sizeof(struct answer));
 			break;
