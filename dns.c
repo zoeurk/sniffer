@@ -179,14 +179,15 @@ void dns_type(int type, unsigned char **pdata,long int *pdatalen, unsigned char 
 		case RRSIG:
 			printf("\trdata_%i ",RRSIG);
 			*pdata = (*pdata + sizeof(struct answer));
-			printf("\n\t\tCovered: %u\n\t\tAlgotithm: %i\n\t\tLabel: %i\n\t\tOriginal TTL: %u\n",
+			printf("\n\t\tCovered: %u\n\t\tAlgotithm: %i\n\t\tLabel: %i\n\t\tOriginal TTL: %u\n\t\tKey tag: %u\n",
 				ntohs(*((unsigned short int *)*pdata)),((unsigned char *)*pdata)[2],
-				((unsigned char *)*pdata)[3],ntohl(((unsigned int *)*pdata)[1]));
+				((unsigned char *)*pdata)[3],ntohl(((unsigned int *)*pdata)[1]),
+				ntohs(((unsigned short int *)*pdata)[8]));
 			time = ntohl(((unsigned int *)*pdata)[2]);
 			printf("\t\tExpiration: %s",ctime(&time));
 			time = ntohl(((unsigned int *)*pdata)[3]);
 			printf("\t\tInception: %s",ctime(&time));
-			stop = ReadName(&((unsigned char *)*pdata)[18],data,*len, buf,*len);
+			stop = ReadName(&((unsigned char *)*pdata)[18],data,0, buf,*len);
 			printf("\t\tOwner: %s\n",buf);
 			*pdata += *len;
 			*pdatalen -= (*len + sizeof(struct answer));

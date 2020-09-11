@@ -31,7 +31,8 @@ int ___getnameinfo___(void *sa,unsigned long int sa_sz,char **addr,unsigned long
 struct data_split *search_sdata(struct data_split *data,unsigned int seq, unsigned int ack){
 	struct data_split *d = data;
 	while(d){
-		if(d->ack == seq || d->ack == ack)
+		//if(d->ack == ack || d->ack = seq)
+		if(d->ack == ack)
 			return d;
 		d = d->next;
 	}
