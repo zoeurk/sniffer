@@ -304,7 +304,7 @@ void services_udp_dst(char *data){
 		for(j = 0; j < count[i]; j++){
 			stop = ReadName((unsigned char *)q,(unsigned char *)data, 0, buf, -1);
 			printf("\tQuestion: %s\n",buf);
-			if(i){
+			if(i || j){
 					q = (struct question *)((char *)q + sizeof(struct question) + stop);
 			}else{
 				q = (struct question *)((char *)q + stop);
