@@ -1,0 +1,79 @@
+13:58:05.329244 IP (tos 0x0, ttl 64, id 11472, offset 0, flags [DF], proto UDP (17), length 328)
+    ZoeurK.lan.bootpc > 192.168.0.1.bootps: [bad udp cksum 0x82ab -> 0x393c!] BOOTP/DHCP, Request from 50:e0:85:b9:d6:15 (oui Unknown), length 300, xid 0x1530b254, Flags [none] (0x0000)
+	  Client-IP ZoeurK.lan
+	  Client-Ethernet-Address 50:e0:85:b9:d6:15 (oui Unknown)
+	  Vendor-rfc1048 Extensions
+	    Magic Cookie 0x63825363
+	    DHCP-Message Option 53, length 1: Release
+	    Server-ID Option 54, length 4: 192.168.0.1
+	    Hostname Option 12, length 7: "Torture"
+	    Client-ID Option 61, length 19: hardware-type 255, 85:b9:d6:15:00:01:00:01:26:52:9d:f7:50:e0:85:b9:d6:15
+	    END Option 255, length 0
+	    PAD Option 0, length 0, occurs 20
+13:58:10.933317 IP (tos 0x10, ttl 128, id 0, offset 0, flags [none], proto UDP (17), length 328)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 50:e0:85:b9:d6:15 (oui Unknown), length 300, xid 0x1c46cf04, secs 4, Flags [none] (0x0000)
+	  Client-Ethernet-Address 50:e0:85:b9:d6:15 (oui Unknown)
+	  Vendor-rfc1048 Extensions
+	    Magic Cookie 0x63825363
+	    DHCP-Message Option 53, length 1: Discover
+	    Requested-IP Option 50, length 4: ZoeurK.lan
+	    Hostname Option 12, length 7: "Torture"
+	    Parameter-Request Option 55, length 13: 
+	      Subnet-Mask, BR, Time-Zone, Default-Gateway
+	      Domain-Name, Domain-Name-Server, Option 119, Hostname
+	      Netbios-Name-Server, Netbios-Scope, MTU, Classless-Static-Route
+	      NTP
+	    Client-ID Option 61, length 19: hardware-type 255, 85:b9:d6:15:00:01:00:01:26:52:9d:f7:50:e0:85:b9:d6:15
+	    END Option 255, length 0
+	    PAD Option 0, length 0, occurs 5
+13:58:11.054409 IP (tos 0x0, ttl 128, id 57005, offset 0, flags [none], proto UDP (17), length 328)
+    192.168.0.1.bootps > 255.255.255.255.bootpc: [no cksum] BOOTP/DHCP, Reply, length 300, xid 0x1c46cf04, Flags [Broadcast] (0x8000)
+	  Your-IP ZoeurK.lan
+	  Server-IP 192.168.0.1
+	  Client-Ethernet-Address 50:e0:85:b9:d6:15 (oui Unknown)
+	  Vendor-rfc1048 Extensions
+	    Magic Cookie 0x63825363
+	    DHCP-Message Option 53, length 1: Offer
+	    Subnet-Mask Option 1, length 4: 255.255.255.0
+	    Time-Zone Option 2, length 4: 0
+	    Default-Gateway Option 3, length 4: 192.168.0.1
+	    TTL Option 23, length 1: 64
+	    Lease-Time Option 51, length 4: 3600
+	    Server-ID Option 54, length 4: 192.168.0.1
+	    Domain-Name-Server Option 6, length 8: ns1.numericable.net,ns2.numericable.net
+	    END Option 255, length 0
+	    PAD Option 0, length 0, occurs 13
+13:58:11.054735 IP (tos 0x10, ttl 128, id 0, offset 0, flags [none], proto UDP (17), length 329)
+    0.0.0.0.bootpc > 255.255.255.255.bootps: [udp sum ok] BOOTP/DHCP, Request from 50:e0:85:b9:d6:15 (oui Unknown), length 301, xid 0x1c46cf04, secs 4, Flags [none] (0x0000)
+	  Client-Ethernet-Address 50:e0:85:b9:d6:15 (oui Unknown)
+	  Vendor-rfc1048 Extensions
+	    Magic Cookie 0x63825363
+	    DHCP-Message Option 53, length 1: Request
+	    Server-ID Option 54, length 4: 192.168.0.1
+	    Requested-IP Option 50, length 4: ZoeurK.lan
+	    Hostname Option 12, length 7: "Torture"
+	    Parameter-Request Option 55, length 13: 
+	      Subnet-Mask, BR, Time-Zone, Default-Gateway
+	      Domain-Name, Domain-Name-Server, Option 119, Hostname
+	      Netbios-Name-Server, Netbios-Scope, MTU, Classless-Static-Route
+	      NTP
+	    Client-ID Option 61, length 19: hardware-type 255, 85:b9:d6:15:00:01:00:01:26:52:9d:f7:50:e0:85:b9:d6:15
+	    END Option 255, length 0
+13:58:12.077276 IP (tos 0x0, ttl 128, id 57005, offset 0, flags [none], proto UDP (17), length 328)
+    192.168.0.1.bootps > 255.255.255.255.bootpc: [no cksum] BOOTP/DHCP, Reply, length 300, xid 0x1c46cf04, Flags [Broadcast] (0x8000)
+	  Your-IP ZoeurK.lan
+	  Server-IP 192.168.0.1
+	  Client-Ethernet-Address 50:e0:85:b9:d6:15 (oui Unknown)
+	  Vendor-rfc1048 Extensions
+	    Magic Cookie 0x63825363
+	    DHCP-Message Option 53, length 1: ACK
+	    Subnet-Mask Option 1, length 4: 255.255.255.0
+	    Time-Zone Option 2, length 4: 0
+	    Default-Gateway Option 3, length 4: 192.168.0.1
+	    TTL Option 23, length 1: 64
+	    Lease-Time Option 51, length 4: 3600
+	    Server-ID Option 54, length 4: 192.168.0.1
+	    Domain-Name-Server Option 6, length 8: ns1.numericable.net,ns2.numericable.net
+	    END Option 255, length 0
+	    PAD Option 0, length 0, occurs 13
+

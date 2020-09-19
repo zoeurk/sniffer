@@ -26,9 +26,12 @@
 #include "protocol.h"
 #include "ntp.h"
 #include "dns.h"
+#include "bootp.h"
 #include "utils.h"
 #include "others.h"
 
+#define BOOTPS_PORT 67
+#define BOOTPC_PORT 68
 #define DNS_PORT 53
 #define NTP_PORT 123
 void delete_arguments(struct arguments *args){
@@ -365,6 +368,7 @@ int main(int argc, char **argv){
 	}
 	signal(SIGINT,finish);
 	do{	myoutput.sizeread = recvfrom(s, buffer, 65535, 0, (struct sockaddr *)&from, &fromlen);
+		if(myoutput.sizeread == 0)continue;
 		if(from.sll_pkttype == PACKET_OUTGOING && from.sll_ifindex == loopback){
 			captured++;
 			getsockopt(s, SOL_PACKET, PACKET_STATISTICS, &stats, &len);
@@ -377,8 +381,10 @@ int main(int argc, char **argv){
 		ip4 = (struct ipv4header *)(buffer + LINK_LAYER);
 		myoutput.version = ip4->version;
 		analyse(ip4);
+		//printf("%i\n",show_it(args.opt, &myoutput));
 		if(show_it(args.opt, &myoutput) == 1){
 			print_it(&myoutput);
+			//printf("%u\n",myoutput.udp4.dst_port);
 			if((args.options&VERBEUX) == 0)
 				goto end;
 			/*if(myoutput.protocol == UDP && myoutput.udp4.src_port == DNS_PORT){
@@ -407,6 +413,10 @@ int main(int argc, char **argv){
 					ptr = (char *)(myoutput.data + 2);
 					services_udp_dst(ptr);
 				}
+				goto end;
+			}
+			if(myoutput.protocol == UDP && (myoutput.udp4.dst_port == BOOTPS_PORT || myoutput.udp4.dst_port == BOOTPC_PORT)){
+				service_dhcp(myoutput.data, myoutput.datalen);
 				goto end;
 			}
 			if(myoutput.protocol == UDP && (myoutput.udp4.dst_port == NTP_PORT || myoutput.udp4.src_port == NTP_PORT)){
