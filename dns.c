@@ -11,6 +11,7 @@
 #include "others.h"
 #include "utils.h"
 const char *base64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+const char *base16 = "0123456789ABCDEF";
 void tobase64(char *input, char *output, unsigned int len)
 {	unsigned char *pinput = (unsigned char *)input;
 	output[0] = base64[pinput[0]>>2];
@@ -19,6 +20,12 @@ void tobase64(char *input, char *output, unsigned int len)
 	output[3] = (len<3)? '=' :base64[(pinput[2]&63)];
 
 }
+void tobase16(char *input,char *output)
+{	unsigned char *pinput = (unsigned char *)input;
+	output[0] = base16[pinput[0] >>4];
+	output[1] = base16[pinput[0]&15];
+}
+
 int ReadName(unsigned char *reader, unsigned char *buf, int lablen, unsigned char *buffer, int len){
 	int pos, _len_ = 0, jump = 0,ptr = 1;
 	unsigned char *curpos, *jumped = NULL;
@@ -204,6 +211,41 @@ void dns_type(int type, unsigned char **pdata,long int *pdatalen, unsigned char 
 			}
 			printf("\n");
 			*pdata += *len;
+			*pdatalen -= (*len + sizeof(struct answer));
+			break;
+		case NSEC3PARAM:
+			*pdata = *pdata + sizeof(struct answer);
+			printf("\trdata_%i:\n\t\tHash algorithm: %u\n\t\tFlags: %u\n\t\tIteration: %u\n\t\tSalt length: %u\n\t\tSalt: ",NSEC3PARAM,
+				((unsigned char *)*pdata)[0],((unsigned char *)*pdata)[1],ntohs(((unsigned short int *)*pdata)[1]),
+				((unsigned char *)*pdata)[5]);
+			for(l = 0,ptr = (char *)&((unsigned char *)*pdata)[5]; l < *len - 5;l++,ptr++){
+				tobase16(ptr,output);
+				printf("%s", output);
+			}
+			printf("\n");
+			*pdata = (*pdata + *len);
+			*pdatalen -= (*len + sizeof(struct answer));
+			break;
+		case DNSKEY:
+			*pdata = *pdata + sizeof(struct answer);
+			printf("\trdata_%i:\n\t\tFlags: %i\n\t\tProtocol: %u\n\t\tAlgorithm: %u\n\t\tPublic key: ",DNSKEY,
+				ntohs(((unsigned short int *)*pdata)[0]),((unsigned char *)*pdata)[2],((unsigned char *)*pdata)[3]);
+			l = *len-4;
+			ptr = (char *)&((unsigned char *)*pdata)[4];
+			l_ = 3;
+			while(l > 0){
+				memcpy(input,ptr,l_);
+				tobase64(input, output, l_);
+				printf("%s", output);
+				memset(input,0,4);
+				memset(output,0,5);
+				l -= 3;
+				if(l < 3)
+					l_ = l;
+				ptr += 3;
+			}
+			printf("\n");
+			*pdata = (*pdata + *len);
 			*pdatalen -= (*len + sizeof(struct answer));
 			break;
 		default:*pdata = (*pdata + sizeof(struct answer));

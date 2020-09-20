@@ -22,6 +22,8 @@
 #define ADDRESS6 28
 #define OPT 41
 #define RRSIG 46
+#define DNSKEY 48
+#define NSEC3PARAM 51
 #define ALL 255
 #define CAA 257
 struct dns{
