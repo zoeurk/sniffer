@@ -10,16 +10,15 @@
 #include "dns.h"
 #include "others.h"
 #include "utils.h"
-/*int printlabel(unsigned char *buffer, int len){
-	unsigned char *pbuf;
-	int i;
-	for(i = 0, pbuf = buffer; i < len;pbuf++, i++){
-			//buf[i] = *pbuf;
-			printf(":%c",*pbuf);
-	}
-	//printf(">>>%i\n",i);
-	return i;
-}*/
+const char *base64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+void tobase64(char *input, char *output, unsigned int len)
+{	unsigned char *pinput = (unsigned char *)input;
+	output[0] = base64[pinput[0]>>2];
+	output[1] = base64[((pinput[0]&3)<<4) | pinput[1]>>4];
+	output[2] = (len<2)? '=' :base64[((pinput[1]&15)<<2) | (pinput[2]>>6)];
+	output[3] = (len<3)? '=' :base64[(pinput[2]&63)];
+
+}
 int ReadName(unsigned char *reader, unsigned char *buf, int lablen, unsigned char *buffer, int len){
 	int pos, _len_ = 0, jump = 0,ptr = 1;
 	unsigned char *curpos, *jumped = NULL;
@@ -33,7 +32,6 @@ int ReadName(unsigned char *reader, unsigned char *buf, int lablen, unsigned cha
 				jumped = &buf[pos];
 			}
 			_len_ = *jumped++;
-			//printlabel(jumped,_len_);
 			memcpy(pbuf,jumped,_len_);
 			pbuf += _len_;
 			*pbuf = '.';
@@ -59,9 +57,6 @@ int ReadName(unsigned char *reader, unsigned char *buf, int lablen, unsigned cha
 				read:
 				_len_ = *curpos++;
 				jump++;
-				//if(l != -1)
-				//	l--;
-				//printlabel(curpos,_len_);
 				memcpy(pbuf,curpos, _len_);
 				pbuf += _len_;
 				*pbuf = '.';
@@ -90,10 +85,13 @@ void dns_type(int type, unsigned char **pdata,long int *pdatalen, unsigned char 
 	struct in6_addr s6;
 	unsigned char buf[65535];
 	char save[65535],
-		*issuetag[3] = {"issuewild", "issue", "iodef"};
-	int stop, i, j;
+		*issuetag[3] = {"issuewild", "issue", "iodef"},
+		input[4],output[5],*ptr;
+	int stop, i, j, l, l_;
 	long int time;
 	memset(buf,0,65535);
+	memset(input,0,4);
+	memset(output,0,5);
 	switch(type){
 		case ADDRESS:
 			*pdata = (*pdata + sizeof(struct answer));
@@ -189,6 +187,22 @@ void dns_type(int type, unsigned char **pdata,long int *pdatalen, unsigned char 
 			printf("\t\tInception: %s",ctime(&time));
 			stop = ReadName(&((unsigned char *)*pdata)[18],data,0, buf,*len);
 			printf("\t\tOwner: %s\n",buf);
+			printf("\t\tSignature: ");
+			l = *len-18-stop;
+			ptr = (char *)&((unsigned char *)*pdata)[18 + stop];
+			l_ = 3;
+			while(l > 0){
+				memcpy(input,ptr,l_);
+				tobase64(input, output, l_);
+				printf("%s", output);
+				memset(input,0,4);
+				memset(output,0,5);
+				l -= 3;
+				if(l < 3)
+					l_ = l;
+				ptr += 3;
+			}
+			printf("\n");
 			*pdata += *len;
 			*pdatalen -= (*len + sizeof(struct answer));
 			break;

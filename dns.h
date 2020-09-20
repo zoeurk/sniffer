@@ -58,7 +58,6 @@ struct soa{
 	unsigned int minimum;
 };
 
-//int printlabel(unsigned char *buffer, int len);
 int ReadName(unsigned char *reader, unsigned char *buf, int lablen, unsigned char *buffer, int len);
 void dns_type_41(void *pdata);
 void dns_type(int type, unsigned char **pdata, long int *datalen, unsigned char *data, int *len);

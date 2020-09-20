@@ -14,7 +14,7 @@ void *analyse(void *buf){
 	struct in_addr 			src,dst;
 	struct in6_addr			src6,dst6;
 	int 				fl, temp, i;
-	char				*phostname, *ip;
+	char				*phostname, *ip, buffer[1024];
 	
 	switch(ip4->version){
 		case IPV4:
@@ -87,6 +87,11 @@ void *analyse(void *buf){
 					protocol_hop_by_hop(ip6, ip, &sz);
 				}
 				break;
+		/*case IGMP:	printf("0x%02x;0x%04x;%u\n",
+					((struct igmp*)ip)->type,((struct igmp*)ip)->checksum,ntohs(((struct igmp*)ip)->NbrOfGrp));
+				ip += sizeof(struct igmp);
+				printf("%u\n",ntohs(((struct igmp_grprecord *)ip)->NbrSrc));
+				break;*/
 		case ICMPv6:	protocol_icmpv6(ip6, ip, &sz);
 				break;
 		case ICMP:	protocol_icmp4(ip);

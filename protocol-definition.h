@@ -89,6 +89,19 @@ struct hop_by_hop{
 	unsigned char hdr_ext_len;
 	unsigned short int options;
 };
+struct igmp{
+	unsigned char type;
+	unsigned char reserved;
+	unsigned short int checksum;
+	unsigned short int zero;
+	unsigned short int NbrOfGrp;
+};
+struct igmp_grprecord{
+	unsigned char type;
+	unsigned char AuxDataLen;
+	unsigned short int NbrSrc;
+	unsigned int MulticastAddr;
+};
 unsigned short int checksum_calculation(const void *buffer,unsigned long int bufsize);
 void *c_alloc(void *check, unsigned long int size);
 void protocol_icmpv6(void *ip6, void *ip,unsigned long int *sz);

@@ -34,7 +34,7 @@ void *c_alloc(void *check, unsigned long int size){
 	}
 	return check;
 }
-void  protocol_icmpv6(void *ip6, void *ip,unsigned long int *sz){
+void protocol_icmpv6(void *ip6, void *ip,unsigned long int *sz){
 	struct icmp4header *icmp4, *c_icmp6;
 	struct pseudo_icmp6header *pseudo_icmp6;
 	unsigned long int size;
