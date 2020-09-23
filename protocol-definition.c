@@ -5,15 +5,15 @@ unsigned short int checksum_calculation(const void *buffer,unsigned long int buf
 	const unsigned short int *ptr;
 	unsigned long int size = bufsize;
 	unsigned int ___checksum___;
-	unsigned char ___char___ = bufsize%2;
+	//unsigned char ___char___ = bufsize%2;
 	for(	___checksum___ = 0,
-		ptr = buffer,
-		size -= ___char___;
-		size > 0;
+		ptr = buffer;
+		//size -= ___char___;
+		size > 1;
 		___checksum___ += *((unsigned short int *)ptr),
 		size-=2 , ptr++
 	);;
-   	if(___char___)
+   	if(size)
 		___checksum___ += *((unsigned char *)ptr);
 	while(___checksum___ >> 16)
 		___checksum___ = (___checksum___ & 0xffff) + (___checksum___ >> 16);
@@ -65,6 +65,24 @@ void protocol_icmpv6(void *ip6, void *ip,unsigned long int *sz){
 	myoutput.print_data = print_data;
 	myoutput.print_data_hex = print_data_hex;
 }
+/*void protocol_igmp(void *ip){
+	struct igmp *icmp4 = (struct igmp *)ip;
+	//icmp4 = (struct icmp4header *)ip;
+	myoutput.icmp4.checksum = ntohs(icmp4->checksum);
+	icmp4->checksum = 0; 
+	myoutput.icmp4.re_checksum =
+		htons(checksum_calculation((unsigned short int *)icmp4, myoutput.length));
+	printf("===>%u;%u;%u\n",myoutput.icmp4.checksum,myoutput.icmp4.re_checksum,myoutput.length);
+	myoutput.icmp4.type = icmp4->type;
+	myoutput.icmp4.code = icmp4->code;
+	myoutput.icmp4.id = ntohs(icmp4->id);
+	myoutput.icmp4.seq = ntohs(icmp4->seq);
+	myoutput.datalen = myoutput.sizeread - (LINK_LAYER + myoutput.ihl);
+	myoutput.data = (char *)ip;
+	myoutput.print_pkt = print_icmp4;
+	myoutput.print_data = print_data;
+	myoutput.print_data_hex = print_data_hex;
+}*/
 void protocol_icmp4(void *ip){
 	struct icmp4header *icmp4 = (struct icmp4header *)ip;
 	icmp4 = (struct icmp4header *)ip;

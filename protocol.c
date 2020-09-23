@@ -14,7 +14,7 @@ void *analyse(void *buf){
 	struct in_addr 			src,dst;
 	struct in6_addr			src6,dst6;
 	int 				fl, temp, i;
-	char				*phostname, *ip, buffer[1024];
+	char				*phostname, *ip, buffer[16];
 	
 	switch(ip4->version){
 		case IPV4:
@@ -87,11 +87,17 @@ void *analyse(void *buf){
 					protocol_hop_by_hop(ip6, ip, &sz);
 				}
 				break;
-		/*case IGMP:	printf("0x%02x;0x%04x;%u\n",
-					((struct igmp*)ip)->type,((struct igmp*)ip)->checksum,ntohs(((struct igmp*)ip)->NbrOfGrp));
+		/*case IGMP:	printf("0x%02x;%u;%u\n",
+					((struct igmp*)ip)->type,ntohs(((struct igmp*)ip)->checksum),ntohs(((struct igmp*)ip)->NbrOfGrp));
+				temp = ((struct igmp*)ip)->checksum;
+				((struct igmp*)ip)->checksum = 0;
+				printf("==>%u;%u\n", checksum_calculation(ip, myoutput.length),ntohs(temp));
 				ip += sizeof(struct igmp);
-				printf("%u\n",ntohs(((struct igmp_grprecord *)ip)->NbrSrc));
-				break;*/
+				printf("%u:%s\n",ntohs(((struct igmp_grprecord *)ip)->NbrSrc), inet_ntop(AF_INET,&((struct igmp_grprecord *)ip)->MulticastAddr,buffer,16));*/
+				/*printf("===igmp===>\n");
+				if(((struct igmp*)ip)->type == 0x22)
+					protocol_igmp(ip);*/
+				break;
 		case ICMPv6:	protocol_icmpv6(ip6, ip, &sz);
 				break;
 		case ICMP:	protocol_icmp4(ip);

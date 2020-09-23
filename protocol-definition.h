@@ -106,6 +106,7 @@ unsigned short int checksum_calculation(const void *buffer,unsigned long int buf
 void *c_alloc(void *check, unsigned long int size);
 void protocol_icmpv6(void *ip6, void *ip,unsigned long int *sz);
 void protocol_icmp4(void *ip);
+void protocol_igmp(void *ip);
 void protocol_tcp4(struct ipv4header *ip4, void *ip, unsigned long int *sz);
 void protocol_tcp6(struct ipv6header *ip6, void *ip, unsigned long int *sz);
 void protocol_udp4(struct ipv4header *ip4, void *ip, unsigned long int *sz);
